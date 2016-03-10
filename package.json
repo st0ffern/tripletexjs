@@ -1,0 +1,23 @@
+{
+  "name": "tripletexjs",
+  "version": "0.0.1",
+  "description": "An wrapper for the Tripletex JSON-RPC API",
+  "main": "tripletex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tripletex",
+    "json-rpc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cobraz/tripletexjs.git"
+  },
+  "author": "Simen A. W. Olsen <simen@nconel.no> (http://cobraz.no)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cobraz/tripletexjs/issues"
+  },
+  "homepage": "https://github.com/cobraz/tripletexjs#readme"
+}
