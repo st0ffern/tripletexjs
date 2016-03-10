@@ -1,6 +1,6 @@
 {
   "name": "tripletexjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An wrapper for the Tripletex JSON-RPC API",
   "main": "tripletex.js",
   "scripts": {
