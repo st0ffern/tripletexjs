@@ -19,3 +19,10 @@ as good as it can get. There is yet to be developed how you can add invoice(s)
 and add order(s).
 
 Many of the missing services just needs simple copy-paste work.
+
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]: LICENSE
+
+[npm-url]: https://npmjs.org/package/tripletexjs
+[npm-version-image]: http://img.shields.io/npm/v/tripletexjs.svg?style=flat
+[npm-downloads-image]: http://img.shields.io/npm/dm/tripletexjs.svg?style=flat
