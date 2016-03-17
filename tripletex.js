@@ -1,11 +1,14 @@
-var request = require('request')
-
 /**
  * Tripletex.js
  * A wrapper for the uncommon Tripletex JSON-RPC API. Upload CSV, really?
  * 
  * The comments reflects our love of REST APIs.
  */
+
+var request = require('request'), // To be able to make requests.
+	async = require('async')
+
+var request = request.defaults({jar: true})
 
 var Tripletex = function(){
 
@@ -220,13 +223,151 @@ var Tripletex = function(){
 	 *****************************************************************
 	 */
 
+
+	/**
+	* Special! addOrder
+	* This function is not actually a part of the API. This actually simplifies the way you
+	* add order regually trough an API; what is does is adding one order at a time. It uses
+	* XLSX to produce an CSV-file and then uploads.
+	*
+	* It uses the same scheme as explained under Fileformat, but provided as one object.
+	* Only change we did was to put order-lines inside the object, as shown:
+	* {
+	*	"Order number": 31941414,
+	*	"lines": [
+	*		{
+	*			"Count": 2
+	*		}
+	*	]
+	* }
+	*/
+	self.addOrder = function(order, callback){
+		self.addOrders([order], callback);
+	}
+
+	/**
+	* Special! addOrders
+	* This function is not actually a part of the API. This functions is a kind of a helper,
+	* that fixed the shitty interface Tripletex has regarding CSV-upload.
+	*
+	* Check out the singular-version (addOrder) to learn more. 
+	*
+	* It uses the same scheme as explained under Fileformat, but provided as an array.
+	*/
+	self.addOrders = function(orders, callback){
+
+		var file;
+		var params = {
+			amountsIncVat: false,
+			ignoreFirstRow: false,
+			assignNewOrderNumbers: true
+		};
+
+		var importingOrders = [];
+		var firstOrderId = 100000;
+
+		async.eachSeries(orders, function(order, callback){
+			var newOrder = [
+				order['Order number'] ? order['Order number'] : firstOrderId,
+				order['Order date'] ? order['Order date'] : "",
+				order['Customer number'] ? order['Customer number'] : "",
+				order['Customer name'] ? order['Customer name'] : "",
+				order['Customer address1'] ? order['Customer address1'] : "",
+				order['Customer address2'] ? order['Customer address2'] : "",
+				order['Customer postal number'] ? order['Customer postal number'] : "",
+				order['Customer city'] ? order['Customer city'] : "",
+				order['Customer email'] ? order['Customer email'] : "",
+				order['Contact first name'] ? order['Contact first name'] : "",
+				order['Contact last name'] ? order['Contact last name'] : "",
+				order['Attn. first name'] ? order['Attn. first name'] : "",
+				order['Attn. last name'] ? order['Attn. last name'] : "",
+				order['Reference number'] ? order['Reference number'] : "",
+				order['Delivery date'] ? order['Delivery date'] : "",
+				order['Delivery location'] ? order['Delivery location'] : "",
+				order['Order comment'] ? order['Order comment'] : "",
+				order['Subscription unit price period'] ? order['Subscription unit price period'] : "",
+				order['Subscription unit price period unit'] ? order['Subscription unit price period unit'] : "",
+				order['Subscription invoice period'] ? order['Subscription invoice period'] : "",
+				order['Subscription invoicing type'] ? order['Subscription invoicing type'] : "",
+				order['Subscription invoicing period count'] ? order['Subscription invoicing period count'] : "",
+				order['Subscription invoicing period unit'] ? order['Subscription invoicing period unit'] : ""
+			];
+
+			firstOrderId++;
+
+			if(typeof order.lines !== 'undefined'){
+				var firstLine = true;
+
+
+				// First line needs to go in newOrder
+				async.eachSeries(order.lines, function(line, callback){
+					var newLine = [
+						line['Subscription start date'] ? line['Subscription start date'] : "",
+						line['Count'] ? line['Count'] : "",
+						line['Unit price'] ? line['Unit price'] : "",
+						line['Discount percentage'] ? line['Discount percentage'] : "",
+						line['Vat type'] ? line['Vat type'] : "",
+						line['Order line description'] ? line['Order line description'] : "",
+						line['Product number'] ? line['Product number'] : "",
+						line['Department number'] ? line['Department number'] : "",
+						line['Department name'] ? line['Department name'] : "",
+						line['Project number'] ? line['Project number'] : "",
+						line['Project name'] ? line['Project name'] : "",
+						line['Currency code'] ? line['Currency code'] : "",
+						line['Warehouse number'] ? line['Warehouse number'] : "",
+						line['Warehouse name'] ? line['Warehouse name'] : ""
+					];
+
+					if(firstLine){
+						newOrder = newOrder.concat(newLine);
+						importingOrders.push(newOrder);
+						firstLine = false;
+					} else {
+						var returningArray = Array(23);
+						returningArray[0] = newOrder[0];
+						importingOrders.push(returningArray.concat(newLine));
+					}
+
+					callback();
+				}, function done(){
+					callback();
+				})
+			} else {
+				importingOrders.push(newOrder);
+				callback();
+			}
+		}, function done(){
+
+			var joinRow = function(row) {
+			  return row.map(escapeCell).join(';')
+			}
+
+			var escapeCell = function(x) {
+			  return /,|"/.test(x)
+			    ? '"' + x + '"'
+			    : x
+			}
+
+			file = importingOrders.map(joinRow).join('\r\n')
+			self.importOrdersTripletexCSV(file, params.amountsIncVat, params.ignoreFirstRow, params.assignNewOrderNumbers, callback);
+		});
+	}
+
 	 /**
 	 * importOrdersTripletexCSV
 	 * Importing orders to Tripletex.
 	 */
 
-	/* I was to lazy to figure out this right now. I need to fucking upload CSV-file here. Not cool, mate!
-	 * Was actually thinking about using J, or some other class, just to produce our CSV-files. */
+	self.importOrdersTripletexCSV = function(file, amountsIncVat, ignoreFirstRow, assignNewOrderNumbers, callback){
+
+		self.request('Project.importOrdersTripletexCSV', [file, amountsIncVat, ignoreFirstRow, assignNewOrderNumbers], function(err, result, body){
+			if(typeof body.error !== 'undefined'){
+				callback(body.error.msg)
+			} else {
+				callback(false, body)
+			}
+		})
+	}
 
 	/* Service: Invoice
 	 *****************************************************************

@@ -1,6 +1,6 @@
 {
   "name": "tripletexjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An wrapper for the Tripletex JSON-RPC API",
   "main": "tripletex.js",
   "scripts": {
@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/cobraz/tripletexjs/issues"
   },
-  "homepage": "https://github.com/cobraz/tripletexjs#readme"
+  "homepage": "https://github.com/cobraz/tripletexjs#readme",
+  "dependencies": {
+    "array-to-csv": "^1.0.1",
+    "async": "^1.5.2",
+    "request": "^2.69.0"
+  }
 }
