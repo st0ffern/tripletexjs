@@ -2,27 +2,17 @@
 
 A wrapper for Tripletex JSON-RPC API.
 
-## Not completed!
-As of now, not complete, but it includes;
+## Announcing the new Tripletex API
+This wrapper was made to integrate with Tripletex JSON-RPC API. We are moving this class forward with Tripletex's new awesome REST API. It will be completely rewritten in December 2017. If there is anyone that want to contribute, please hit us up!
 
- * Sync Service
- * Company Service
- * Product Service
- * Project Service, not complete
- * Invoice Service, not complete!
+The repository is being moved to AYR AS who is taking over the ownership of the project.
+
 
 ## Use it
 ```nodejs
 var tripletexjs = require('tripletexjs')
 var tripletex = new tripletexjs()
 ```
-
-## New functions!
-Tripletex API are most likely built solely on working with their web application, and are just exposed to outside developers to extend their. They most likely aren't putting much effort into extendings its functionalty, hence their awkward way of authenticating.
-
-No matter, we have added some magic to the mix recently (march 2016). Now you can add orders to Tripletex, just by running some simple functions. This is hopefully the first step to make an more intuitive way of exchanging data with Tripletex.
-
-Since they are not documented trough Tripletex API documentation, we would like to explain the functions behavour here.
 
 ## Project (Order) Service
 These functions are not actually a part of the Tripletex API, the only thing we found in the documentation is uploading orders trough CSV (importOrdersTripletexCSV). Because we didn't like that way of adding orders, we added a more intuitive way; a way more like the onces we are used to. This would most likely be the same for invoices, however that down the pipeline. The reason beeing that most applications you would only want to add orders, and manually / bulk send them for Tripletex interface.
