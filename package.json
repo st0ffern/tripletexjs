@@ -31,7 +31,6 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "@types/node": "^6.0.95",
-    "@types/bluebird": "^3.5.19",
     "gulp-typescript": "^3.2.3",
     "merge2": "^1.2.0",
     "typescript": "^2.6.2"
