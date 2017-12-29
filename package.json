@@ -1,6 +1,6 @@
 {
   "name": "tripletexjs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Typescript / Javascript class for Tripletex 2.0 API",
   "main": "dist/api.js",
   "typings": "definitions/index",
@@ -26,10 +26,11 @@
   "homepage": "https://github.com/cobraz/tripletexjs#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "@types/node": "^6.0.95",
+    "@types/bluebird": "^3.5.19"
   },
   "devDependencies": {
-    "@types/node": "^6.0.95",
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.2.3",
     "merge2": "^1.2.0",
