@@ -1,28 +1,38 @@
 {
   "name": "tripletexjs",
-  "version": "0.0.3",
-  "description": "An wrapper for the Tripletex JSON-RPC API",
-  "main": "tripletex.js",
+  "version": "0.0.4",
+  "description": "Typescript / Javascript class for Tripletex 2.0 API",
+  "main": "dist/api.js",
+  "typings": "definitions/index",
+  "typescript": {
+    "definition": "definitions/index"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "tripletex",
-    "json-rpc"
+    "rest-api"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cobraz/tripletexjs.git"
   },
-  "author": "Simen A. W. Olsen <simen@nconel.no> (http://cobraz.no)",
+  "author": "Simen A. W. Olsen <so@ayr.no> (http://cobraz.no)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cobraz/tripletexjs/issues"
   },
   "homepage": "https://github.com/cobraz/tripletexjs#readme",
   "dependencies": {
-    "array-to-csv": "^1.0.1",
-    "async": "^1.5.2",
-    "request": "^2.69.0"
+    "bluebird": "^3.5.1",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.95",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.2.3",
+    "merge2": "^1.2.0",
+    "typescript": "^2.6.2"
   }
 }
