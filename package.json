@@ -1,38 +1,21 @@
 {
-  "name": "tripletexjs",
-  "version": "0.0.10",
-  "description": "Typescript / Javascript class for Tripletex 2.0 API",
-  "main": "dist/api.js",
-  "typings": "definitions/api",
-  "typescript": {
-    "definition": "definitions/api"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "tripletex",
-    "rest-api"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cobraz/tripletexjs.git"
-  },
-  "author": "Simen A. W. Olsen <so@ayr.no> (http://cobraz.no)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cobraz/tripletexjs/issues"
-  },
-  "homepage": "https://github.com/cobraz/tripletexjs#readme",
+  "name": "typescript-fetch-api",
+  "version": "0.0.0",
+  "license": "Unlicense",
+  "main": "./dist/api.js",
+  "browser": "./dist/api.js",
+  "typings": "./dist/api.d.ts",
   "dependencies": {
-    "bluebird": "^3.5.1",
-    "request": "^2.83.0"
+    "core-js": "^2.4.0",
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "scripts" : {
+    "prepublish" : "typings install && tsc", 
+    "test": "tslint api.ts"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "@types/node": "^6.0.95",
-    "gulp-typescript": "^3.2.3",
-    "merge2": "^1.2.0",
-    "typescript": "^2.6.2"
+    "tslint": "^3.15.1",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
   }
 }
