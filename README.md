@@ -4,7 +4,7 @@
 
 A wrapper for Tripletex 2.0 API in Typescript / Javascript.
 
-- Build date: 2018-07-29T19:38:18.000+02:00
+- Build date: 2018-07-29T19:44:10.597+02:00
 
 ## Installation
 
@@ -1185,3 +1185,8 @@ Class | Method | HTTP request | Description
 
 - **Type**: HTTP basic authentication
 
+
+## Contributing
+
+Send bug reports, feature requests, and code contributions to this
+repository. The repository is maintained by Bjerk AS (Simen A. W. Olsen). 
