@@ -21,14 +21,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobraz/tripletexjs.git"
+    "url": "git+https://github.com/Bjerkio/tripletexjs.git"
   },
   "author": "Simen A. W. Olsen <so@ayr.no> (http://cobraz.no)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cobraz/tripletexjs/issues"
+    "url": "https://github.com/Bjerkio/tripletexjs/issues"
   },
-  "homepage": "https://github.com/cobraz/tripletexjs#readme",
+  "homepage": "https://github.com/Bjerkio/tripletexjs#readme",
   "dependencies": {
     "portable-fetch": "^3.0.0"
   },
