@@ -6,7 +6,9 @@
   "typings": "./dist/index.d.ts",
   "scripts": {
     "swagger-gen": "./swagger-gen.sh",
-    "build": "tsc --outDir dist/",
+    "prebuild": "npm run swagger-gen",
+    "compile": "tsc --outDir dist/",
+    "build": "npm run compile",
     "prepublishOnly": "npm run build",
     "postinstall": "npm run build"
   },
