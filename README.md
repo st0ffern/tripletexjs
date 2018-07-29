@@ -6,8 +6,6 @@
 
 A wrapper for Tripletex 2.0 API in Typescript / Javascript.
 
-- Build date: 2018-07-29T20:21:49.972+02:00
-
 ## Installation
 
 ### For [Node.js](https://nodejs.org/)
@@ -90,7 +88,7 @@ import { AddressApi } from 'tripletexjs';
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
  | [**get**](AddressApi.md#get) | **GET** /address/{id} | Get address by ID.
- | [**put**](AddressApi.md#put) | **PUT** /address/{id} | Update address. 
+ | [**put**](AddressApi.md#put) | **PUT** /address/{id} | Update address.
  | [**search**](AddressApi.md#search) | **GET** /address | Find addresses corresponding with sent data.
 
 ### BankApi
@@ -237,7 +235,7 @@ Class | Method | HTTP request | Description
  | [**get**](CustomerApi.md#get) | **GET** /customer/{id} | Get customer by ID.
  | [**post**](CustomerApi.md#post) | **POST** /customer | Create customer. Related customer addresses may also be created.
  | [**postList**](CustomerApi.md#postList) | **POST** /customer/list | [BETA] Create multiple customers. Related supplier addresses may also be created.
- | [**put**](CustomerApi.md#put) | **PUT** /customer/{id} | Update customer. 
+ | [**put**](CustomerApi.md#put) | **PUT** /customer/{id} | Update customer.
  | [**putList**](CustomerApi.md#putList) | **PUT** /customer/list | [BETA] Update multiple customers. Addresses can also be updated.
  | [**search**](CustomerApi.md#search) | **GET** /customer | Find customers corresponding with sent data.
 
@@ -289,7 +287,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
  | [**get**](EmployeeemploymentApi.md#get) | **GET** /employee/employment/{id} | Find employment by ID.
  | [**post**](EmployeeemploymentApi.md#post) | **POST** /employee/employment | [BETA] Create employment.
- | [**put**](EmployeeemploymentApi.md#put) | **PUT** /employee/employment/{id} | [BETA] Update employemnt. 
+ | [**put**](EmployeeemploymentApi.md#put) | **PUT** /employee/employment/{id} | [BETA] Update employemnt.
  | [**search**](EmployeeemploymentApi.md#search) | **GET** /employee/employment | Find all employments for employee.
 
 ### EmployeeemploymentdetailsApi
@@ -302,7 +300,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
  | [**get**](EmployeeemploymentdetailsApi.md#get) | **GET** /employee/employment/details/{id} | [BETA] Find employment details by ID.
  | [**post**](EmployeeemploymentdetailsApi.md#post) | **POST** /employee/employment/details | [BETA] Create employment details.
- | [**put**](EmployeeemploymentdetailsApi.md#put) | **PUT** /employee/employment/details/{id} | [BETA] Update employment details. 
+ | [**put**](EmployeeemploymentdetailsApi.md#put) | **PUT** /employee/employment/details/{id} | [BETA] Update employment details.
  | [**search**](EmployeeemploymentdetailsApi.md#search) | **GET** /employee/employment/details | [BETA] Find all employmentdetails for employment.
 
 ### EmployeeemploymentemploymentTypeApi
@@ -325,7 +323,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
  | [**get**](EmployeeemploymentleaveOfAbsenceApi.md#get) | **GET** /employee/employment/leaveOfAbsence/{id} | [BETA] Find leave of absence by ID.
  | [**post**](EmployeeemploymentleaveOfAbsenceApi.md#post) | **POST** /employee/employment/leaveOfAbsence | [BETA] Create leave of absence.
- | [**put**](EmployeeemploymentleaveOfAbsenceApi.md#put) | **PUT** /employee/employment/leaveOfAbsence/{id} | [BETA] Update leave of absence. 
+ | [**put**](EmployeeemploymentleaveOfAbsenceApi.md#put) | **PUT** /employee/employment/leaveOfAbsence/{id} | [BETA] Update leave of absence.
 
 ### EmployeeemploymentleaveOfAbsenceTypeApi
 
@@ -391,7 +389,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
  | [**get**](EmployeestandardTimeApi.md#get) | **GET** /employee/standardTime/{id} | [BETA] Find standard time by ID.
  | [**post**](EmployeestandardTimeApi.md#post) | **POST** /employee/standardTime | [BETA] Create standard time.
- | [**put**](EmployeestandardTimeApi.md#put) | **PUT** /employee/standardTime/{id} | [BETA] Update standard time. 
+ | [**put**](EmployeestandardTimeApi.md#put) | **PUT** /employee/standardTime/{id} | [BETA] Update standard time.
  | [**search**](EmployeestandardTimeApi.md#search) | **GET** /employee/standardTime | [BETA] Find all standard times for employee.
 
 ### EventApi
@@ -711,7 +709,7 @@ Class | Method | HTTP request | Description
  | [**get**](SupplierApi.md#get) | **GET** /supplier/{id} | Get supplier by ID.
  | [**post**](SupplierApi.md#post) | **POST** /supplier | Create supplier. Related supplier addresses may also be created.
  | [**postList**](SupplierApi.md#postList) | **POST** /supplier/list | [BETA] Create multiple suppliers. Related supplier addresses may also be created.
- | [**put**](SupplierApi.md#put) | **PUT** /supplier/{id} | Update supplier. 
+ | [**put**](SupplierApi.md#put) | **PUT** /supplier/{id} | Update supplier.
  | [**putList**](SupplierApi.md#putList) | **PUT** /supplier/list | [BETA] Update multiple suppliers. Addresses can also be updated.
  | [**search**](SupplierApi.md#search) | **GET** /supplier | Find suppliers corresponding with sent data.
 
@@ -1192,3 +1190,15 @@ Class | Method | HTTP request | Description
 
 Send bug reports, feature requests, and code contributions to this
 repository. The repository is maintained by Bjerk AS (Simen A. W. Olsen).
+
+Contributions to this library is much appreciated. We are currently
+working on creating a script that automatically updates the repository
+when Tripletex updates their Swagger file. Please have a look at <thead>
+project tab or issues for more information on current help-needed.
+
+## Disclaimer
+
+This project is not associated with Tripletex AS at all. The maintainer works with their platform and have
+done so for many years. The Tripletex logo belongs to Tripletex AS. We put it there only so people would
+know we are speaking of the Tripletex accounting software, owned and provided by the Norwegian registered
+company Tripletex AS.

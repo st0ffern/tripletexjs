@@ -118,7 +118,7 @@ export interface AccommodationAllowance {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof AccommodationAllowance
      */
     changes?: Array<Change>;
@@ -204,7 +204,7 @@ export interface Account {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Account
      */
     changes?: Array<Change>;
@@ -370,7 +370,7 @@ export interface AccountingPeriod {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof AccountingPeriod
      */
     changes?: Array<Change>;
@@ -426,7 +426,7 @@ export interface Activity {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Activity
      */
     changes?: Array<Change>;
@@ -500,7 +500,7 @@ export interface Address {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Address
      */
     changes?: Array<Change>;
@@ -574,7 +574,7 @@ export interface AnnualAccount {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof AnnualAccount
      */
     changes?: Array<Change>;
@@ -624,7 +624,7 @@ export interface ApiConsumer {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof ApiConsumer
      */
     changes?: Array<Change>;
@@ -686,7 +686,7 @@ export interface ApiError {
     developerMessage?: string;
     /**
      * 
-     * @type {Array&lt;ApiValidationMessage&gt;}
+     * @type {Array<ApiValidationMessage>}
      * @memberof ApiError
      */
     validationMessages?: Array<ApiValidationMessage>;
@@ -764,7 +764,7 @@ export interface Bank {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Bank
      */
     changes?: Array<Change>;
@@ -782,13 +782,13 @@ export interface Bank {
     name?: string;
     /**
      * Bank statement file formats supported.
-     * @type {Array&lt;string&gt;}
+     * @type {Array<string>}
      * @memberof Bank
      */
     bankStatementFileFormatSupport?: Array<Bank.BankStatementFileFormatSupportEnum>;
     /**
      * Register numbers belonging to bank.
-     * @type {Array&lt;number&gt;}
+     * @type {Array<number>}
      * @memberof Bank
      */
     registerNumbers?: Array<number>;
@@ -829,7 +829,7 @@ export interface BankReconciliation {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof BankReconciliation
      */
     changes?: Array<Change>;
@@ -915,7 +915,7 @@ export interface BankReconciliationMatch {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof BankReconciliationMatch
      */
     changes?: Array<Change>;
@@ -933,13 +933,13 @@ export interface BankReconciliationMatch {
     bankReconciliation: BankReconciliation;
     /**
      * Match transactions
-     * @type {Array&lt;BankTransaction&gt;}
+     * @type {Array<BankTransaction>}
      * @memberof BankReconciliationMatch
      */
     transactions?: Array<BankTransaction>;
     /**
      * Match postings
-     * @type {Array&lt;Posting&gt;}
+     * @type {Array<Posting>}
      * @memberof BankReconciliationMatch
      */
     postings?: Array<Posting>;
@@ -965,7 +965,7 @@ export interface BankReconciliationPaymentType {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof BankReconciliationPaymentType
      */
     changes?: Array<Change>;
@@ -1015,7 +1015,7 @@ export interface BankStatement {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof BankStatement
      */
     changes?: Array<Change>;
@@ -1039,7 +1039,7 @@ export interface BankStatement {
     fileName?: string;
     /**
      * Bank transactions tied to the bank statement
-     * @type {Array&lt;BankTransaction&gt;}
+     * @type {Array<BankTransaction>}
      * @memberof BankStatement
      */
     transactions?: Array<BankTransaction>;
@@ -1065,7 +1065,7 @@ export interface BankTransaction {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof BankTransaction
      */
     changes?: Array<Change>;
@@ -1121,7 +1121,7 @@ export interface Banner {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Banner
      */
     changes?: Array<Change>;
@@ -1263,7 +1263,7 @@ export interface CloseGroup {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof CloseGroup
      */
     changes?: Array<Change>;
@@ -1281,7 +1281,7 @@ export interface CloseGroup {
     date?: string;
     /**
      * 
-     * @type {Array&lt;Posting&gt;}
+     * @type {Array<Posting>}
      * @memberof CloseGroup
      */
     postings?: Array<Posting>;
@@ -1307,7 +1307,7 @@ export interface Company {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Company
      */
     changes?: Array<Change>;
@@ -1439,7 +1439,7 @@ export interface ConsumerToken {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof ConsumerToken
      */
     changes?: Array<Change>;
@@ -1489,7 +1489,7 @@ export interface Contact {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Contact
      */
     changes?: Array<Change>;
@@ -1545,7 +1545,7 @@ export interface Cost {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Cost
      */
     changes?: Array<Change>;
@@ -1673,7 +1673,7 @@ export interface Country {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Country
      */
     changes?: Array<Change>;
@@ -1711,7 +1711,7 @@ export interface Currency {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Currency
      */
     changes?: Array<Change>;
@@ -1755,7 +1755,7 @@ export interface Customer {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Customer
      */
     changes?: Array<Change>;
@@ -1827,7 +1827,7 @@ export interface Customer {
     invoiceEmail?: string;
     /**
      * List of the bank account numbers for this customer. Norwegian bank account numbers only.
-     * @type {Array&lt;string&gt;}
+     * @type {Array<string>}
      * @memberof Customer
      */
     bankAccounts?: Array<string>;
@@ -1913,7 +1913,7 @@ export interface CustomerCategory {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof CustomerCategory
      */
     changes?: Array<Change>;
@@ -2118,7 +2118,7 @@ export interface Department {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Department
      */
     changes?: Array<Change>;
@@ -2168,7 +2168,7 @@ export interface Employee {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Employee
      */
     changes?: Array<Change>;
@@ -2258,7 +2258,7 @@ export interface Employee {
     department?: Department;
     /**
      * Employments tied to the employee
-     * @type {Array&lt;Employment&gt;}
+     * @type {Array<Employment>}
      * @memberof Employee
      */
     employments?: Array<Employment>;
@@ -2300,7 +2300,7 @@ export interface EmployeeToken {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof EmployeeToken
      */
     changes?: Array<Change>;
@@ -2356,7 +2356,7 @@ export interface Employment {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Employment
      */
     changes?: Array<Change>;
@@ -2404,7 +2404,7 @@ export interface Employment {
     lastSalaryChangeDate?: string;
     /**
      * Employment types tied to the employment
-     * @type {Array&lt;EmploymentDetails&gt;}
+     * @type {Array<EmploymentDetails>}
      * @memberof Employment
      */
     employmentDetails?: Array<EmploymentDetails>;
@@ -2430,7 +2430,7 @@ export interface EmploymentDetails {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof EmploymentDetails
      */
     changes?: Array<Change>;
@@ -2516,7 +2516,7 @@ export interface EmploymentType {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof EmploymentType
      */
     changes?: Array<Change>;
@@ -2556,7 +2556,7 @@ export namespace EmploymentType {
      * @enum {string}
      */
     export enum EmploymentTypeEnum {
-        RELATIONSHIP = <any> 'TYPE_OF_EMPLOYMENT_RELATIONSHIP'
+        TYPEOFEMPLOYMENTRELATIONSHIP = <any> 'TYPE_OF_EMPLOYMENT_RELATIONSHIP'
     }
 }
 
@@ -2580,7 +2580,7 @@ export interface Entitlement {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Entitlement
      */
     changes?: Array<Change>;
@@ -2730,7 +2730,7 @@ export interface ImportReportDTO {
     config?: ImportConfigDTO;
     /**
      * 
-     * @type {Array&lt;string&gt;}
+     * @type {Array<string>}
      * @memberof ImportReportDTO
      */
     admins?: Array<string>;
@@ -2742,19 +2742,19 @@ export interface ImportReportDTO {
     summary?: { [key: string]: { [key: string]: number; }; };
     /**
      * 
-     * @type {Array&lt;Result&gt;}
+     * @type {Array<Result>}
      * @memberof ImportReportDTO
      */
     errors?: Array<Result>;
     /**
      * 
-     * @type {Array&lt;string&gt;}
+     * @type {Array<string>}
      * @memberof ImportReportDTO
      */
     messages?: Array<string>;
     /**
      * 
-     * @type {Array&lt;Result&gt;}
+     * @type {Array<Result>}
      * @memberof ImportReportDTO
      */
     results?: Array<Result>;
@@ -2780,7 +2780,7 @@ export interface Inventory {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Inventory
      */
     changes?: Array<Change>;
@@ -2836,7 +2836,7 @@ export interface Invoice {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Invoice
      */
     changes?: Array<Change>;
@@ -2884,7 +2884,7 @@ export interface Invoice {
     comment?: string;
     /**
      * Related orders. Only one order per invoice is supported at the moment.
-     * @type {Array&lt;Order&gt;}
+     * @type {Array<Order>}
      * @memberof Invoice
      */
     orders: Array<Order>;
@@ -2999,7 +2999,7 @@ export interface Job {
     jobDetail?: JobDetailDTO;
     /**
      * 
-     * @type {Array&lt;TriggerDTO&gt;}
+     * @type {Array<TriggerDTO>}
      * @memberof Job
      */
     triggers?: Array<TriggerDTO>;
@@ -3063,7 +3063,7 @@ export interface LeaveOfAbsence {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof LeaveOfAbsence
      */
     changes?: Array<Change>;
@@ -3137,7 +3137,7 @@ export interface LeaveOfAbsenceType {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof LeaveOfAbsenceType
      */
     changes?: Array<Change>;
@@ -3177,7 +3177,7 @@ export namespace LeaveOfAbsenceType {
      * @enum {string}
      */
     export enum LeaveOfAbsenceTypeEnum {
-        TYPE = <any> 'LEAVE_OF_ABSENCE_TYPE'
+        LEAVEOFABSENCETYPE = <any> 'LEAVE_OF_ABSENCE_TYPE'
     }
 }
 
@@ -3237,7 +3237,7 @@ export interface LedgerAccount {
     closingBalanceCurrency?: number;
     /**
      * Link to postings on this account.
-     * @type {Array&lt;Posting&gt;}
+     * @type {Array<Posting>}
      * @memberof LedgerAccount
      */
     postings?: Array<Posting>;
@@ -3318,7 +3318,7 @@ export interface ListResponseAccommodationAllowance {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;AccommodationAllowance&gt;}
+     * @type {Array<AccommodationAllowance>}
      * @memberof ListResponseAccommodationAllowance
      */
     values?: Array<AccommodationAllowance>;
@@ -3356,7 +3356,7 @@ export interface ListResponseAccount {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Account&gt;}
+     * @type {Array<Account>}
      * @memberof ListResponseAccount
      */
     values?: Array<Account>;
@@ -3394,7 +3394,7 @@ export interface ListResponseAccountingPeriod {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;AccountingPeriod&gt;}
+     * @type {Array<AccountingPeriod>}
      * @memberof ListResponseAccountingPeriod
      */
     values?: Array<AccountingPeriod>;
@@ -3432,7 +3432,7 @@ export interface ListResponseActivity {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Activity&gt;}
+     * @type {Array<Activity>}
      * @memberof ListResponseActivity
      */
     values?: Array<Activity>;
@@ -3470,7 +3470,7 @@ export interface ListResponseAddress {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Address&gt;}
+     * @type {Array<Address>}
      * @memberof ListResponseAddress
      */
     values?: Array<Address>;
@@ -3508,7 +3508,7 @@ export interface ListResponseAnnualAccount {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;AnnualAccount&gt;}
+     * @type {Array<AnnualAccount>}
      * @memberof ListResponseAnnualAccount
      */
     values?: Array<AnnualAccount>;
@@ -3546,7 +3546,7 @@ export interface ListResponseBank {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Bank&gt;}
+     * @type {Array<Bank>}
      * @memberof ListResponseBank
      */
     values?: Array<Bank>;
@@ -3584,7 +3584,7 @@ export interface ListResponseBankReconciliation {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;BankReconciliation&gt;}
+     * @type {Array<BankReconciliation>}
      * @memberof ListResponseBankReconciliation
      */
     values?: Array<BankReconciliation>;
@@ -3622,7 +3622,7 @@ export interface ListResponseBankReconciliationMatch {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;BankReconciliationMatch&gt;}
+     * @type {Array<BankReconciliationMatch>}
      * @memberof ListResponseBankReconciliationMatch
      */
     values?: Array<BankReconciliationMatch>;
@@ -3660,7 +3660,7 @@ export interface ListResponseBankReconciliationPaymentType {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;BankReconciliationPaymentType&gt;}
+     * @type {Array<BankReconciliationPaymentType>}
      * @memberof ListResponseBankReconciliationPaymentType
      */
     values?: Array<BankReconciliationPaymentType>;
@@ -3698,7 +3698,7 @@ export interface ListResponseBankStatement {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;BankStatement&gt;}
+     * @type {Array<BankStatement>}
      * @memberof ListResponseBankStatement
      */
     values?: Array<BankStatement>;
@@ -3736,7 +3736,7 @@ export interface ListResponseBankTransaction {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;BankTransaction&gt;}
+     * @type {Array<BankTransaction>}
      * @memberof ListResponseBankTransaction
      */
     values?: Array<BankTransaction>;
@@ -3774,7 +3774,7 @@ export interface ListResponseBanner {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Banner&gt;}
+     * @type {Array<Banner>}
      * @memberof ListResponseBanner
      */
     values?: Array<Banner>;
@@ -3812,7 +3812,7 @@ export interface ListResponseCloseGroup {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;CloseGroup&gt;}
+     * @type {Array<CloseGroup>}
      * @memberof ListResponseCloseGroup
      */
     values?: Array<CloseGroup>;
@@ -3850,7 +3850,7 @@ export interface ListResponseCompany {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Company&gt;}
+     * @type {Array<Company>}
      * @memberof ListResponseCompany
      */
     values?: Array<Company>;
@@ -3888,7 +3888,7 @@ export interface ListResponseContact {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Contact&gt;}
+     * @type {Array<Contact>}
      * @memberof ListResponseContact
      */
     values?: Array<Contact>;
@@ -3926,7 +3926,7 @@ export interface ListResponseCost {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Cost&gt;}
+     * @type {Array<Cost>}
      * @memberof ListResponseCost
      */
     values?: Array<Cost>;
@@ -3964,7 +3964,7 @@ export interface ListResponseCountry {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Country&gt;}
+     * @type {Array<Country>}
      * @memberof ListResponseCountry
      */
     values?: Array<Country>;
@@ -4002,7 +4002,7 @@ export interface ListResponseCurrency {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Currency&gt;}
+     * @type {Array<Currency>}
      * @memberof ListResponseCurrency
      */
     values?: Array<Currency>;
@@ -4040,7 +4040,7 @@ export interface ListResponseCustomer {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Customer&gt;}
+     * @type {Array<Customer>}
      * @memberof ListResponseCustomer
      */
     values?: Array<Customer>;
@@ -4078,7 +4078,7 @@ export interface ListResponseCustomerCategory {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;CustomerCategory&gt;}
+     * @type {Array<CustomerCategory>}
      * @memberof ListResponseCustomerCategory
      */
     values?: Array<CustomerCategory>;
@@ -4116,7 +4116,7 @@ export interface ListResponseDepartment {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Department&gt;}
+     * @type {Array<Department>}
      * @memberof ListResponseDepartment
      */
     values?: Array<Department>;
@@ -4154,7 +4154,7 @@ export interface ListResponseEmployee {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Employee&gt;}
+     * @type {Array<Employee>}
      * @memberof ListResponseEmployee
      */
     values?: Array<Employee>;
@@ -4192,7 +4192,7 @@ export interface ListResponseEmployment {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Employment&gt;}
+     * @type {Array<Employment>}
      * @memberof ListResponseEmployment
      */
     values?: Array<Employment>;
@@ -4230,7 +4230,7 @@ export interface ListResponseEmploymentDetails {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;EmploymentDetails&gt;}
+     * @type {Array<EmploymentDetails>}
      * @memberof ListResponseEmploymentDetails
      */
     values?: Array<EmploymentDetails>;
@@ -4268,7 +4268,7 @@ export interface ListResponseEmploymentType {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;EmploymentType&gt;}
+     * @type {Array<EmploymentType>}
      * @memberof ListResponseEmploymentType
      */
     values?: Array<EmploymentType>;
@@ -4306,7 +4306,7 @@ export interface ListResponseEntitlement {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Entitlement&gt;}
+     * @type {Array<Entitlement>}
      * @memberof ListResponseEntitlement
      */
     values?: Array<Entitlement>;
@@ -4344,7 +4344,7 @@ export interface ListResponseInventory {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Inventory&gt;}
+     * @type {Array<Inventory>}
      * @memberof ListResponseInventory
      */
     values?: Array<Inventory>;
@@ -4382,7 +4382,7 @@ export interface ListResponseInvoice {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Invoice&gt;}
+     * @type {Array<Invoice>}
      * @memberof ListResponseInvoice
      */
     values?: Array<Invoice>;
@@ -4420,7 +4420,7 @@ export interface ListResponseLeaveOfAbsenceType {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;LeaveOfAbsenceType&gt;}
+     * @type {Array<LeaveOfAbsenceType>}
      * @memberof ListResponseLeaveOfAbsenceType
      */
     values?: Array<LeaveOfAbsenceType>;
@@ -4458,7 +4458,7 @@ export interface ListResponseLedgerAccount {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;LedgerAccount&gt;}
+     * @type {Array<LedgerAccount>}
      * @memberof ListResponseLedgerAccount
      */
     values?: Array<LedgerAccount>;
@@ -4496,7 +4496,7 @@ export interface ListResponseMileageAllowance {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;MileageAllowance&gt;}
+     * @type {Array<MileageAllowance>}
      * @memberof ListResponseMileageAllowance
      */
     values?: Array<MileageAllowance>;
@@ -4534,7 +4534,7 @@ export interface ListResponseNotification {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Notification&gt;}
+     * @type {Array<Notification>}
      * @memberof ListResponseNotification
      */
     values?: Array<Notification>;
@@ -4572,7 +4572,7 @@ export interface ListResponseOccupationCode {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;OccupationCode&gt;}
+     * @type {Array<OccupationCode>}
      * @memberof ListResponseOccupationCode
      */
     values?: Array<OccupationCode>;
@@ -4610,7 +4610,7 @@ export interface ListResponseOrder {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Order&gt;}
+     * @type {Array<Order>}
      * @memberof ListResponseOrder
      */
     values?: Array<Order>;
@@ -4648,7 +4648,7 @@ export interface ListResponseOrderLine {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;OrderLine&gt;}
+     * @type {Array<OrderLine>}
      * @memberof ListResponseOrderLine
      */
     values?: Array<OrderLine>;
@@ -4686,7 +4686,7 @@ export interface ListResponsePassenger {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Passenger&gt;}
+     * @type {Array<Passenger>}
      * @memberof ListResponsePassenger
      */
     values?: Array<Passenger>;
@@ -4724,7 +4724,7 @@ export interface ListResponsePaymentType {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;PaymentType&gt;}
+     * @type {Array<PaymentType>}
      * @memberof ListResponsePaymentType
      */
     values?: Array<PaymentType>;
@@ -4762,7 +4762,7 @@ export interface ListResponsePaymentTypeOut {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;PaymentTypeOut&gt;}
+     * @type {Array<PaymentTypeOut>}
      * @memberof ListResponsePaymentTypeOut
      */
     values?: Array<PaymentTypeOut>;
@@ -4800,7 +4800,7 @@ export interface ListResponsePayslip {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Payslip&gt;}
+     * @type {Array<Payslip>}
      * @memberof ListResponsePayslip
      */
     values?: Array<Payslip>;
@@ -4838,7 +4838,7 @@ export interface ListResponsePerDiemCompensation {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;PerDiemCompensation&gt;}
+     * @type {Array<PerDiemCompensation>}
      * @memberof ListResponsePerDiemCompensation
      */
     values?: Array<PerDiemCompensation>;
@@ -4876,7 +4876,7 @@ export interface ListResponsePosting {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Posting&gt;}
+     * @type {Array<Posting>}
      * @memberof ListResponsePosting
      */
     values?: Array<Posting>;
@@ -4914,7 +4914,7 @@ export interface ListResponseProduct {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Product&gt;}
+     * @type {Array<Product>}
      * @memberof ListResponseProduct
      */
     values?: Array<Product>;
@@ -4952,7 +4952,7 @@ export interface ListResponseProductUnit {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;ProductUnit&gt;}
+     * @type {Array<ProductUnit>}
      * @memberof ListResponseProductUnit
      */
     values?: Array<ProductUnit>;
@@ -4990,7 +4990,7 @@ export interface ListResponseProject {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Project&gt;}
+     * @type {Array<Project>}
      * @memberof ListResponseProject
      */
     values?: Array<Project>;
@@ -5028,7 +5028,7 @@ export interface ListResponseProjectCategory {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;ProjectCategory&gt;}
+     * @type {Array<ProjectCategory>}
      * @memberof ListResponseProjectCategory
      */
     values?: Array<ProjectCategory>;
@@ -5066,7 +5066,7 @@ export interface ListResponseProspect {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Prospect&gt;}
+     * @type {Array<Prospect>}
      * @memberof ListResponseProspect
      */
     values?: Array<Prospect>;
@@ -5104,7 +5104,7 @@ export interface ListResponseRemunerationType {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;RemunerationType&gt;}
+     * @type {Array<RemunerationType>}
      * @memberof ListResponseRemunerationType
      */
     values?: Array<RemunerationType>;
@@ -5142,7 +5142,7 @@ export interface ListResponseSalarySpecification {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;SalarySpecification&gt;}
+     * @type {Array<SalarySpecification>}
      * @memberof ListResponseSalarySpecification
      */
     values?: Array<SalarySpecification>;
@@ -5180,7 +5180,7 @@ export interface ListResponseSalaryTransaction {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;SalaryTransaction&gt;}
+     * @type {Array<SalaryTransaction>}
      * @memberof ListResponseSalaryTransaction
      */
     values?: Array<SalaryTransaction>;
@@ -5218,7 +5218,7 @@ export interface ListResponseSalaryType {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;SalaryType&gt;}
+     * @type {Array<SalaryType>}
      * @memberof ListResponseSalaryType
      */
     values?: Array<SalaryType>;
@@ -5256,7 +5256,7 @@ export interface ListResponseStandardTime {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;StandardTime&gt;}
+     * @type {Array<StandardTime>}
      * @memberof ListResponseStandardTime
      */
     values?: Array<StandardTime>;
@@ -5294,7 +5294,7 @@ export interface ListResponseSubscription {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Subscription&gt;}
+     * @type {Array<Subscription>}
      * @memberof ListResponseSubscription
      */
     values?: Array<Subscription>;
@@ -5332,7 +5332,7 @@ export interface ListResponseSupplier {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Supplier&gt;}
+     * @type {Array<Supplier>}
      * @memberof ListResponseSupplier
      */
     values?: Array<Supplier>;
@@ -5370,7 +5370,7 @@ export interface ListResponseSupplierBalance {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;SupplierBalance&gt;}
+     * @type {Array<SupplierBalance>}
      * @memberof ListResponseSupplierBalance
      */
     values?: Array<SupplierBalance>;
@@ -5408,7 +5408,7 @@ export interface ListResponseTimeClock {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;TimeClock&gt;}
+     * @type {Array<TimeClock>}
      * @memberof ListResponseTimeClock
      */
     values?: Array<TimeClock>;
@@ -5446,7 +5446,7 @@ export interface ListResponseTimesheetEntry {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;TimesheetEntry&gt;}
+     * @type {Array<TimesheetEntry>}
      * @memberof ListResponseTimesheetEntry
      */
     values?: Array<TimesheetEntry>;
@@ -5484,7 +5484,7 @@ export interface ListResponseTravelCostCategory {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;TravelCostCategory&gt;}
+     * @type {Array<TravelCostCategory>}
      * @memberof ListResponseTravelCostCategory
      */
     values?: Array<TravelCostCategory>;
@@ -5522,7 +5522,7 @@ export interface ListResponseTravelExpense {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;TravelExpense&gt;}
+     * @type {Array<TravelExpense>}
      * @memberof ListResponseTravelExpense
      */
     values?: Array<TravelExpense>;
@@ -5560,7 +5560,7 @@ export interface ListResponseTravelExpenseRate {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;TravelExpenseRate&gt;}
+     * @type {Array<TravelExpenseRate>}
      * @memberof ListResponseTravelExpenseRate
      */
     values?: Array<TravelExpenseRate>;
@@ -5598,7 +5598,7 @@ export interface ListResponseTravelExpenseRateCategory {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;TravelExpenseRateCategory&gt;}
+     * @type {Array<TravelExpenseRateCategory>}
      * @memberof ListResponseTravelExpenseRateCategory
      */
     values?: Array<TravelExpenseRateCategory>;
@@ -5636,7 +5636,7 @@ export interface ListResponseTravelExpenseRateCategoryGroup {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;TravelExpenseRateCategoryGroup&gt;}
+     * @type {Array<TravelExpenseRateCategoryGroup>}
      * @memberof ListResponseTravelExpenseRateCategoryGroup
      */
     values?: Array<TravelExpenseRateCategoryGroup>;
@@ -5674,7 +5674,7 @@ export interface ListResponseTravelPaymentType {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;TravelPaymentType&gt;}
+     * @type {Array<TravelPaymentType>}
      * @memberof ListResponseTravelPaymentType
      */
     values?: Array<TravelPaymentType>;
@@ -5712,7 +5712,7 @@ export interface ListResponseVatType {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;VatType&gt;}
+     * @type {Array<VatType>}
      * @memberof ListResponseVatType
      */
     values?: Array<VatType>;
@@ -5750,7 +5750,7 @@ export interface ListResponseVoucher {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Voucher&gt;}
+     * @type {Array<Voucher>}
      * @memberof ListResponseVoucher
      */
     values?: Array<Voucher>;
@@ -5788,7 +5788,7 @@ export interface ListResponseVoucherType {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;VoucherType&gt;}
+     * @type {Array<VoucherType>}
      * @memberof ListResponseVoucherType
      */
     values?: Array<VoucherType>;
@@ -5826,7 +5826,7 @@ export interface ListResponseWeeklyStatus {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;WeeklyStatus&gt;}
+     * @type {Array<WeeklyStatus>}
      * @memberof ListResponseWeeklyStatus
      */
     values?: Array<WeeklyStatus>;
@@ -5864,7 +5864,7 @@ export interface ListResponseWorkingHoursScheme {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;WorkingHoursScheme&gt;}
+     * @type {Array<WorkingHoursScheme>}
      * @memberof ListResponseWorkingHoursScheme
      */
     values?: Array<WorkingHoursScheme>;
@@ -6004,7 +6004,7 @@ export interface MileageAllowance {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof MileageAllowance
      */
     changes?: Array<Change>;
@@ -6076,7 +6076,7 @@ export interface MileageAllowance {
     isCompanyCar?: boolean;
     /**
      * Link to individual passengers.
-     * @type {Array&lt;Passenger&gt;}
+     * @type {Array<Passenger>}
      * @memberof MileageAllowance
      */
     passengers?: Array<Passenger>;
@@ -6208,7 +6208,7 @@ export interface MonthlyStatus {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof MonthlyStatus
      */
     changes?: Array<Change>;
@@ -6300,7 +6300,7 @@ export interface Notification {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Notification
      */
     changes?: Array<Change>;
@@ -6362,7 +6362,7 @@ export interface OccupationCode {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof OccupationCode
      */
     changes?: Array<Change>;
@@ -6406,7 +6406,7 @@ export interface Order {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Order
      */
     changes?: Array<Change>;
@@ -6556,7 +6556,7 @@ export interface Order {
     orderLineSorting?: Order.OrderLineSortingEnum;
     /**
      * Order lines tied to the order
-     * @type {Array&lt;OrderLine&gt;}
+     * @type {Array<OrderLine>}
      * @memberof Order
      */
     orderLines?: Array<OrderLine>;
@@ -6692,7 +6692,7 @@ export interface OrderLine {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof OrderLine
      */
     changes?: Array<Change>;
@@ -6826,7 +6826,7 @@ export interface Passenger {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Passenger
      */
     changes?: Array<Change>;
@@ -6870,7 +6870,7 @@ export interface PaymentType {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof PaymentType
      */
     changes?: Array<Change>;
@@ -6938,7 +6938,7 @@ export interface PaymentTypeOut {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof PaymentTypeOut
      */
     changes?: Array<Change>;
@@ -7030,7 +7030,7 @@ export interface Payslip {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Payslip
      */
     changes?: Array<Change>;
@@ -7072,7 +7072,7 @@ export interface Payslip {
     month?: number;
     /**
      * Link to salary specifications.
-     * @type {Array&lt;SalarySpecification&gt;}
+     * @type {Array<SalarySpecification>}
      * @memberof Payslip
      */
     specifications?: Array<SalarySpecification>;
@@ -7116,7 +7116,7 @@ export interface PerDiemCompensation {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof PerDiemCompensation
      */
     changes?: Array<Change>;
@@ -7243,7 +7243,7 @@ export interface Posting {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Posting
      */
     changes?: Array<Change>;
@@ -7401,7 +7401,7 @@ export interface Product {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Product
      */
     changes?: Array<Change>;
@@ -7511,7 +7511,7 @@ export interface ProductUnit {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof ProductUnit
      */
     changes?: Array<Change>;
@@ -7561,7 +7561,7 @@ export interface Project {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Project
      */
     changes?: Array<Change>;
@@ -7701,7 +7701,7 @@ export interface ProjectCategory {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof ProjectCategory
      */
     changes?: Array<Change>;
@@ -7751,7 +7751,7 @@ export interface Prospect {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Prospect
      */
     changes?: Array<Change>;
@@ -7885,7 +7885,7 @@ export interface RemunerationType {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof RemunerationType
      */
     changes?: Array<Change>;
@@ -7925,7 +7925,7 @@ export namespace RemunerationType {
      * @enum {string}
      */
     export enum RemunerationTypeEnum {
-        TYPE = <any> 'REMUNERATION_TYPE'
+        REMUNERATIONTYPE = <any> 'REMUNERATION_TYPE'
     }
 }
 
@@ -8427,7 +8427,7 @@ export interface ResponseWrapperLeaveOfAbsence {
 export interface ResponseWrapperListJob {
     /**
      * 
-     * @type {Array&lt;Job&gt;}
+     * @type {Array<Job>}
      * @memberof ResponseWrapperListJob
      */
     value?: Array<Job>;
@@ -9085,7 +9085,7 @@ export interface Result {
     output?: { [key: string]: any; };
     /**
      * 
-     * @type {Array&lt;string&gt;}
+     * @type {Array<string>}
      * @memberof Result
      */
     log?: Array<string>;
@@ -9160,7 +9160,7 @@ export interface SalarySpecification {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof SalarySpecification
      */
     changes?: Array<Change>;
@@ -9258,7 +9258,7 @@ export interface SalaryTransaction {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof SalaryTransaction
      */
     changes?: Array<Change>;
@@ -9288,7 +9288,7 @@ export interface SalaryTransaction {
     month: number;
     /**
      * Link to individual payslip objects.
-     * @type {Array&lt;Payslip&gt;}
+     * @type {Array<Payslip>}
      * @memberof SalaryTransaction
      */
     payslips: Array<Payslip>;
@@ -9314,7 +9314,7 @@ export interface SalaryType {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof SalaryType
      */
     changes?: Array<Change>;
@@ -9364,7 +9364,7 @@ export interface SessionToken {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof SessionToken
      */
     changes?: Array<Change>;
@@ -9452,7 +9452,7 @@ export interface StandardTime {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof StandardTime
      */
     changes?: Array<Change>;
@@ -9502,7 +9502,7 @@ export interface Subscription {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Subscription
      */
     changes?: Array<Change>;
@@ -9576,7 +9576,7 @@ export interface Supplier {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Supplier
      */
     changes?: Array<Change>;
@@ -9636,7 +9636,7 @@ export interface Supplier {
     email?: string;
     /**
      * List of the bank account numbers for this supplier.  Norwegian bank account numbers only.
-     * @type {Array&lt;string&gt;}
+     * @type {Array<string>}
      * @memberof Supplier
      */
     bankAccounts?: Array<string>;
@@ -9746,7 +9746,7 @@ export interface SupplierBalance {
     balanceOut?: number;
     /**
      * Currencies that have been used prior to this period, for the given filter
-     * @type {Array&lt;Currency&gt;}
+     * @type {Array<Currency>}
      * @memberof SupplierBalance
      */
     balanceInCurrencies?: Array<Currency>;
@@ -9792,7 +9792,7 @@ export interface TimeClock {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof TimeClock
      */
     changes?: Array<Change>;
@@ -9872,7 +9872,7 @@ export interface TimesheetEntry {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof TimesheetEntry
      */
     changes?: Array<Change>;
@@ -9920,7 +9920,7 @@ export interface TimesheetEntry {
     employee: Employee;
     /**
      * Link to stop watches on this hour.
-     * @type {Array&lt;TimeClock&gt;}
+     * @type {Array<TimeClock>}
      * @memberof TimesheetEntry
      */
     timeClocks?: Array<TimeClock>;
@@ -9976,7 +9976,7 @@ export interface TimesheetEntrySearchResponse {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;TimesheetEntry&gt;}
+     * @type {Array<TimesheetEntry>}
      * @memberof TimesheetEntrySearchResponse
      */
     values?: Array<TimesheetEntry>;
@@ -10008,7 +10008,7 @@ export interface TravelCostCategory {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof TravelCostCategory
      */
     changes?: Array<Change>;
@@ -10156,7 +10156,7 @@ export interface TravelExpense {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof TravelExpense
      */
     changes?: Array<Change>;
@@ -10330,25 +10330,25 @@ export interface TravelExpense {
     title?: string;
     /**
      * Link to individual per diem compensations.
-     * @type {Array&lt;PerDiemCompensation&gt;}
+     * @type {Array<PerDiemCompensation>}
      * @memberof TravelExpense
      */
     perDiemCompensations?: Array<PerDiemCompensation>;
     /**
      * Link to individual mileage allowances.
-     * @type {Array&lt;MileageAllowance&gt;}
+     * @type {Array<MileageAllowance>}
      * @memberof TravelExpense
      */
     mileageAllowances?: Array<MileageAllowance>;
     /**
      * Link to individual accommodation allowances.
-     * @type {Array&lt;AccommodationAllowance&gt;}
+     * @type {Array<AccommodationAllowance>}
      * @memberof TravelExpense
      */
     accommodationAllowances?: Array<AccommodationAllowance>;
     /**
      * Link to individual costs.
-     * @type {Array&lt;Cost&gt;}
+     * @type {Array<Cost>}
      * @memberof TravelExpense
      */
     costs?: Array<Cost>;
@@ -10366,7 +10366,7 @@ export interface TravelExpense {
     state?: TravelExpense.StateEnum;
     /**
      * 
-     * @type {Array&lt;Link&gt;}
+     * @type {Array<Link>}
      * @memberof TravelExpense
      */
     actions?: Array<Link>;
@@ -10410,7 +10410,7 @@ export interface TravelExpenseRate {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof TravelExpenseRate
      */
     changes?: Array<Change>;
@@ -10478,7 +10478,7 @@ export interface TravelExpenseRateCategory {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof TravelExpenseRateCategory
      */
     changes?: Array<Change>;
@@ -10598,7 +10598,7 @@ export interface TravelExpenseRateCategoryGroup {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof TravelExpenseRateCategoryGroup
      */
     changes?: Array<Change>;
@@ -10654,7 +10654,7 @@ export interface TravelPaymentType {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof TravelPaymentType
      */
     changes?: Array<Change>;
@@ -10978,7 +10978,7 @@ export interface VatType {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof VatType
      */
     changes?: Array<Change>;
@@ -11028,7 +11028,7 @@ export interface Voucher {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof Voucher
      */
     changes?: Array<Change>;
@@ -11076,7 +11076,7 @@ export interface Voucher {
     reverseVoucher?: Voucher;
     /**
      * 
-     * @type {Array&lt;Posting&gt;}
+     * @type {Array<Posting>}
      * @memberof Voucher
      */
     postings: Array<Posting>;
@@ -11114,7 +11114,7 @@ export interface VoucherSearchResponse {
     versionDigest?: string;
     /**
      * 
-     * @type {Array&lt;Voucher&gt;}
+     * @type {Array<Voucher>}
      * @memberof VoucherSearchResponse
      */
     values?: Array<Voucher>;
@@ -11146,7 +11146,7 @@ export interface VoucherType {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof VoucherType
      */
     changes?: Array<Change>;
@@ -11184,7 +11184,7 @@ export interface WeeklyStatus {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof WeeklyStatus
      */
     changes?: Array<Change>;
@@ -11258,7 +11258,7 @@ export interface WorkingHoursScheme {
     version?: number;
     /**
      * 
-     * @type {Array&lt;Change&gt;}
+     * @type {Array<Change>}
      * @memberof WorkingHoursScheme
      */
     changes?: Array<Change>;
@@ -11298,7 +11298,7 @@ export namespace WorkingHoursScheme {
      * @enum {string}
      */
     export enum WorkingHoursSchemeEnum {
-        SCHEME = <any> 'WORKING_HOURS_SCHEME'
+        WORKINGHOURSSCHEME = <any> 'WORKING_HOURS_SCHEME'
     }
 }
 
@@ -11660,8 +11660,8 @@ export class ActivityApi extends BaseAPI {
     /**
      * 
      * @summary Find activity by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ActivityApi
@@ -11673,13 +11673,13 @@ export class ActivityApi extends BaseAPI {
     /**
      * 
      * @summary Find applicable time sheet activities for an employee on a specific day.
-     * @param {} projectId Project ID
-     * @param {} [employeeId] Employee ID. Defaults to ID of token owner.
-     * @param {} [date] yyyy-MM-dd. Defaults to today.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} projectId Project ID
+     * @param {number} [employeeId] Employee ID. Defaults to ID of token owner.
+     * @param {string} [date] yyyy-MM-dd. Defaults to today.
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ActivityApi
@@ -11691,18 +11691,18 @@ export class ActivityApi extends BaseAPI {
     /**
      * 
      * @summary Find activities corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [name] Containing
-     * @param {} [number] Equals
-     * @param {} [description] Containing
-     * @param {} [isProjectActivity] Equals
-     * @param {} [isGeneral] Equals
-     * @param {} [isChargeable] Equals
-     * @param {} [isTask] Equals
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [name] Containing
+     * @param {string} [number] Equals
+     * @param {string} [description] Containing
+     * @param {boolean} [isProjectActivity] Equals
+     * @param {boolean} [isGeneral] Equals
+     * @param {boolean} [isChargeable] Equals
+     * @param {boolean} [isTask] Equals
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ActivityApi
@@ -12018,8 +12018,8 @@ export class AddressApi extends BaseAPI {
     /**
      * 
      * @summary Get address by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AddressApi
@@ -12031,8 +12031,8 @@ export class AddressApi extends BaseAPI {
     /**
      * 
      * @summary Update address. 
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Address} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AddressApi
@@ -12044,16 +12044,16 @@ export class AddressApi extends BaseAPI {
     /**
      * 
      * @summary Find addresses corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [addressLine1] List of IDs
-     * @param {} [addressLine2] List of IDs
-     * @param {} [postalCode] List of IDs
-     * @param {} [city] List of IDs
-     * @param {} [name] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [addressLine1] List of IDs
+     * @param {string} [addressLine2] List of IDs
+     * @param {string} [postalCode] List of IDs
+     * @param {string} [city] List of IDs
+     * @param {string} [name] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AddressApi
@@ -12199,12 +12199,12 @@ export class BankApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find bank corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [registerNumbers] Bank register number (four digits)
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [registerNumbers] Bank register number (four digits)
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankApi
@@ -12804,7 +12804,7 @@ export class BankreconciliationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete bank reconciliation by ID.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationApi
@@ -12816,10 +12816,10 @@ export class BankreconciliationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Add an adjustment to reconciliation by ID.
-     * @param {} id Element ID
-     * @param {} paymentTypeId Bank reconciliation PaymentType ID.
-     * @param {} postingDate Format is yyyy-MM-dd
-     * @param {} amount Amount
+     * @param {number} id Element ID
+     * @param {number} paymentTypeId Bank reconciliation PaymentType ID.
+     * @param {string} postingDate Format is yyyy-MM-dd
+     * @param {number} amount Amount
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationApi
@@ -12831,8 +12831,8 @@ export class BankreconciliationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get bank reconciliation.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationApi
@@ -12844,9 +12844,9 @@ export class BankreconciliationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get last closed reconciliation by account ID.
-     * @param {} accountId Account ID
-     * @param {} [after] Format is yyyy-MM-dd
-     * @param {} [fields] Fields filter pattern
+     * @param {number} accountId Account ID
+     * @param {string} [after] Format is yyyy-MM-dd
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationApi
@@ -12858,7 +12858,7 @@ export class BankreconciliationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Post a bank reconciliation.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {BankReconciliation} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationApi
@@ -12870,8 +12870,8 @@ export class BankreconciliationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update a bank reconciliation.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {BankReconciliation} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationApi
@@ -12883,13 +12883,13 @@ export class BankreconciliationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find bank reconciliation corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [accountingPeriodId] List of IDs
-     * @param {} [accountId] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [accountingPeriodId] List of IDs
+     * @param {string} [accountId] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationApi
@@ -13304,7 +13304,7 @@ export class BankreconciliationmatchApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete a bank reconciliation match by ID.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationmatchApi
@@ -13316,8 +13316,8 @@ export class BankreconciliationmatchApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get bank reconciliation match by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationmatchApi
@@ -13329,7 +13329,7 @@ export class BankreconciliationmatchApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create a bank reconciliation match.
-     * @param {} [body] Partial object describing what should be updated
+     * @param {BankReconciliationMatch} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationmatchApi
@@ -13341,8 +13341,8 @@ export class BankreconciliationmatchApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update a bank reconciliation match by ID.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {BankReconciliationMatch} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationmatchApi
@@ -13354,12 +13354,12 @@ export class BankreconciliationmatchApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find bank reconciliation match corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [bankReconciliationId] List of bank reconciliation IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [bankReconciliationId] List of bank reconciliation IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationmatchApi
@@ -13576,8 +13576,8 @@ export class BankreconciliationpaymentTypeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get payment type by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationpaymentTypeApi
@@ -13589,12 +13589,12 @@ export class BankreconciliationpaymentTypeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find payment type corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [description] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [description] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankreconciliationpaymentTypeApi
@@ -13689,12 +13689,12 @@ export const BankstatementApiFetchParamCreator = function (configuration?: Confi
         /**
          * 
          * @summary [BETA] Upload bank statement file.
-         * @param {string} fileFormat File format
+         * @param {'DANSKE_BANK_CSV' | 'EIKA_TELEPAY'} fileFormat File format
          * @param {any} file The bank statement file
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        importBankStatement(fileFormat: string, file: any, options: any = {}): FetchArgs {
+        importBankStatement(fileFormat: 'DANSKE_BANK_CSV' | 'EIKA_TELEPAY', file: any, options: any = {}): FetchArgs {
             // verify required parameter 'fileFormat' is not null or undefined
             if (fileFormat === null || fileFormat === undefined) {
                 throw new RequiredError('fileFormat','Required parameter fileFormat was null or undefined when calling importBankStatement.');
@@ -13842,12 +13842,12 @@ export const BankstatementApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary [BETA] Upload bank statement file.
-         * @param {string} fileFormat File format
+         * @param {'DANSKE_BANK_CSV' | 'EIKA_TELEPAY'} fileFormat File format
          * @param {any} file The bank statement file
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        importBankStatement(fileFormat: string, file: any, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<ResponseWrapperBankStatement> {
+        importBankStatement(fileFormat: 'DANSKE_BANK_CSV' | 'EIKA_TELEPAY', file: any, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<ResponseWrapperBankStatement> {
             const localVarFetchArgs = BankstatementApiFetchParamCreator(configuration).importBankStatement(fileFormat, file, options);
             return (fetch: FetchAPI = portableFetch, basePath: string = BASE_PATH) => {
                 return fetch(basePath + localVarFetchArgs.url, localVarFetchArgs.options).then((response) => {
@@ -13915,12 +13915,12 @@ export const BankstatementApiFactory = function (configuration?: Configuration, 
         /**
          * 
          * @summary [BETA] Upload bank statement file.
-         * @param {string} fileFormat File format
+         * @param {'DANSKE_BANK_CSV' | 'EIKA_TELEPAY'} fileFormat File format
          * @param {any} file The bank statement file
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        importBankStatement(fileFormat: string, file: any, options?: any) {
+        importBankStatement(fileFormat: 'DANSKE_BANK_CSV' | 'EIKA_TELEPAY', file: any, options?: any) {
             return BankstatementApiFp(configuration).importBankStatement(fileFormat, file, options)(fetch, basePath);
         },
         /**
@@ -13950,7 +13950,7 @@ export class BankstatementApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete bank statement by ID.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankstatementApi
@@ -13962,8 +13962,8 @@ export class BankstatementApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get bank statement.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankstatementApi
@@ -13975,24 +13975,24 @@ export class BankstatementApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Upload bank statement file.
-     * @param {} fileFormat File format
-     * @param {} file The bank statement file
+     * @param {'DANSKE_BANK_CSV' | 'EIKA_TELEPAY'} fileFormat File format
+     * @param {any} file The bank statement file
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankstatementApi
      */
-    public importBankStatement(fileFormat: string, file: any, options?: any) {
+    public importBankStatement(fileFormat: 'DANSKE_BANK_CSV' | 'EIKA_TELEPAY', file: any, options?: any) {
         return BankstatementApiFp(this.configuration).importBankStatement(fileFormat, file, options)(this.fetch, this.basePath);
     }
 
     /**
      * 
      * @summary [BETA] Find bank statement corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankstatementApi
@@ -14277,8 +14277,8 @@ export class BankstatementtransactionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get bank transaction by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankstatementtransactionApi
@@ -14290,8 +14290,8 @@ export class BankstatementtransactionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get additional details about transaction by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankstatementtransactionApi
@@ -14303,11 +14303,11 @@ export class BankstatementtransactionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find bank transaction corresponding with sent data.
-     * @param {} bankStatementId Bank statement ID
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} bankStatementId Bank statement ID
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof BankstatementtransactionApi
@@ -14594,8 +14594,8 @@ export class CompanyApi extends BaseAPI {
     /**
      * 
      * @summary Find company by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CompanyApi
@@ -14607,10 +14607,10 @@ export class CompanyApi extends BaseAPI {
     /**
      * 
      * @summary Find divisions.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CompanyApi
@@ -14622,10 +14622,10 @@ export class CompanyApi extends BaseAPI {
     /**
      * 
      * @summary Returns client customers (with accountant/auditor relation) where the current user has login access (proxy login).
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CompanyApi
@@ -14926,8 +14926,8 @@ export class ContactApi extends BaseAPI {
     /**
      * 
      * @summary Get contact by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ContactApi
@@ -14939,7 +14939,7 @@ export class ContactApi extends BaseAPI {
     /**
      * 
      * @summary Create contact.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Contact} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ContactApi
@@ -14951,15 +14951,15 @@ export class ContactApi extends BaseAPI {
     /**
      * 
      * @summary Find contacts corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [firstName] Containing
-     * @param {} [lastName] Containing
-     * @param {} [email] Containing
-     * @param {} [customerId] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [firstName] Containing
+     * @param {string} [lastName] Containing
+     * @param {string} [email] Containing
+     * @param {string} [customerId] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ContactApi
@@ -15176,8 +15176,8 @@ export class CountryApi extends BaseAPI {
     /**
      * 
      * @summary Get country by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CountryApi
@@ -15189,12 +15189,12 @@ export class CountryApi extends BaseAPI {
     /**
      * 
      * @summary Find countries corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [code] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [code] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CountryApi
@@ -15495,8 +15495,8 @@ export class CrmprospectApi extends BaseAPI {
     /**
      * 
      * @summary Get prospect by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CrmprospectApi
@@ -15508,24 +15508,24 @@ export class CrmprospectApi extends BaseAPI {
     /**
      * 
      * @summary Find prospects corresponding with sent data.
-     * @param {} [name] Containing
-     * @param {} [description] Containing
-     * @param {} [createdDateFrom] From and including
-     * @param {} [createdDateTo] To and excluding
-     * @param {} [customerId] Equals
-     * @param {} [salesEmployeeId] Equals
-     * @param {} [isClosed] Equals
-     * @param {} [closedReason] Equals
-     * @param {} [closedDateFrom] From and including
-     * @param {} [closedDateTo] To and excluding
-     * @param {} [competitor] Containing
-     * @param {} [prospectType] Equals
-     * @param {} [projectId] Equals
-     * @param {} [projectOfferId] Equals
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [name] Containing
+     * @param {string} [description] Containing
+     * @param {string} [createdDateFrom] From and including
+     * @param {string} [createdDateTo] To and excluding
+     * @param {string} [customerId] Equals
+     * @param {string} [salesEmployeeId] Equals
+     * @param {boolean} [isClosed] Equals
+     * @param {string} [closedReason] Equals
+     * @param {string} [closedDateFrom] From and including
+     * @param {string} [closedDateTo] To and excluding
+     * @param {string} [competitor] Containing
+     * @param {string} [prospectType] Equals
+     * @param {string} [projectId] Equals
+     * @param {string} [projectOfferId] Equals
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CrmprospectApi
@@ -15742,8 +15742,8 @@ export class CurrencyApi extends BaseAPI {
     /**
      * 
      * @summary Get currency by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CurrencyApi
@@ -15755,12 +15755,12 @@ export class CurrencyApi extends BaseAPI {
     /**
      * 
      * @summary Find currencies corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [code] Currency codes
-     * @param {} [fields] Fields filter pattern
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [code] Currency codes
+     * @param {string} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CurrencyApi
@@ -15854,7 +15854,7 @@ export const CustomerApiFetchParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary [BETA] Create multiple customers. Related supplier addresses may also be created.
-         * @param {Array&lt;Customer&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Customer>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -15928,7 +15928,7 @@ export const CustomerApiFetchParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary [BETA] Update multiple customers. Addresses can also be updated.
-         * @param {Array&lt;Customer&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<Customer>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -16089,7 +16089,7 @@ export const CustomerApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary [BETA] Create multiple customers. Related supplier addresses may also be created.
-         * @param {Array&lt;Customer&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Customer>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -16128,7 +16128,7 @@ export const CustomerApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary [BETA] Update multiple customers. Addresses can also be updated.
-         * @param {Array&lt;Customer&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<Customer>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -16205,7 +16205,7 @@ export const CustomerApiFactory = function (configuration?: Configuration, fetch
         /**
          * 
          * @summary [BETA] Create multiple customers. Related supplier addresses may also be created.
-         * @param {Array&lt;Customer&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Customer>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -16226,7 +16226,7 @@ export const CustomerApiFactory = function (configuration?: Configuration, fetch
         /**
          * 
          * @summary [BETA] Update multiple customers. Addresses can also be updated.
-         * @param {Array&lt;Customer&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<Customer>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -16265,8 +16265,8 @@ export class CustomerApi extends BaseAPI {
     /**
      * 
      * @summary Get customer by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomerApi
@@ -16278,7 +16278,7 @@ export class CustomerApi extends BaseAPI {
     /**
      * 
      * @summary Create customer. Related customer addresses may also be created.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Customer} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomerApi
@@ -16290,7 +16290,7 @@ export class CustomerApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create multiple customers. Related supplier addresses may also be created.
-     * @param {} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+     * @param {Array<Customer>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomerApi
@@ -16302,8 +16302,8 @@ export class CustomerApi extends BaseAPI {
     /**
      * 
      * @summary Update customer. 
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Customer} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomerApi
@@ -16315,7 +16315,7 @@ export class CustomerApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update multiple customers. Addresses can also be updated.
-     * @param {} [body] JSON representing updates to object. Should have ID and version set.
+     * @param {Array<Customer>} [body] JSON representing updates to object. Should have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomerApi
@@ -16327,16 +16327,16 @@ export class CustomerApi extends BaseAPI {
     /**
      * 
      * @summary Find customers corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [customerAccountNumber] List of IDs
-     * @param {} [email] Equals
-     * @param {} [invoiceEmail] Equals
-     * @param {} [isInactive] Equals
-     * @param {} [accountManagerId] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [customerAccountNumber] List of IDs
+     * @param {string} [email] Equals
+     * @param {string} [invoiceEmail] Equals
+     * @param {boolean} [isInactive] Equals
+     * @param {string} [accountManagerId] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomerApi
@@ -16708,8 +16708,8 @@ export class CustomercategoryApi extends BaseAPI {
     /**
      * 
      * @summary Find customer/supplier category by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomercategoryApi
@@ -16721,7 +16721,7 @@ export class CustomercategoryApi extends BaseAPI {
     /**
      * 
      * @summary Add new customer/supplier category.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {CustomerCategory} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomercategoryApi
@@ -16733,8 +16733,8 @@ export class CustomercategoryApi extends BaseAPI {
     /**
      * 
      * @summary Update customer/supplier category.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {CustomerCategory} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomercategoryApi
@@ -16746,15 +16746,15 @@ export class CustomercategoryApi extends BaseAPI {
     /**
      * 
      * @summary Find customer/supplier categories corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [name] Containing
-     * @param {} [number] Equals
-     * @param {} [description] Containing
-     * @param {} [type] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [name] Containing
+     * @param {string} [number] Equals
+     * @param {string} [description] Containing
+     * @param {string} [type] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CustomercategoryApi
@@ -16985,8 +16985,8 @@ export class DepartmentApi extends BaseAPI {
     /**
      * 
      * @summary Get department by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DepartmentApi
@@ -16998,14 +16998,14 @@ export class DepartmentApi extends BaseAPI {
     /**
      * 
      * @summary Find department corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [name] Containing
-     * @param {} [departmentNumber] Containing
-     * @param {} [departmentManagerId] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [name] Containing
+     * @param {string} [departmentNumber] Containing
+     * @param {string} [departmentManagerId] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DepartmentApi
@@ -17099,7 +17099,7 @@ export const EmployeeApiFetchParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary [BETA] Create several employees.
-         * @param {Array&lt;Employee&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Employee>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -17300,7 +17300,7 @@ export const EmployeeApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary [BETA] Create several employees.
-         * @param {Array&lt;Employee&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Employee>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -17397,7 +17397,7 @@ export const EmployeeApiFactory = function (configuration?: Configuration, fetch
         /**
          * 
          * @summary [BETA] Create several employees.
-         * @param {Array&lt;Employee&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Employee>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -17447,8 +17447,8 @@ export class EmployeeApi extends BaseAPI {
     /**
      * 
      * @summary Get employee by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeApi
@@ -17460,7 +17460,7 @@ export class EmployeeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create one employee.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Employee} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeApi
@@ -17472,7 +17472,7 @@ export class EmployeeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create several employees.
-     * @param {} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+     * @param {Array<Employee>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeApi
@@ -17484,8 +17484,8 @@ export class EmployeeApi extends BaseAPI {
     /**
      * 
      * @summary Update employee.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Employee} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeApi
@@ -17497,16 +17497,16 @@ export class EmployeeApi extends BaseAPI {
     /**
      * 
      * @summary Find employees corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [firstName] Containing
-     * @param {} [lastName] Containing
-     * @param {} [employeeNumber] Containing
-     * @param {} [allowInformationRegistration] Equals
-     * @param {} [departmentId] List of IDs
-     * @param {} [fields] Fields filter pattern
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [firstName] Containing
+     * @param {string} [lastName] Containing
+     * @param {string} [employeeNumber] Containing
+     * @param {boolean} [allowInformationRegistration] Equals
+     * @param {string} [departmentId] List of IDs
+     * @param {string} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeApi
@@ -17850,8 +17850,8 @@ export class EmployeeemploymentApi extends BaseAPI {
     /**
      * 
      * @summary Find employment by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentApi
@@ -17863,7 +17863,7 @@ export class EmployeeemploymentApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create employment.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Employment} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentApi
@@ -17875,8 +17875,8 @@ export class EmployeeemploymentApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update employemnt. 
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Employment} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentApi
@@ -17888,11 +17888,11 @@ export class EmployeeemploymentApi extends BaseAPI {
     /**
      * 
      * @summary Find all employments for employee.
-     * @param {} [employeeId] Element ID
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [employeeId] Element ID
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentApi
@@ -18236,8 +18236,8 @@ export class EmployeeemploymentdetailsApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find employment details by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentdetailsApi
@@ -18249,7 +18249,7 @@ export class EmployeeemploymentdetailsApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create employment details.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {EmploymentDetails} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentdetailsApi
@@ -18261,8 +18261,8 @@ export class EmployeeemploymentdetailsApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update employment details. 
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {EmploymentDetails} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentdetailsApi
@@ -18274,11 +18274,11 @@ export class EmployeeemploymentdetailsApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find all employmentdetails for employment.
-     * @param {} [employmentId] Element ID
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [employmentId] Element ID
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentdetailsApi
@@ -18410,10 +18410,10 @@ export class EmployeeemploymentemploymentTypeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find all employment type IDs.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentemploymentTypeApi
@@ -18666,8 +18666,8 @@ export class EmployeeemploymentleaveOfAbsenceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find leave of absence by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentleaveOfAbsenceApi
@@ -18679,7 +18679,7 @@ export class EmployeeemploymentleaveOfAbsenceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create leave of absence.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {LeaveOfAbsence} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentleaveOfAbsenceApi
@@ -18691,8 +18691,8 @@ export class EmployeeemploymentleaveOfAbsenceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update leave of absence. 
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {LeaveOfAbsence} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentleaveOfAbsenceApi
@@ -18824,10 +18824,10 @@ export class EmployeeemploymentleaveOfAbsenceTypeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find all leave of absence type IDs.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentleaveOfAbsenceTypeApi
@@ -18973,12 +18973,12 @@ export class EmployeeemploymentoccupationCodeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find all profession codes.
-     * @param {} [nameNO] Containing
-     * @param {} [code] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [nameNO] Containing
+     * @param {string} [code] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentoccupationCodeApi
@@ -19110,10 +19110,10 @@ export class EmployeeemploymentremunerationTypeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find all remuneration type IDs.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentremunerationTypeApi
@@ -19245,10 +19245,10 @@ export class EmployeeemploymentworkingHoursSchemeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find working hours scheme ID.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeemploymentworkingHoursSchemeApi
@@ -19369,11 +19369,11 @@ export const EmployeeentitlementApiFetchParamCreator = function (configuration?:
          * @summary [BETA] Update employee entitlements in client account.
          * @param {number} employeeId Employee ID
          * @param {number} customerId Client ID
-         * @param {string} template Template
+         * @param {'NONE_PRIVILEGES' | 'STANDARD_PRIVILEGES_ACCOUNTANT' | 'STANDARD_PRIVILEGES_AUDITOR' | 'ALL_PRIVILEGES' | 'AGRO_READ_ONLY' | 'AGRO_READ_APPROVE' | 'AGRO_READ_WRITE' | 'AGRO_READ_WRITE_APPROVE'} template Template
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        grantClientEntitlementsByTemplate(employeeId: number, customerId: number, template: string, options: any = {}): FetchArgs {
+        grantClientEntitlementsByTemplate(employeeId: number, customerId: number, template: 'NONE_PRIVILEGES' | 'STANDARD_PRIVILEGES_ACCOUNTANT' | 'STANDARD_PRIVILEGES_AUDITOR' | 'ALL_PRIVILEGES' | 'AGRO_READ_ONLY' | 'AGRO_READ_APPROVE' | 'AGRO_READ_WRITE' | 'AGRO_READ_WRITE_APPROVE', options: any = {}): FetchArgs {
             // verify required parameter 'employeeId' is not null or undefined
             if (employeeId === null || employeeId === undefined) {
                 throw new RequiredError('employeeId','Required parameter employeeId was null or undefined when calling grantClientEntitlementsByTemplate.');
@@ -19424,11 +19424,11 @@ export const EmployeeentitlementApiFetchParamCreator = function (configuration?:
          * The user will only receive the entitlements which are possible with the registered user type
          * @summary [BETA] Update employee entitlements.
          * @param {number} employeeId Employee ID
-         * @param {string} template Template
+         * @param {'NONE_PRIVILEGES' | 'ALL_PRIVILEGES' | 'INVOICING_MANAGER' | 'PERSONELL_MANAGER' | 'ACCOUNTANT' | 'AUDITOR' | 'DEPARTMENT_LEADER'} template Template
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        grantEntitlementsByTemplate(employeeId: number, template: string, options: any = {}): FetchArgs {
+        grantEntitlementsByTemplate(employeeId: number, template: 'NONE_PRIVILEGES' | 'ALL_PRIVILEGES' | 'INVOICING_MANAGER' | 'PERSONELL_MANAGER' | 'ACCOUNTANT' | 'AUDITOR' | 'DEPARTMENT_LEADER', options: any = {}): FetchArgs {
             // verify required parameter 'employeeId' is not null or undefined
             if (employeeId === null || employeeId === undefined) {
                 throw new RequiredError('employeeId','Required parameter employeeId was null or undefined when calling grantEntitlementsByTemplate.');
@@ -19579,11 +19579,11 @@ export const EmployeeentitlementApiFp = function(configuration?: Configuration) 
          * @summary [BETA] Update employee entitlements in client account.
          * @param {number} employeeId Employee ID
          * @param {number} customerId Client ID
-         * @param {string} template Template
+         * @param {'NONE_PRIVILEGES' | 'STANDARD_PRIVILEGES_ACCOUNTANT' | 'STANDARD_PRIVILEGES_AUDITOR' | 'ALL_PRIVILEGES' | 'AGRO_READ_ONLY' | 'AGRO_READ_APPROVE' | 'AGRO_READ_WRITE' | 'AGRO_READ_WRITE_APPROVE'} template Template
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        grantClientEntitlementsByTemplate(employeeId: number, customerId: number, template: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<Response> {
+        grantClientEntitlementsByTemplate(employeeId: number, customerId: number, template: 'NONE_PRIVILEGES' | 'STANDARD_PRIVILEGES_ACCOUNTANT' | 'STANDARD_PRIVILEGES_AUDITOR' | 'ALL_PRIVILEGES' | 'AGRO_READ_ONLY' | 'AGRO_READ_APPROVE' | 'AGRO_READ_WRITE' | 'AGRO_READ_WRITE_APPROVE', options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<Response> {
             const localVarFetchArgs = EmployeeentitlementApiFetchParamCreator(configuration).grantClientEntitlementsByTemplate(employeeId, customerId, template, options);
             return (fetch: FetchAPI = portableFetch, basePath: string = BASE_PATH) => {
                 return fetch(basePath + localVarFetchArgs.url, localVarFetchArgs.options).then((response) => {
@@ -19599,11 +19599,11 @@ export const EmployeeentitlementApiFp = function(configuration?: Configuration) 
          * The user will only receive the entitlements which are possible with the registered user type
          * @summary [BETA] Update employee entitlements.
          * @param {number} employeeId Employee ID
-         * @param {string} template Template
+         * @param {'NONE_PRIVILEGES' | 'ALL_PRIVILEGES' | 'INVOICING_MANAGER' | 'PERSONELL_MANAGER' | 'ACCOUNTANT' | 'AUDITOR' | 'DEPARTMENT_LEADER'} template Template
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        grantEntitlementsByTemplate(employeeId: number, template: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<Response> {
+        grantEntitlementsByTemplate(employeeId: number, template: 'NONE_PRIVILEGES' | 'ALL_PRIVILEGES' | 'INVOICING_MANAGER' | 'PERSONELL_MANAGER' | 'ACCOUNTANT' | 'AUDITOR' | 'DEPARTMENT_LEADER', options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<Response> {
             const localVarFetchArgs = EmployeeentitlementApiFetchParamCreator(configuration).grantEntitlementsByTemplate(employeeId, template, options);
             return (fetch: FetchAPI = portableFetch, basePath: string = BASE_PATH) => {
                 return fetch(basePath + localVarFetchArgs.url, localVarFetchArgs.options).then((response) => {
@@ -19678,22 +19678,22 @@ export const EmployeeentitlementApiFactory = function (configuration?: Configura
          * @summary [BETA] Update employee entitlements in client account.
          * @param {number} employeeId Employee ID
          * @param {number} customerId Client ID
-         * @param {string} template Template
+         * @param {'NONE_PRIVILEGES' | 'STANDARD_PRIVILEGES_ACCOUNTANT' | 'STANDARD_PRIVILEGES_AUDITOR' | 'ALL_PRIVILEGES' | 'AGRO_READ_ONLY' | 'AGRO_READ_APPROVE' | 'AGRO_READ_WRITE' | 'AGRO_READ_WRITE_APPROVE'} template Template
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        grantClientEntitlementsByTemplate(employeeId: number, customerId: number, template: string, options?: any) {
+        grantClientEntitlementsByTemplate(employeeId: number, customerId: number, template: 'NONE_PRIVILEGES' | 'STANDARD_PRIVILEGES_ACCOUNTANT' | 'STANDARD_PRIVILEGES_AUDITOR' | 'ALL_PRIVILEGES' | 'AGRO_READ_ONLY' | 'AGRO_READ_APPROVE' | 'AGRO_READ_WRITE' | 'AGRO_READ_WRITE_APPROVE', options?: any) {
             return EmployeeentitlementApiFp(configuration).grantClientEntitlementsByTemplate(employeeId, customerId, template, options)(fetch, basePath);
         },
         /**
          * The user will only receive the entitlements which are possible with the registered user type
          * @summary [BETA] Update employee entitlements.
          * @param {number} employeeId Employee ID
-         * @param {string} template Template
+         * @param {'NONE_PRIVILEGES' | 'ALL_PRIVILEGES' | 'INVOICING_MANAGER' | 'PERSONELL_MANAGER' | 'ACCOUNTANT' | 'AUDITOR' | 'DEPARTMENT_LEADER'} template Template
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        grantEntitlementsByTemplate(employeeId: number, template: string, options?: any) {
+        grantEntitlementsByTemplate(employeeId: number, template: 'NONE_PRIVILEGES' | 'ALL_PRIVILEGES' | 'INVOICING_MANAGER' | 'PERSONELL_MANAGER' | 'ACCOUNTANT' | 'AUDITOR' | 'DEPARTMENT_LEADER', options?: any) {
             return EmployeeentitlementApiFp(configuration).grantEntitlementsByTemplate(employeeId, template, options)(fetch, basePath);
         },
         /**
@@ -19723,12 +19723,12 @@ export class EmployeeentitlementApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find all entitlements at client for user.
-     * @param {} [employeeId] Employee ID. Defaults to ID of token owner.
-     * @param {} [customerId] Client ID
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [employeeId] Employee ID. Defaults to ID of token owner.
+     * @param {number} [customerId] Client ID
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeentitlementApi
@@ -19740,8 +19740,8 @@ export class EmployeeentitlementApi extends BaseAPI {
     /**
      * 
      * @summary Get entitlement by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeentitlementApi
@@ -19753,38 +19753,38 @@ export class EmployeeentitlementApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update employee entitlements in client account.
-     * @param {} employeeId Employee ID
-     * @param {} customerId Client ID
-     * @param {} template Template
+     * @param {number} employeeId Employee ID
+     * @param {number} customerId Client ID
+     * @param {'NONE_PRIVILEGES' | 'STANDARD_PRIVILEGES_ACCOUNTANT' | 'STANDARD_PRIVILEGES_AUDITOR' | 'ALL_PRIVILEGES' | 'AGRO_READ_ONLY' | 'AGRO_READ_APPROVE' | 'AGRO_READ_WRITE' | 'AGRO_READ_WRITE_APPROVE'} template Template
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeentitlementApi
      */
-    public grantClientEntitlementsByTemplate(employeeId: number, customerId: number, template: string, options?: any) {
+    public grantClientEntitlementsByTemplate(employeeId: number, customerId: number, template: 'NONE_PRIVILEGES' | 'STANDARD_PRIVILEGES_ACCOUNTANT' | 'STANDARD_PRIVILEGES_AUDITOR' | 'ALL_PRIVILEGES' | 'AGRO_READ_ONLY' | 'AGRO_READ_APPROVE' | 'AGRO_READ_WRITE' | 'AGRO_READ_WRITE_APPROVE', options?: any) {
         return EmployeeentitlementApiFp(this.configuration).grantClientEntitlementsByTemplate(employeeId, customerId, template, options)(this.fetch, this.basePath);
     }
 
     /**
      * The user will only receive the entitlements which are possible with the registered user type
      * @summary [BETA] Update employee entitlements.
-     * @param {} employeeId Employee ID
-     * @param {} template Template
+     * @param {number} employeeId Employee ID
+     * @param {'NONE_PRIVILEGES' | 'ALL_PRIVILEGES' | 'INVOICING_MANAGER' | 'PERSONELL_MANAGER' | 'ACCOUNTANT' | 'AUDITOR' | 'DEPARTMENT_LEADER'} template Template
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeentitlementApi
      */
-    public grantEntitlementsByTemplate(employeeId: number, template: string, options?: any) {
+    public grantEntitlementsByTemplate(employeeId: number, template: 'NONE_PRIVILEGES' | 'ALL_PRIVILEGES' | 'INVOICING_MANAGER' | 'PERSONELL_MANAGER' | 'ACCOUNTANT' | 'AUDITOR' | 'DEPARTMENT_LEADER', options?: any) {
         return EmployeeentitlementApiFp(this.configuration).grantEntitlementsByTemplate(employeeId, template, options)(this.fetch, this.basePath);
     }
 
     /**
      * 
      * @summary Find all entitlements for user.
-     * @param {} [employeeId] Employee ID. Defaults to ID of token owner.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [employeeId] Employee ID. Defaults to ID of token owner.
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeeentitlementApi
@@ -20128,8 +20128,8 @@ export class EmployeestandardTimeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find standard time by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeestandardTimeApi
@@ -20141,7 +20141,7 @@ export class EmployeestandardTimeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create standard time.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {StandardTime} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeestandardTimeApi
@@ -20153,8 +20153,8 @@ export class EmployeestandardTimeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update standard time. 
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {StandardTime} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeestandardTimeApi
@@ -20166,11 +20166,11 @@ export class EmployeestandardTimeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find all standard times for employee.
-     * @param {} [employeeId] Employee ID. Defaults to ID of token owner.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [employeeId] Employee ID. Defaults to ID of token owner.
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmployeestandardTimeApi
@@ -20281,7 +20281,7 @@ export class EventApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get all (WebHook) event keys.
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EventApi
@@ -20682,7 +20682,7 @@ export class EventsubscriptionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete the given subscription.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EventsubscriptionApi
@@ -20694,8 +20694,8 @@ export class EventsubscriptionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get subscription by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EventsubscriptionApi
@@ -20707,7 +20707,7 @@ export class EventsubscriptionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create a new subscription for current EmployeeToken.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Subscription} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EventsubscriptionApi
@@ -20719,8 +20719,8 @@ export class EventsubscriptionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Change a current subscription, based on id.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Subscription} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EventsubscriptionApi
@@ -20732,10 +20732,10 @@ export class EventsubscriptionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find all ongoing subscriptions.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EventsubscriptionApi
@@ -20966,8 +20966,8 @@ export class InventoryApi extends BaseAPI {
     /**
      * 
      * @summary Get inventory by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InventoryApi
@@ -20979,14 +20979,14 @@ export class InventoryApi extends BaseAPI {
     /**
      * 
      * @summary Find inventory corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [name] Containing
-     * @param {} [isMainInventory] Equals
-     * @param {} [isInactive] Equals
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [name] Containing
+     * @param {boolean} [isMainInventory] Equals
+     * @param {boolean} [isInactive] Equals
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InventoryApi
@@ -21275,12 +21275,12 @@ export const InvoiceApiFetchParamCreator = function (configuration?: Configurati
          * 
          * @summary [BETA] Send invoice by ID and sendType. Optionally override email recipient.
          * @param {number} id Element ID
-         * @param {string} sendType SendType
+         * @param {'EMAIL' | 'EHF'} sendType SendType
          * @param {string} [overrideEmailAddress] Will override email address if sendType &#x3D; EMAIL
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        send(id: number, sendType: string, overrideEmailAddress?: string, options: any = {}): FetchArgs {
+        send(id: number, sendType: 'EMAIL' | 'EHF', overrideEmailAddress?: string, options: any = {}): FetchArgs {
             // verify required parameter 'id' is not null or undefined
             if (id === null || id === undefined) {
                 throw new RequiredError('id','Required parameter id was null or undefined when calling send.');
@@ -21443,12 +21443,12 @@ export const InvoiceApiFp = function(configuration?: Configuration) {
          * 
          * @summary [BETA] Send invoice by ID and sendType. Optionally override email recipient.
          * @param {number} id Element ID
-         * @param {string} sendType SendType
+         * @param {'EMAIL' | 'EHF'} sendType SendType
          * @param {string} [overrideEmailAddress] Will override email address if sendType &#x3D; EMAIL
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        send(id: number, sendType: string, overrideEmailAddress?: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<Response> {
+        send(id: number, sendType: 'EMAIL' | 'EHF', overrideEmailAddress?: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<Response> {
             const localVarFetchArgs = InvoiceApiFetchParamCreator(configuration).send(id, sendType, overrideEmailAddress, options);
             return (fetch: FetchAPI = portableFetch, basePath: string = BASE_PATH) => {
                 return fetch(basePath + localVarFetchArgs.url, localVarFetchArgs.options).then((response) => {
@@ -21538,12 +21538,12 @@ export const InvoiceApiFactory = function (configuration?: Configuration, fetch?
          * 
          * @summary [BETA] Send invoice by ID and sendType. Optionally override email recipient.
          * @param {number} id Element ID
-         * @param {string} sendType SendType
+         * @param {'EMAIL' | 'EHF'} sendType SendType
          * @param {string} [overrideEmailAddress] Will override email address if sendType &#x3D; EMAIL
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        send(id: number, sendType: string, overrideEmailAddress?: string, options?: any) {
+        send(id: number, sendType: 'EMAIL' | 'EHF', overrideEmailAddress?: string, options?: any) {
             return InvoiceApiFp(configuration).send(id, sendType, overrideEmailAddress, options)(fetch, basePath);
         },
     };
@@ -21559,7 +21559,7 @@ export class InvoiceApi extends BaseAPI {
     /**
      * 
      * @summary Get invoice document by invoice ID.
-     * @param {} invoiceId Invoice ID from which PDF is downloaded.
+     * @param {number} invoiceId Invoice ID from which PDF is downloaded.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InvoiceApi
@@ -21571,8 +21571,8 @@ export class InvoiceApi extends BaseAPI {
     /**
      * 
      * @summary Get invoice by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InvoiceApi
@@ -21584,10 +21584,10 @@ export class InvoiceApi extends BaseAPI {
     /**
      * 
      * @summary Update invoice. The invoice is updated with payment information. The amount is in the invoice’s currency.
-     * @param {} id Invoice id
-     * @param {} paymentDate Payment date
-     * @param {} paymentTypeId PaymentType id
-     * @param {} paidAmount Amount paid by customer
+     * @param {number} id Invoice id
+     * @param {string} paymentDate Payment date
+     * @param {number} paymentTypeId PaymentType id
+     * @param {number} paidAmount Amount paid by customer
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InvoiceApi
@@ -21599,8 +21599,8 @@ export class InvoiceApi extends BaseAPI {
     /**
      * 
      * @summary Create invoice.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
-     * @param {} [sendToCustomer] Equals
+     * @param {Invoice} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {boolean} [sendToCustomer] Equals
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InvoiceApi
@@ -21612,17 +21612,17 @@ export class InvoiceApi extends BaseAPI {
     /**
      * 
      * @summary Find invoices corresponding with sent data.
-     * @param {} invoiceDateFrom From and including
-     * @param {} invoiceDateTo To and excluding
-     * @param {} [id] List of IDs
-     * @param {} [invoiceNumber] Equals
-     * @param {} [kid] Equals
-     * @param {} [voucherId] Equals
-     * @param {} [customerId] Equals
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} invoiceDateFrom From and including
+     * @param {string} invoiceDateTo To and excluding
+     * @param {string} [id] List of IDs
+     * @param {string} [invoiceNumber] Equals
+     * @param {string} [kid] Equals
+     * @param {string} [voucherId] Equals
+     * @param {string} [customerId] Equals
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InvoiceApi
@@ -21634,14 +21634,14 @@ export class InvoiceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Send invoice by ID and sendType. Optionally override email recipient.
-     * @param {} id Element ID
-     * @param {} sendType SendType
-     * @param {} [overrideEmailAddress] Will override email address if sendType &#x3D; EMAIL
+     * @param {number} id Element ID
+     * @param {'EMAIL' | 'EHF'} sendType SendType
+     * @param {string} [overrideEmailAddress] Will override email address if sendType &#x3D; EMAIL
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InvoiceApi
      */
-    public send(id: number, sendType: string, overrideEmailAddress?: string, options?: any) {
+    public send(id: number, sendType: 'EMAIL' | 'EHF', overrideEmailAddress?: string, options?: any) {
         return InvoiceApiFp(this.configuration).send(id, sendType, overrideEmailAddress, options)(this.fetch, this.basePath);
     }
 
@@ -21853,8 +21853,8 @@ export class InvoicepaymentTypeApi extends BaseAPI {
     /**
      * 
      * @summary Get payment type by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InvoicepaymentTypeApi
@@ -21866,12 +21866,12 @@ export class InvoicepaymentTypeApi extends BaseAPI {
     /**
      * 
      * @summary Find payment type corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [description] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [description] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InvoicepaymentTypeApi
@@ -22225,18 +22225,18 @@ export class LedgerApi extends BaseAPI {
     /**
      * 
      * @summary Find open posts corresponding with sent data.
-     * @param {} date Invoice date. Format is yyyy-MM-dd (to and excl.).
-     * @param {} [accountId] Element ID
-     * @param {} [supplierId] Element ID
-     * @param {} [customerId] Element ID
-     * @param {} [employeeId] Element ID
-     * @param {} [departmentId] Element ID
-     * @param {} [projectId] Element ID
-     * @param {} [productId] Element ID
-     * @param {} [fields] Fields filter pattern
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
+     * @param {string} date Invoice date. Format is yyyy-MM-dd (to and excl.).
+     * @param {number} [accountId] Element ID
+     * @param {number} [supplierId] Element ID
+     * @param {number} [customerId] Element ID
+     * @param {number} [employeeId] Element ID
+     * @param {number} [departmentId] Element ID
+     * @param {number} [projectId] Element ID
+     * @param {number} [productId] Element ID
+     * @param {string} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerApi
@@ -22248,20 +22248,20 @@ export class LedgerApi extends BaseAPI {
     /**
      * 
      * @summary Get ledger (hovedbok).
-     * @param {} dateFrom Format is yyyy-MM-dd (from and incl.).
-     * @param {} dateTo Format is yyyy-MM-dd (to and excl.).
-     * @param {} [openPostings] Deprecated
-     * @param {} [accountId] Element ID
-     * @param {} [supplierId] Element ID
-     * @param {} [customerId] Element ID
-     * @param {} [employeeId] Element ID
-     * @param {} [departmentId] Element ID
-     * @param {} [projectId] Element ID
-     * @param {} [productId] Element ID
-     * @param {} [fields] Fields filter pattern
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
+     * @param {string} dateFrom Format is yyyy-MM-dd (from and incl.).
+     * @param {string} dateTo Format is yyyy-MM-dd (to and excl.).
+     * @param {string} [openPostings] Deprecated
+     * @param {number} [accountId] Element ID
+     * @param {number} [supplierId] Element ID
+     * @param {number} [customerId] Element ID
+     * @param {number} [employeeId] Element ID
+     * @param {number} [departmentId] Element ID
+     * @param {number} [projectId] Element ID
+     * @param {number} [productId] Element ID
+     * @param {string} [fields] Fields filter pattern
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerApi
@@ -22428,7 +22428,7 @@ export const LedgeraccountApiFetchParamCreator = function (configuration?: Confi
         /**
          * 
          * @summary [BETA] Create several accounts.
-         * @param {Array&lt;Account&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Account>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -22502,7 +22502,7 @@ export const LedgeraccountApiFetchParamCreator = function (configuration?: Confi
         /**
          * 
          * @summary [BETA] Update multiple accounts.
-         * @param {Array&lt;Account&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<Account>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -22686,7 +22686,7 @@ export const LedgeraccountApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary [BETA] Create several accounts.
-         * @param {Array&lt;Account&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Account>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -22725,7 +22725,7 @@ export const LedgeraccountApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary [BETA] Update multiple accounts.
-         * @param {Array&lt;Account&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<Account>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -22819,7 +22819,7 @@ export const LedgeraccountApiFactory = function (configuration?: Configuration, 
         /**
          * 
          * @summary [BETA] Create several accounts.
-         * @param {Array&lt;Account&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Account>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -22840,7 +22840,7 @@ export const LedgeraccountApiFactory = function (configuration?: Configuration, 
         /**
          * 
          * @summary [BETA] Update multiple accounts.
-         * @param {Array&lt;Account&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<Account>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -22876,7 +22876,7 @@ export class LedgeraccountApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete account.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgeraccountApi
@@ -22888,7 +22888,7 @@ export class LedgeraccountApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete multiple accounts.
-     * @param {} ids ID of the elements
+     * @param {string} ids ID of the elements
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgeraccountApi
@@ -22900,8 +22900,8 @@ export class LedgeraccountApi extends BaseAPI {
     /**
      * 
      * @summary Get account by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgeraccountApi
@@ -22913,7 +22913,7 @@ export class LedgeraccountApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create a new account.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Account} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgeraccountApi
@@ -22925,7 +22925,7 @@ export class LedgeraccountApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create several accounts.
-     * @param {} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+     * @param {Array<Account>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgeraccountApi
@@ -22937,8 +22937,8 @@ export class LedgeraccountApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update account.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Account} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgeraccountApi
@@ -22950,7 +22950,7 @@ export class LedgeraccountApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update multiple accounts.
-     * @param {} [body] JSON representing updates to object. Should have ID and version set.
+     * @param {Array<Account>} [body] JSON representing updates to object. Should have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgeraccountApi
@@ -22962,13 +22962,13 @@ export class LedgeraccountApi extends BaseAPI {
     /**
      * 
      * @summary Find accounts corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [number] List of IDs
-     * @param {} [isBankAccount] Equals
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [number] List of IDs
+     * @param {boolean} [isBankAccount] Equals
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgeraccountApi
@@ -23220,8 +23220,8 @@ export class LedgeraccountingPeriodApi extends BaseAPI {
     /**
      * 
      * @summary Get accounting period by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgeraccountingPeriodApi
@@ -23233,17 +23233,17 @@ export class LedgeraccountingPeriodApi extends BaseAPI {
     /**
      * 
      * @summary Find accounting periods corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [numberFrom] From and including
-     * @param {} [numberTo] To and excluding
-     * @param {} [startFrom] From and including
-     * @param {} [startTo] To and excluding
-     * @param {} [endFrom] From and including
-     * @param {} [endTo] To and excluding
-     * @param {} [count] Number of elements to return
-     * @param {} [from] From index
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {number} [numberFrom] From and including
+     * @param {number} [numberTo] To and excluding
+     * @param {string} [startFrom] From and including
+     * @param {string} [startTo] To and excluding
+     * @param {string} [endFrom] From and including
+     * @param {string} [endTo] To and excluding
+     * @param {number} [count] Number of elements to return
+     * @param {number} [from] From index
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgeraccountingPeriodApi
@@ -23467,8 +23467,8 @@ export class LedgerannualAccountApi extends BaseAPI {
     /**
      * 
      * @summary Get annual account by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerannualAccountApi
@@ -23480,13 +23480,13 @@ export class LedgerannualAccountApi extends BaseAPI {
     /**
      * 
      * @summary Find annual accounts corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [yearFrom] From and including
-     * @param {} [yearTo] To and excluding
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {number} [yearFrom] From and including
+     * @param {number} [yearTo] To and excluding
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerannualAccountApi
@@ -23718,8 +23718,8 @@ export class LedgercloseGroupApi extends BaseAPI {
     /**
      * 
      * @summary Get close group by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgercloseGroupApi
@@ -23731,13 +23731,13 @@ export class LedgercloseGroupApi extends BaseAPI {
     /**
      * 
      * @summary Find close groups corresponding with sent data.
-     * @param {} dateFrom From and including
-     * @param {} dateTo To and excluding
-     * @param {} [id] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} dateFrom From and including
+     * @param {string} dateTo To and excluding
+     * @param {string} [id] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgercloseGroupApi
@@ -23866,7 +23866,7 @@ export const LedgerpaymentTypeOutApiFetchParamCreator = function (configuration?
         /**
          * 
          * @summary [BETA] Create multiple payment types for outgoing payments at once
-         * @param {Array&lt;PaymentTypeOut&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<PaymentTypeOut>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -23940,7 +23940,7 @@ export const LedgerpaymentTypeOutApiFetchParamCreator = function (configuration?
         /**
          * 
          * @summary [BETA] Update multiple payment types for outgoing payments at once
-         * @param {Array&lt;PaymentTypeOut&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<PaymentTypeOut>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -24105,7 +24105,7 @@ export const LedgerpaymentTypeOutApiFp = function(configuration?: Configuration)
         /**
          * 
          * @summary [BETA] Create multiple payment types for outgoing payments at once
-         * @param {Array&lt;PaymentTypeOut&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<PaymentTypeOut>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -24144,7 +24144,7 @@ export const LedgerpaymentTypeOutApiFp = function(configuration?: Configuration)
         /**
          * 
          * @summary [BETA] Update multiple payment types for outgoing payments at once
-         * @param {Array&lt;PaymentTypeOut&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<PaymentTypeOut>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -24228,7 +24228,7 @@ export const LedgerpaymentTypeOutApiFactory = function (configuration?: Configur
         /**
          * 
          * @summary [BETA] Create multiple payment types for outgoing payments at once
-         * @param {Array&lt;PaymentTypeOut&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<PaymentTypeOut>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -24249,7 +24249,7 @@ export const LedgerpaymentTypeOutApiFactory = function (configuration?: Configur
         /**
          * 
          * @summary [BETA] Update multiple payment types for outgoing payments at once
-         * @param {Array&lt;PaymentTypeOut&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<PaymentTypeOut>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -24285,7 +24285,7 @@ export class LedgerpaymentTypeOutApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete payment type for outgoing payments by ID.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerpaymentTypeOutApi
@@ -24297,8 +24297,8 @@ export class LedgerpaymentTypeOutApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get payment type for outgoing payments by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerpaymentTypeOutApi
@@ -24310,7 +24310,7 @@ export class LedgerpaymentTypeOutApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create new payment type for outgoing payments
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {PaymentTypeOut} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerpaymentTypeOutApi
@@ -24322,7 +24322,7 @@ export class LedgerpaymentTypeOutApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create multiple payment types for outgoing payments at once
-     * @param {} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+     * @param {Array<PaymentTypeOut>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerpaymentTypeOutApi
@@ -24334,8 +24334,8 @@ export class LedgerpaymentTypeOutApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update existing payment type for outgoing payments
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {PaymentTypeOut} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerpaymentTypeOutApi
@@ -24347,7 +24347,7 @@ export class LedgerpaymentTypeOutApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update multiple payment types for outgoing payments at once
-     * @param {} [body] JSON representing updates to object. Should have ID and version set.
+     * @param {Array<PaymentTypeOut>} [body] JSON representing updates to object. Should have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerpaymentTypeOutApi
@@ -24359,13 +24359,13 @@ export class LedgerpaymentTypeOutApi extends BaseAPI {
     /**
      * This is an API endpoint for getting payment types for outgoing payments. This is equivalent to the section 'Outgoing Payments' under Accounts Settings in Tripletex. These are the payment types listed in supplier invoices, vat returns, salary payments and Tax/ENI
      * @summary [BETA] Gets payment types for outgoing payments
-     * @param {} [id] List of IDs
-     * @param {} [description] Containing
-     * @param {} [isInactive] Equals
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [description] Containing
+     * @param {boolean} [isInactive] Equals
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerpaymentTypeOutApi
@@ -24790,8 +24790,8 @@ export class LedgerpostingApi extends BaseAPI {
     /**
      * 
      * @summary Find postings by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerpostingApi
@@ -24803,18 +24803,18 @@ export class LedgerpostingApi extends BaseAPI {
     /**
      * 
      * @summary Find open posts corresponding with sent data.
-     * @param {} date Invoice date. Format is yyyy-MM-dd (to and excl.).
-     * @param {} [accountId] Element ID
-     * @param {} [supplierId] Element ID
-     * @param {} [customerId] Element ID
-     * @param {} [employeeId] Element ID
-     * @param {} [departmentId] Element ID
-     * @param {} [projectId] Element ID
-     * @param {} [productId] Element ID
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} date Invoice date. Format is yyyy-MM-dd (to and excl.).
+     * @param {number} [accountId] Element ID
+     * @param {number} [supplierId] Element ID
+     * @param {number} [customerId] Element ID
+     * @param {number} [employeeId] Element ID
+     * @param {number} [departmentId] Element ID
+     * @param {number} [projectId] Element ID
+     * @param {number} [productId] Element ID
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerpostingApi
@@ -24826,20 +24826,20 @@ export class LedgerpostingApi extends BaseAPI {
     /**
      * 
      * @summary Find postings corresponding with sent data.
-     * @param {} dateFrom Format is yyyy-MM-dd (from and incl.).
-     * @param {} dateTo Format is yyyy-MM-dd (to and excl.).
-     * @param {} [openPostings] Deprecated
-     * @param {} [accountId] Element ID
-     * @param {} [supplierId] Element ID
-     * @param {} [customerId] Element ID
-     * @param {} [employeeId] Element ID
-     * @param {} [departmentId] Element ID
-     * @param {} [projectId] Element ID
-     * @param {} [productId] Element ID
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} dateFrom Format is yyyy-MM-dd (from and incl.).
+     * @param {string} dateTo Format is yyyy-MM-dd (to and excl.).
+     * @param {string} [openPostings] Deprecated
+     * @param {number} [accountId] Element ID
+     * @param {number} [supplierId] Element ID
+     * @param {number} [customerId] Element ID
+     * @param {number} [employeeId] Element ID
+     * @param {number} [departmentId] Element ID
+     * @param {number} [projectId] Element ID
+     * @param {number} [productId] Element ID
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgerpostingApi
@@ -25056,8 +25056,8 @@ export class LedgervatTypeApi extends BaseAPI {
     /**
      * 
      * @summary Get vat type by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervatTypeApi
@@ -25069,12 +25069,12 @@ export class LedgervatTypeApi extends BaseAPI {
     /**
      * 
      * @summary Find vat types corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [number] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [number] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervatTypeApi
@@ -25994,7 +25994,7 @@ export class LedgervoucherApi extends BaseAPI {
     /**
      * 
      * @summary Get attachment by voucher ID.
-     * @param {} voucherId Voucher ID from which PDF is downloaded.
+     * @param {number} voucherId Voucher ID from which PDF is downloaded.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherApi
@@ -26006,8 +26006,8 @@ export class LedgervoucherApi extends BaseAPI {
     /**
      * 
      * @summary Get voucher by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherApi
@@ -26019,9 +26019,9 @@ export class LedgervoucherApi extends BaseAPI {
     /**
      * 
      * @summary Import GBAT10. Send as multipart form.
-     * @param {} generateVatPostings If the import should generate VAT postings
-     * @param {} file The file
-     * @param {} [encoding] The file encoding
+     * @param {boolean} generateVatPostings If the import should generate VAT postings
+     * @param {any} file The file
+     * @param {string} [encoding] The file encoding
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherApi
@@ -26033,14 +26033,14 @@ export class LedgervoucherApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find non-posted vouchers.
-     * @param {} includeNonApproved Include non-approved vouchers in the result.
-     * @param {} [dateFrom] From and including
-     * @param {} [dateTo] To and excluding
-     * @param {} [changedSince] Only return elements that have changed since this date and time
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {boolean} includeNonApproved Include non-approved vouchers in the result.
+     * @param {string} [dateFrom] From and including
+     * @param {string} [dateTo] To and excluding
+     * @param {string} [changedSince] Only return elements that have changed since this date and time
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherApi
@@ -26052,8 +26052,8 @@ export class LedgervoucherApi extends BaseAPI {
     /**
      * 
      * @summary Add new voucher. IMPORTANT: Also creates postings. Only the gross amounts will be used
-     * @param {} [sendToLedger] Should the voucher be sent to ledger? Requires the \&quot;Advanced Voucher\&quot; permission.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {boolean} [sendToLedger] Should the voucher be sent to ledger? Requires the \&quot;Advanced Voucher\&quot; permission.
+     * @param {Voucher} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherApi
@@ -26065,9 +26065,9 @@ export class LedgervoucherApi extends BaseAPI {
     /**
      * 
      * @summary Update voucher. Postings with guiRow==0 will be deleted and regenerated.
-     * @param {} id Element ID
-     * @param {} [sendToLedger] Should the voucher be sent to ledger? Requires the \&quot;Advanced Voucher\&quot; permission.
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {boolean} [sendToLedger] Should the voucher be sent to ledger? Requires the \&quot;Advanced Voucher\&quot; permission.
+     * @param {Voucher} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherApi
@@ -26079,17 +26079,17 @@ export class LedgervoucherApi extends BaseAPI {
     /**
      * 
      * @summary Find vouchers corresponding with sent data.
-     * @param {} dateFrom From and including
-     * @param {} dateTo To and excluding
-     * @param {} [id] List of IDs
-     * @param {} [number] List of IDs
-     * @param {} [numberFrom] From and including
-     * @param {} [numberTo] To and excluding
-     * @param {} [typeId] List of IDs
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} dateFrom From and including
+     * @param {string} dateTo To and excluding
+     * @param {string} [id] List of IDs
+     * @param {string} [number] List of IDs
+     * @param {number} [numberFrom] From and including
+     * @param {number} [numberTo] To and excluding
+     * @param {string} [typeId] List of IDs
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherApi
@@ -26101,9 +26101,9 @@ export class LedgervoucherApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Send voucher to inbox.
-     * @param {} id ID of voucher that should be sent to inbox.
-     * @param {} [version] Version of voucher that should be sent to inbox.
-     * @param {} [comment] Description of why the voucher was rejected. This parameter is only used if the approval feature is enabled.
+     * @param {number} id ID of voucher that should be sent to inbox.
+     * @param {number} [version] Version of voucher that should be sent to inbox.
+     * @param {string} [comment] Description of why the voucher was rejected. This parameter is only used if the approval feature is enabled.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherApi
@@ -26115,9 +26115,9 @@ export class LedgervoucherApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Send voucher to ledger.
-     * @param {} id ID of voucher that should be sent to ledger.
-     * @param {} [version] Version of voucher that should be sent to ledger.
-     * @param {} [number] Voucher number to use. If omitted or 0 the system will assign the number.
+     * @param {number} id ID of voucher that should be sent to ledger.
+     * @param {number} [version] Version of voucher that should be sent to ledger.
+     * @param {number} [number] Voucher number to use. If omitted or 0 the system will assign the number.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherApi
@@ -26129,9 +26129,9 @@ export class LedgervoucherApi extends BaseAPI {
     /**
      * 
      * @summary Upload attachment to voucher. Send as multipart form.
-     * @param {} voucherId Voucher ID to upload PDF to.
-     * @param {} fileName File name to store the pdf under. Will not be the same as the filename on the file returned.
-     * @param {} file The file
+     * @param {number} voucherId Voucher ID to upload PDF to.
+     * @param {string} fileName File name to store the pdf under. Will not be the same as the filename on the file returned.
+     * @param {any} file The file
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherApi
@@ -26341,8 +26341,8 @@ export class LedgervoucherTypeApi extends BaseAPI {
     /**
      * 
      * @summary Get voucher type by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherTypeApi
@@ -26354,11 +26354,11 @@ export class LedgervoucherTypeApi extends BaseAPI {
     /**
      * 
      * @summary Find voucher types corresponding with sent data.
-     * @param {} [name] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [name] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LedgervoucherTypeApi
@@ -26827,8 +26827,8 @@ export class OrderApi extends BaseAPI {
     /**
      * 
      * @summary Get order by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrderApi
@@ -26840,9 +26840,9 @@ export class OrderApi extends BaseAPI {
     /**
      * 
      * @summary Create new invoice from order.
-     * @param {} id ID of order to invoice.
-     * @param {} invoiceDate To and excluding
-     * @param {} [sendToCustomer] Send invoice to customer
+     * @param {number} id ID of order to invoice.
+     * @param {string} invoiceDate To and excluding
+     * @param {boolean} [sendToCustomer] Send invoice to customer
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrderApi
@@ -26854,7 +26854,7 @@ export class OrderApi extends BaseAPI {
     /**
      * 
      * @summary Create order.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Order} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrderApi
@@ -26866,8 +26866,8 @@ export class OrderApi extends BaseAPI {
     /**
      * 
      * @summary Update order.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Order} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrderApi
@@ -26879,16 +26879,16 @@ export class OrderApi extends BaseAPI {
     /**
      * 
      * @summary Find orders corresponding with sent data.
-     * @param {} orderDateFrom From and including
-     * @param {} orderDateTo To and excluding
-     * @param {} [id] List of IDs
-     * @param {} [number] Equals
-     * @param {} [customerId] List of IDs
-     * @param {} [isClosed] Equals
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} orderDateFrom From and including
+     * @param {string} orderDateTo To and excluding
+     * @param {string} [id] List of IDs
+     * @param {string} [number] Equals
+     * @param {string} [customerId] List of IDs
+     * @param {boolean} [isClosed] Equals
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrderApi
@@ -27017,7 +27017,7 @@ export const OrderorderlineApiFetchParamCreator = function (configuration?: Conf
         /**
          * 
          * @summary Create multiple order lines.
-         * @param {Array&lt;OrderLine&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<OrderLine>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -27118,7 +27118,7 @@ export const OrderorderlineApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Create multiple order lines.
-         * @param {Array&lt;OrderLine&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<OrderLine>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -27177,7 +27177,7 @@ export const OrderorderlineApiFactory = function (configuration?: Configuration,
         /**
          * 
          * @summary Create multiple order lines.
-         * @param {Array&lt;OrderLine&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<OrderLine>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -27197,7 +27197,7 @@ export class OrderorderlineApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete order line by ID.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrderorderlineApi
@@ -27209,8 +27209,8 @@ export class OrderorderlineApi extends BaseAPI {
     /**
      * 
      * @summary Get order line by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrderorderlineApi
@@ -27222,7 +27222,7 @@ export class OrderorderlineApi extends BaseAPI {
     /**
      * 
      * @summary Create order line. When creating several order lines, use /list for better performance.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {OrderLine} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrderorderlineApi
@@ -27234,7 +27234,7 @@ export class OrderorderlineApi extends BaseAPI {
     /**
      * 
      * @summary Create multiple order lines.
-     * @param {} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+     * @param {Array<OrderLine>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrderorderlineApi
@@ -27369,7 +27369,7 @@ export const ProductApiFetchParamCreator = function (configuration?: Configurati
          * 
          * @summary Find products corresponding with sent data.
          * @param {string} [number] DEPRECATED. List of product numbers (Integer only)
-         * @param {Array&lt;string&gt;} [productNumber] List of valid product numbers
+         * @param {Array<string>} [productNumber] List of valid product numbers
          * @param {string} [name] Containing
          * @param {boolean} [isInactive] Equals
          * @param {boolean} [isStockItem] Equals
@@ -27566,7 +27566,7 @@ export const ProductApiFp = function(configuration?: Configuration) {
          * 
          * @summary Find products corresponding with sent data.
          * @param {string} [number] DEPRECATED. List of product numbers (Integer only)
-         * @param {Array&lt;string&gt;} [productNumber] List of valid product numbers
+         * @param {Array<string>} [productNumber] List of valid product numbers
          * @param {string} [name] Containing
          * @param {boolean} [isInactive] Equals
          * @param {boolean} [isStockItem] Equals
@@ -27645,7 +27645,7 @@ export const ProductApiFactory = function (configuration?: Configuration, fetch?
          * 
          * @summary Find products corresponding with sent data.
          * @param {string} [number] DEPRECATED. List of product numbers (Integer only)
-         * @param {Array&lt;string&gt;} [productNumber] List of valid product numbers
+         * @param {Array<string>} [productNumber] List of valid product numbers
          * @param {string} [name] Containing
          * @param {boolean} [isInactive] Equals
          * @param {boolean} [isStockItem] Equals
@@ -27683,8 +27683,8 @@ export class ProductApi extends BaseAPI {
     /**
      * 
      * @summary Get product by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductApi
@@ -27696,7 +27696,7 @@ export class ProductApi extends BaseAPI {
     /**
      * 
      * @summary Create new product.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Product} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductApi
@@ -27708,8 +27708,8 @@ export class ProductApi extends BaseAPI {
     /**
      * 
      * @summary Update product.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Product} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductApi
@@ -27721,26 +27721,26 @@ export class ProductApi extends BaseAPI {
     /**
      * 
      * @summary Find products corresponding with sent data.
-     * @param {} [number] DEPRECATED. List of product numbers (Integer only)
-     * @param {} [productNumber] List of valid product numbers
-     * @param {} [name] Containing
-     * @param {} [isInactive] Equals
-     * @param {} [isStockItem] Equals
-     * @param {} [currencyId] Equals
-     * @param {} [vatTypeId] Equals
-     * @param {} [productUnitId] Equals
-     * @param {} [departmentId] Equals
-     * @param {} [accountId] Equals
-     * @param {} [costExcludingVatCurrencyFrom] From and including
-     * @param {} [costExcludingVatCurrencyTo] To and excluding
-     * @param {} [priceExcludingVatCurrencyFrom] From and including
-     * @param {} [priceExcludingVatCurrencyTo] To and excluding
-     * @param {} [priceIncludingVatCurrencyFrom] From and including
-     * @param {} [priceIncludingVatCurrencyTo] To and excluding
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [number] DEPRECATED. List of product numbers (Integer only)
+     * @param {Array<string>} [productNumber] List of valid product numbers
+     * @param {string} [name] Containing
+     * @param {boolean} [isInactive] Equals
+     * @param {boolean} [isStockItem] Equals
+     * @param {string} [currencyId] Equals
+     * @param {string} [vatTypeId] Equals
+     * @param {string} [productUnitId] Equals
+     * @param {string} [departmentId] Equals
+     * @param {string} [accountId] Equals
+     * @param {number} [costExcludingVatCurrencyFrom] From and including
+     * @param {number} [costExcludingVatCurrencyTo] To and excluding
+     * @param {number} [priceExcludingVatCurrencyFrom] From and including
+     * @param {number} [priceExcludingVatCurrencyTo] To and excluding
+     * @param {number} [priceIncludingVatCurrencyFrom] From and including
+     * @param {number} [priceIncludingVatCurrencyTo] To and excluding
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductApi
@@ -27971,8 +27971,8 @@ export class ProductunitApi extends BaseAPI {
     /**
      * 
      * @summary Get product unit by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductunitApi
@@ -27984,14 +27984,14 @@ export class ProductunitApi extends BaseAPI {
     /**
      * 
      * @summary Find product units corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [name] Names
-     * @param {} [nameShort] Short names
-     * @param {} [commonCode] Common codes
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [name] Names
+     * @param {string} [nameShort] Short names
+     * @param {string} [commonCode] Common codes
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProductunitApi
@@ -28182,7 +28182,7 @@ export const ProjectApiFetchParamCreator = function (configuration?: Configurati
         /**
          * 
          * @summary [BETA] Register new projects. Multiple projects for different users can be sent in the same request.
-         * @param {Array&lt;Project&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Project>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -28466,7 +28466,7 @@ export const ProjectApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary [BETA] Register new projects. Multiple projects for different users can be sent in the same request.
-         * @param {Array&lt;Project&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Project>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -28596,7 +28596,7 @@ export const ProjectApiFactory = function (configuration?: Configuration, fetch?
         /**
          * 
          * @summary [BETA] Register new projects. Multiple projects for different users can be sent in the same request.
-         * @param {Array&lt;Project&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Project>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -28654,7 +28654,7 @@ export class ProjectApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete projects.
-     * @param {} ids ID of the elements
+     * @param {string} ids ID of the elements
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectApi
@@ -28666,8 +28666,8 @@ export class ProjectApi extends BaseAPI {
     /**
      * 
      * @summary Find project by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectApi
@@ -28679,12 +28679,12 @@ export class ProjectApi extends BaseAPI {
     /**
      * 
      * @summary Find projects applicable for time sheet registration on a specific day.
-     * @param {} [employeeId] Employee ID. Defaults to ID of token owner.
-     * @param {} [date] yyyy-MM-dd. Defaults to today.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [employeeId] Employee ID. Defaults to ID of token owner.
+     * @param {string} [date] yyyy-MM-dd. Defaults to today.
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectApi
@@ -28696,7 +28696,7 @@ export class ProjectApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Add new project.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Project} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectApi
@@ -28708,7 +28708,7 @@ export class ProjectApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Register new projects. Multiple projects for different users can be sent in the same request.
-     * @param {} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+     * @param {Array<Project>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectApi
@@ -28720,8 +28720,8 @@ export class ProjectApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update project.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Project} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectApi
@@ -28733,24 +28733,24 @@ export class ProjectApi extends BaseAPI {
     /**
      * 
      * @summary Find projects corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [name] Containing
-     * @param {} [number] Equals
-     * @param {} [isOffer] Equals
-     * @param {} [projectManagerId] List of IDs
-     * @param {} [employeeInProjectId] List of IDs
-     * @param {} [departmentId] List of IDs
-     * @param {} [startDateFrom] From and including
-     * @param {} [startDateTo] To and excluding
-     * @param {} [endDateFrom] From and including
-     * @param {} [endDateTo] To and excluding
-     * @param {} [isClosed] Equals
-     * @param {} [customerId] Equals
-     * @param {} [externalAccountsNumber] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [name] Containing
+     * @param {string} [number] Equals
+     * @param {boolean} [isOffer] Equals
+     * @param {string} [projectManagerId] List of IDs
+     * @param {string} [employeeInProjectId] List of IDs
+     * @param {string} [departmentId] List of IDs
+     * @param {string} [startDateFrom] From and including
+     * @param {string} [startDateTo] To and excluding
+     * @param {string} [endDateFrom] From and including
+     * @param {string} [endDateTo] To and excluding
+     * @param {boolean} [isClosed] Equals
+     * @param {string} [customerId] Equals
+     * @param {string} [externalAccountsNumber] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectApi
@@ -29115,8 +29115,8 @@ export class ProjectcategoryApi extends BaseAPI {
     /**
      * 
      * @summary Find project category by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectcategoryApi
@@ -29128,7 +29128,7 @@ export class ProjectcategoryApi extends BaseAPI {
     /**
      * 
      * @summary Add new project category.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {ProjectCategory} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectcategoryApi
@@ -29140,8 +29140,8 @@ export class ProjectcategoryApi extends BaseAPI {
     /**
      * 
      * @summary Update project category.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {ProjectCategory} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectcategoryApi
@@ -29153,14 +29153,14 @@ export class ProjectcategoryApi extends BaseAPI {
     /**
      * 
      * @summary Find project categories corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [name] Containing
-     * @param {} [number] Equals
-     * @param {} [description] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [name] Containing
+     * @param {string} [number] Equals
+     * @param {string} [description] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof ProjectcategoryApi
@@ -29504,7 +29504,7 @@ export class SalarypayslipApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find payslip (PDF document) by ID.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SalarypayslipApi
@@ -29516,8 +29516,8 @@ export class SalarypayslipApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find payslip by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SalarypayslipApi
@@ -29529,21 +29529,21 @@ export class SalarypayslipApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find payslips corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [employeeId] List of IDs
-     * @param {} [wageTransactionId] List of IDs
-     * @param {} [activityId] List of IDs
-     * @param {} [yearFrom] From and including
-     * @param {} [yearTo] To and excluding
-     * @param {} [monthFrom] From and including
-     * @param {} [monthTo] To and excluding
-     * @param {} [voucherDateFrom] From and including
-     * @param {} [voucherDateTo] To and excluding
-     * @param {} [comment] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [employeeId] List of IDs
+     * @param {string} [wageTransactionId] List of IDs
+     * @param {string} [activityId] List of IDs
+     * @param {number} [yearFrom] From and including
+     * @param {number} [yearTo] To and excluding
+     * @param {number} [monthFrom] From and including
+     * @param {number} [monthTo] To and excluding
+     * @param {string} [voucherDateFrom] From and including
+     * @param {string} [voucherDateTo] To and excluding
+     * @param {string} [comment] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SalarypayslipApi
@@ -29789,7 +29789,7 @@ export class SalarytransactionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete salary transaction by ID.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SalarytransactionApi
@@ -29801,8 +29801,8 @@ export class SalarytransactionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find salary transaction by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SalarytransactionApi
@@ -29814,7 +29814,7 @@ export class SalarytransactionApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create a new salary transaction.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {SalaryTransaction} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SalarytransactionApi
@@ -30045,8 +30045,8 @@ export class SalarytypeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find salary type by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SalarytypeApi
@@ -30058,14 +30058,14 @@ export class SalarytypeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find salary type corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [number] Containing
-     * @param {} [name] Containing
-     * @param {} [description] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [number] Containing
+     * @param {string} [name] Containing
+     * @param {string} [description] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SalarytypeApi
@@ -30159,7 +30159,7 @@ export const SupplierApiFetchParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary [BETA] Create multiple suppliers. Related supplier addresses may also be created.
-         * @param {Array&lt;Supplier&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Supplier>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -30233,7 +30233,7 @@ export const SupplierApiFetchParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary [BETA] Update multiple suppliers. Addresses can also be updated.
-         * @param {Array&lt;Supplier&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<Supplier>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -30399,7 +30399,7 @@ export const SupplierApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary [BETA] Create multiple suppliers. Related supplier addresses may also be created.
-         * @param {Array&lt;Supplier&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Supplier>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -30438,7 +30438,7 @@ export const SupplierApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary [BETA] Update multiple suppliers. Addresses can also be updated.
-         * @param {Array&lt;Supplier&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<Supplier>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -30516,7 +30516,7 @@ export const SupplierApiFactory = function (configuration?: Configuration, fetch
         /**
          * 
          * @summary [BETA] Create multiple suppliers. Related supplier addresses may also be created.
-         * @param {Array&lt;Supplier&gt;} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+         * @param {Array<Supplier>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -30537,7 +30537,7 @@ export const SupplierApiFactory = function (configuration?: Configuration, fetch
         /**
          * 
          * @summary [BETA] Update multiple suppliers. Addresses can also be updated.
-         * @param {Array&lt;Supplier&gt;} [body] JSON representing updates to object. Should have ID and version set.
+         * @param {Array<Supplier>} [body] JSON representing updates to object. Should have ID and version set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -30577,8 +30577,8 @@ export class SupplierApi extends BaseAPI {
     /**
      * 
      * @summary Get supplier by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SupplierApi
@@ -30590,7 +30590,7 @@ export class SupplierApi extends BaseAPI {
     /**
      * 
      * @summary Create supplier. Related supplier addresses may also be created.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Supplier} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SupplierApi
@@ -30602,7 +30602,7 @@ export class SupplierApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create multiple suppliers. Related supplier addresses may also be created.
-     * @param {} [body] JSON representing a list of new object to be created. Should not have ID and version set.
+     * @param {Array<Supplier>} [body] JSON representing a list of new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SupplierApi
@@ -30614,8 +30614,8 @@ export class SupplierApi extends BaseAPI {
     /**
      * 
      * @summary Update supplier. 
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Supplier} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SupplierApi
@@ -30627,7 +30627,7 @@ export class SupplierApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update multiple suppliers. Addresses can also be updated.
-     * @param {} [body] JSON representing updates to object. Should have ID and version set.
+     * @param {Array<Supplier>} [body] JSON representing updates to object. Should have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SupplierApi
@@ -30639,17 +30639,17 @@ export class SupplierApi extends BaseAPI {
     /**
      * 
      * @summary Find suppliers corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [supplierNumber] List of IDs
-     * @param {} [email] Equals
-     * @param {} [invoiceEmail] Equals
-     * @param {} [isInactive] Equals
-     * @param {} [accountManagerId] List of IDs
-     * @param {} [changedSince] Only return elements that have changed since this date and time
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [supplierNumber] List of IDs
+     * @param {string} [email] Equals
+     * @param {string} [invoiceEmail] Equals
+     * @param {boolean} [isInactive] Equals
+     * @param {string} [accountManagerId] List of IDs
+     * @param {string} [changedSince] Only return elements that have changed since this date and time
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SupplierApi
@@ -30949,7 +30949,7 @@ export const TimesheetentryApiFetchParamCreator = function (configuration?: Conf
         /**
          * 
          * @summary Add new timesheet entry. Multiple objects for several users can be sent in the same request.
-         * @param {Array&lt;TimesheetEntry&gt;} [body] List of timesheet entry objects
+         * @param {Array<TimesheetEntry>} [body] List of timesheet entry objects
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -31023,7 +31023,7 @@ export const TimesheetentryApiFetchParamCreator = function (configuration?: Conf
         /**
          * 
          * @summary Update timesheet entry. Multiple objects for different users can be sent in the same request.
-         * @param {Array&lt;TimesheetEntry&gt;} [body] List of timesheet entry objects to update
+         * @param {Array<TimesheetEntry>} [body] List of timesheet entry objects to update
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -31286,7 +31286,7 @@ export const TimesheetentryApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Add new timesheet entry. Multiple objects for several users can be sent in the same request.
-         * @param {Array&lt;TimesheetEntry&gt;} [body] List of timesheet entry objects
+         * @param {Array<TimesheetEntry>} [body] List of timesheet entry objects
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -31325,7 +31325,7 @@ export const TimesheetentryApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Update timesheet entry. Multiple objects for different users can be sent in the same request.
-         * @param {Array&lt;TimesheetEntry&gt;} [body] List of timesheet entry objects to update
+         * @param {Array<TimesheetEntry>} [body] List of timesheet entry objects to update
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -31456,7 +31456,7 @@ export const TimesheetentryApiFactory = function (configuration?: Configuration,
         /**
          * 
          * @summary Add new timesheet entry. Multiple objects for several users can be sent in the same request.
-         * @param {Array&lt;TimesheetEntry&gt;} [body] List of timesheet entry objects
+         * @param {Array<TimesheetEntry>} [body] List of timesheet entry objects
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -31477,7 +31477,7 @@ export const TimesheetentryApiFactory = function (configuration?: Configuration,
         /**
          * 
          * @summary Update timesheet entry. Multiple objects for different users can be sent in the same request.
-         * @param {Array&lt;TimesheetEntry&gt;} [body] List of timesheet entry objects to update
+         * @param {Array<TimesheetEntry>} [body] List of timesheet entry objects to update
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -31517,8 +31517,8 @@ export class TimesheetentryApi extends BaseAPI {
     /**
      * 
      * @summary Delete timesheet entry by ID.
-     * @param {} id Element ID
-     * @param {} [version] Number of current version
+     * @param {number} id Element ID
+     * @param {number} [version] Number of current version
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheetentryApi
@@ -31530,8 +31530,8 @@ export class TimesheetentryApi extends BaseAPI {
     /**
      * 
      * @summary Find timesheet entry by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheetentryApi
@@ -31543,12 +31543,12 @@ export class TimesheetentryApi extends BaseAPI {
     /**
      * 
      * @summary Find recently used timesheet activities.
-     * @param {} projectId ID of project to find activities for
-     * @param {} [employeeId] ID of employee to find activities for. Defaults to ID of token owner.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} projectId ID of project to find activities for
+     * @param {number} [employeeId] ID of employee to find activities for. Defaults to ID of token owner.
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheetentryApi
@@ -31560,11 +31560,11 @@ export class TimesheetentryApi extends BaseAPI {
     /**
      * 
      * @summary Find projects with recent activities (timesheet entry registered).
-     * @param {} [employeeId] ID of employee with recent project hours Defaults to ID of token owner.
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [employeeId] ID of employee with recent project hours Defaults to ID of token owner.
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheetentryApi
@@ -31576,10 +31576,10 @@ export class TimesheetentryApi extends BaseAPI {
     /**
      * 
      * @summary Find total hours registered on an employee in a specific period.
-     * @param {} [employeeId] ID of employee to find hours for. Defaults to ID of token owner.
-     * @param {} [startDate] Format is yyyy-MM-dd (from and incl.). Defaults to today.
-     * @param {} [endDate] Format is yyyy-MM-dd (to and excl.). Defaults to tomorrow.
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [employeeId] ID of employee to find hours for. Defaults to ID of token owner.
+     * @param {string} [startDate] Format is yyyy-MM-dd (from and incl.). Defaults to today.
+     * @param {string} [endDate] Format is yyyy-MM-dd (to and excl.). Defaults to tomorrow.
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheetentryApi
@@ -31591,7 +31591,7 @@ export class TimesheetentryApi extends BaseAPI {
     /**
      * 
      * @summary Add new timesheet entry. Only one entry per employee/date/activity/project combination is supported.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {TimesheetEntry} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheetentryApi
@@ -31603,7 +31603,7 @@ export class TimesheetentryApi extends BaseAPI {
     /**
      * 
      * @summary Add new timesheet entry. Multiple objects for several users can be sent in the same request.
-     * @param {} [body] List of timesheet entry objects
+     * @param {Array<TimesheetEntry>} [body] List of timesheet entry objects
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheetentryApi
@@ -31615,8 +31615,8 @@ export class TimesheetentryApi extends BaseAPI {
     /**
      * 
      * @summary Update timesheet entry by ID. Note: Timesheet entry object fields which are present but not set, or set to 0, will be nulled.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {TimesheetEntry} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheetentryApi
@@ -31628,7 +31628,7 @@ export class TimesheetentryApi extends BaseAPI {
     /**
      * 
      * @summary Update timesheet entry. Multiple objects for different users can be sent in the same request.
-     * @param {} [body] List of timesheet entry objects to update
+     * @param {Array<TimesheetEntry>} [body] List of timesheet entry objects to update
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheetentryApi
@@ -31640,17 +31640,17 @@ export class TimesheetentryApi extends BaseAPI {
     /**
      * 
      * @summary Find timesheet entry corresponding with sent data.
-     * @param {} dateFrom From and including
-     * @param {} dateTo To and excluding
-     * @param {} [id] List of IDs
-     * @param {} [employeeId] List of IDs
-     * @param {} [projectId] List of IDs
-     * @param {} [activityId] List of IDs
-     * @param {} [comment] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} dateFrom From and including
+     * @param {string} dateTo To and excluding
+     * @param {string} [id] List of IDs
+     * @param {string} [employeeId] List of IDs
+     * @param {string} [projectId] List of IDs
+     * @param {string} [activityId] List of IDs
+     * @param {string} [comment] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheetentryApi
@@ -32209,8 +32209,8 @@ export class TimesheettimeClockApi extends BaseAPI {
     /**
      * 
      * @summary Find time clock entry by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheettimeClockApi
@@ -32222,8 +32222,8 @@ export class TimesheettimeClockApi extends BaseAPI {
     /**
      * 
      * @summary Find a user’s present running time clock.
-     * @param {} [employeeId] Employee ID. Defaults to ID of token owner.
-     * @param {} [fields] Fields filter pattern
+     * @param {number} [employeeId] Employee ID. Defaults to ID of token owner.
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheettimeClockApi
@@ -32235,8 +32235,8 @@ export class TimesheettimeClockApi extends BaseAPI {
     /**
      * 
      * @summary Update time clock by ID.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {TimeClock} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheettimeClockApi
@@ -32248,18 +32248,18 @@ export class TimesheettimeClockApi extends BaseAPI {
     /**
      * 
      * @summary Find time clock entries corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [employeeId] List of IDs
-     * @param {} [projectId] List of IDs
-     * @param {} [activityId] List of IDs
-     * @param {} [dateFrom] From and including
-     * @param {} [dateTo] To and excluding
-     * @param {} [hourId] List of IDs
-     * @param {} [isRunning] Equals
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [employeeId] List of IDs
+     * @param {string} [projectId] List of IDs
+     * @param {string} [activityId] List of IDs
+     * @param {string} [dateFrom] From and including
+     * @param {string} [dateTo] To and excluding
+     * @param {string} [hourId] List of IDs
+     * @param {boolean} [isRunning] Equals
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheettimeClockApi
@@ -32271,10 +32271,10 @@ export class TimesheettimeClockApi extends BaseAPI {
     /**
      * 
      * @summary Start time clock.
-     * @param {} activityId Activity ID
-     * @param {} [employeeId] Employee ID. Defaults to ID of token owner.
-     * @param {} [projectId] Project ID
-     * @param {} [date] Optional. Default is today’s date
+     * @param {number} activityId Activity ID
+     * @param {number} [employeeId] Employee ID. Defaults to ID of token owner.
+     * @param {number} [projectId] Project ID
+     * @param {string} [date] Optional. Default is today’s date
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheettimeClockApi
@@ -32286,8 +32286,8 @@ export class TimesheettimeClockApi extends BaseAPI {
     /**
      * 
      * @summary Stop time clock.
-     * @param {} id Element ID
-     * @param {} [version] Number of current version
+     * @param {number} id Element ID
+     * @param {number} [version] Number of current version
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TimesheettimeClockApi
@@ -32409,8 +32409,8 @@ export class TokenconsumerApi extends BaseAPI {
     /**
      * 
      * @summary Get consumer token by token string.
-     * @param {} token Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {string} token Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TokenconsumerApi
@@ -32569,11 +32569,11 @@ export class TokenemployeeApi extends BaseAPI {
     /**
      * 
      * @summary Create an employee token. Only selected consumers are allowed
-     * @param {} tokenName A user defined name for the new token
-     * @param {} consumerName The name of the consumer
-     * @param {} employeeId The id of the employee
-     * @param {} companyOwned Is the key company owned
-     * @param {} expirationDate Expiration date for the employeeToken
+     * @param {string} tokenName A user defined name for the new token
+     * @param {string} consumerName The name of the consumer
+     * @param {number} employeeId The id of the employee
+     * @param {boolean} companyOwned Is the key company owned
+     * @param {string} expirationDate Expiration date for the employeeToken
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TokenemployeeApi
@@ -32831,7 +32831,7 @@ export class TokensessionApi extends BaseAPI {
     /**
      * 
      * @summary Delete session token.
-     * @param {} token The login token string to delete
+     * @param {string} token The login token string to delete
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TokensessionApi
@@ -32843,9 +32843,9 @@ export class TokensessionApi extends BaseAPI {
     /**
      * 
      * @summary Create session token.
-     * @param {} consumerToken Token of the API consumer
-     * @param {} employeeToken The employees token
-     * @param {} expirationDate Expiration date for the combined token
+     * @param {string} consumerToken Token of the API consumer
+     * @param {string} employeeToken The employees token
+     * @param {string} expirationDate Expiration date for the combined token
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TokensessionApi
@@ -32857,7 +32857,7 @@ export class TokensessionApi extends BaseAPI {
     /**
      * 
      * @summary Find information about the current user.
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TokensessionApi
@@ -33138,7 +33138,7 @@ export const TravelExpenseApiFetchParamCreator = function (configuration?: Confi
          * @param {string} [projectManagerId] Equals
          * @param {string} [departureDateFrom] From and including
          * @param {string} [returnDateTo] To and excluding
-         * @param {string} [state] category
+         * @param {'ALL' | 'OPEN' | 'APPROVED' | 'SALARY_PAID' | 'DELIVERED'} [state] category
          * @param {number} [from] From index
          * @param {number} [count] Number of elements to return
          * @param {string} [sorting] Sorting pattern
@@ -33146,7 +33146,7 @@ export const TravelExpenseApiFetchParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(employeeId?: string, departmentId?: string, projectId?: string, projectManagerId?: string, departureDateFrom?: string, returnDateTo?: string, state?: string, from?: number, count?: number, sorting?: string, fields?: string, options: any = {}): FetchArgs {
+        search(employeeId?: string, departmentId?: string, projectId?: string, projectManagerId?: string, departureDateFrom?: string, returnDateTo?: string, state?: 'ALL' | 'OPEN' | 'APPROVED' | 'SALARY_PAID' | 'DELIVERED', from?: number, count?: number, sorting?: string, fields?: string, options: any = {}): FetchArgs {
             const localVarPath = `/travelExpense`;
             const localVarUrlObj = url.parse(localVarPath, true);
             const localVarRequestOptions = Object.assign({ method: 'GET' }, options);
@@ -33434,7 +33434,7 @@ export const TravelExpenseApiFp = function(configuration?: Configuration) {
          * @param {string} [projectManagerId] Equals
          * @param {string} [departureDateFrom] From and including
          * @param {string} [returnDateTo] To and excluding
-         * @param {string} [state] category
+         * @param {'ALL' | 'OPEN' | 'APPROVED' | 'SALARY_PAID' | 'DELIVERED'} [state] category
          * @param {number} [from] From index
          * @param {number} [count] Number of elements to return
          * @param {string} [sorting] Sorting pattern
@@ -33442,7 +33442,7 @@ export const TravelExpenseApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(employeeId?: string, departmentId?: string, projectId?: string, projectManagerId?: string, departureDateFrom?: string, returnDateTo?: string, state?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<ListResponseTravelExpense> {
+        search(employeeId?: string, departmentId?: string, projectId?: string, projectManagerId?: string, departureDateFrom?: string, returnDateTo?: string, state?: 'ALL' | 'OPEN' | 'APPROVED' | 'SALARY_PAID' | 'DELIVERED', from?: number, count?: number, sorting?: string, fields?: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<ListResponseTravelExpense> {
             const localVarFetchArgs = TravelExpenseApiFetchParamCreator(configuration).search(employeeId, departmentId, projectId, projectManagerId, departureDateFrom, returnDateTo, state, from, count, sorting, fields, options);
             return (fetch: FetchAPI = portableFetch, basePath: string = BASE_PATH) => {
                 return fetch(basePath + localVarFetchArgs.url, localVarFetchArgs.options).then((response) => {
@@ -33582,7 +33582,7 @@ export const TravelExpenseApiFactory = function (configuration?: Configuration, 
          * @param {string} [projectManagerId] Equals
          * @param {string} [departureDateFrom] From and including
          * @param {string} [returnDateTo] To and excluding
-         * @param {string} [state] category
+         * @param {'ALL' | 'OPEN' | 'APPROVED' | 'SALARY_PAID' | 'DELIVERED'} [state] category
          * @param {number} [from] From index
          * @param {number} [count] Number of elements to return
          * @param {string} [sorting] Sorting pattern
@@ -33590,7 +33590,7 @@ export const TravelExpenseApiFactory = function (configuration?: Configuration, 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(employeeId?: string, departmentId?: string, projectId?: string, projectManagerId?: string, departureDateFrom?: string, returnDateTo?: string, state?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
+        search(employeeId?: string, departmentId?: string, projectId?: string, projectManagerId?: string, departureDateFrom?: string, returnDateTo?: string, state?: 'ALL' | 'OPEN' | 'APPROVED' | 'SALARY_PAID' | 'DELIVERED', from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
             return TravelExpenseApiFp(configuration).search(employeeId, departmentId, projectId, projectManagerId, departureDateFrom, returnDateTo, state, from, count, sorting, fields, options)(fetch, basePath);
         },
         /**
@@ -33626,7 +33626,7 @@ export class TravelExpenseApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete travel expense.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseApi
@@ -33638,7 +33638,7 @@ export class TravelExpenseApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Approve travel expenses.
-     * @param {} [id] ID of the elements
+     * @param {string} [id] ID of the elements
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseApi
@@ -33650,7 +33650,7 @@ export class TravelExpenseApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Copy travel expense.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseApi
@@ -33662,7 +33662,7 @@ export class TravelExpenseApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Deliver travel expenses.
-     * @param {} [id] ID of the elements
+     * @param {string} [id] ID of the elements
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseApi
@@ -33674,8 +33674,8 @@ export class TravelExpenseApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get travel expense by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseApi
@@ -33687,7 +33687,7 @@ export class TravelExpenseApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create travel expense.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {TravelExpense} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseApi
@@ -33699,8 +33699,8 @@ export class TravelExpenseApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update travel expense.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {TravelExpense} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseApi
@@ -33712,29 +33712,29 @@ export class TravelExpenseApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find travel expenses corresponding with sent data.
-     * @param {} [employeeId] Equals
-     * @param {} [departmentId] Equals
-     * @param {} [projectId] Equals
-     * @param {} [projectManagerId] Equals
-     * @param {} [departureDateFrom] From and including
-     * @param {} [returnDateTo] To and excluding
-     * @param {} [state] category
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [employeeId] Equals
+     * @param {string} [departmentId] Equals
+     * @param {string} [projectId] Equals
+     * @param {string} [projectManagerId] Equals
+     * @param {string} [departureDateFrom] From and including
+     * @param {string} [returnDateTo] To and excluding
+     * @param {'ALL' | 'OPEN' | 'APPROVED' | 'SALARY_PAID' | 'DELIVERED'} [state] category
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseApi
      */
-    public search(employeeId?: string, departmentId?: string, projectId?: string, projectManagerId?: string, departureDateFrom?: string, returnDateTo?: string, state?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
+    public search(employeeId?: string, departmentId?: string, projectId?: string, projectManagerId?: string, departureDateFrom?: string, returnDateTo?: string, state?: 'ALL' | 'OPEN' | 'APPROVED' | 'SALARY_PAID' | 'DELIVERED', from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
         return TravelExpenseApiFp(this.configuration).search(employeeId, departmentId, projectId, projectManagerId, departureDateFrom, returnDateTo, state, from, count, sorting, fields, options)(this.fetch, this.basePath);
     }
 
     /**
      * 
      * @summary [BETA] Unapprove travel expenses.
-     * @param {} [id] ID of the elements
+     * @param {string} [id] ID of the elements
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseApi
@@ -33746,7 +33746,7 @@ export class TravelExpenseApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Undeliver travel expenses.
-     * @param {} [id] ID of the elements
+     * @param {string} [id] ID of the elements
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseApi
@@ -34224,7 +34224,7 @@ export class TravelExpenseaccommodationAllowanceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete accommodation allowance.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseaccommodationAllowanceApi
@@ -34236,8 +34236,8 @@ export class TravelExpenseaccommodationAllowanceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get travel accommodation allowance by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseaccommodationAllowanceApi
@@ -34249,7 +34249,7 @@ export class TravelExpenseaccommodationAllowanceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create accommodation allowance.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {AccommodationAllowance} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseaccommodationAllowanceApi
@@ -34261,8 +34261,8 @@ export class TravelExpenseaccommodationAllowanceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update accommodation allowance.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {AccommodationAllowance} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseaccommodationAllowanceApi
@@ -34274,21 +34274,21 @@ export class TravelExpenseaccommodationAllowanceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find accommodation allowances corresponding with sent data.
-     * @param {} [travelExpenseId] Equals
-     * @param {} [rateTypeId] Equals
-     * @param {} [rateCategoryId] Equals
-     * @param {} [rateFrom] From and including
-     * @param {} [rateTo] To and excluding
-     * @param {} [countFrom] From and including
-     * @param {} [countTo] To and excluding
-     * @param {} [amountFrom] From and including
-     * @param {} [amountTo] To and excluding
-     * @param {} [location] Containing
-     * @param {} [address] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [travelExpenseId] Equals
+     * @param {string} [rateTypeId] Equals
+     * @param {string} [rateCategoryId] Equals
+     * @param {number} [rateFrom] From and including
+     * @param {number} [rateTo] To and excluding
+     * @param {number} [countFrom] From and including
+     * @param {number} [countTo] To and excluding
+     * @param {number} [amountFrom] From and including
+     * @param {number} [amountTo] To and excluding
+     * @param {string} [location] Containing
+     * @param {string} [address] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseaccommodationAllowanceApi
@@ -34766,7 +34766,7 @@ export class TravelExpensecostApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete cost.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensecostApi
@@ -34778,8 +34778,8 @@ export class TravelExpensecostApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get cost by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensecostApi
@@ -34791,7 +34791,7 @@ export class TravelExpensecostApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create cost.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Cost} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensecostApi
@@ -34803,8 +34803,8 @@ export class TravelExpensecostApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update cost.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Cost} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensecostApi
@@ -34816,21 +34816,21 @@ export class TravelExpensecostApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find costs corresponding with sent data.
-     * @param {} [travelExpenseId] Equals
-     * @param {} [vatTypeId] Equals
-     * @param {} [currencyId] Equals
-     * @param {} [rateFrom] From and including
-     * @param {} [rateTo] To and excluding
-     * @param {} [countFrom] From and including
-     * @param {} [countTo] To and excluding
-     * @param {} [amountFrom] From and including
-     * @param {} [amountTo] To and excluding
-     * @param {} [location] Containing
-     * @param {} [address] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [travelExpenseId] Equals
+     * @param {string} [vatTypeId] Equals
+     * @param {string} [currencyId] Equals
+     * @param {number} [rateFrom] From and including
+     * @param {number} [rateTo] To and excluding
+     * @param {number} [countFrom] From and including
+     * @param {number} [countTo] To and excluding
+     * @param {number} [amountFrom] From and including
+     * @param {number} [amountTo] To and excluding
+     * @param {string} [location] Containing
+     * @param {string} [address] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensecostApi
@@ -35047,8 +35047,8 @@ export class TravelExpensecostCategoryApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get cost category by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensecostCategoryApi
@@ -35060,12 +35060,12 @@ export class TravelExpensecostCategoryApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find cost category corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [description] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [description] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensecostCategoryApi
@@ -35564,7 +35564,7 @@ export class TravelExpensemileageAllowanceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete mileage allowance.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensemileageAllowanceApi
@@ -35576,8 +35576,8 @@ export class TravelExpensemileageAllowanceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get mileage allowance by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensemileageAllowanceApi
@@ -35589,7 +35589,7 @@ export class TravelExpensemileageAllowanceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create mileage allowance.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {MileageAllowance} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensemileageAllowanceApi
@@ -35601,8 +35601,8 @@ export class TravelExpensemileageAllowanceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update mileage allowance.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {MileageAllowance} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensemileageAllowanceApi
@@ -35614,24 +35614,24 @@ export class TravelExpensemileageAllowanceApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find mileage allowances corresponding with sent data.
-     * @param {} [travelExpenseId] Equals
-     * @param {} [rateTypeId] Equals
-     * @param {} [rateCategoryId] Equals
-     * @param {} [kmFrom] From and including
-     * @param {} [kmTo] To and excluding
-     * @param {} [rateFrom] From and including
-     * @param {} [rateTo] To and excluding
-     * @param {} [amountFrom] From and including
-     * @param {} [amountTo] To and excluding
-     * @param {} [departureLocation] Containing
-     * @param {} [destination] Containing
-     * @param {} [dateFrom] From and including
-     * @param {} [dateTo] To and excluding
-     * @param {} [isCompanyCar] Equals
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [travelExpenseId] Equals
+     * @param {string} [rateTypeId] Equals
+     * @param {string} [rateCategoryId] Equals
+     * @param {number} [kmFrom] From and including
+     * @param {number} [kmTo] To and excluding
+     * @param {number} [rateFrom] From and including
+     * @param {number} [rateTo] To and excluding
+     * @param {number} [amountFrom] From and including
+     * @param {number} [amountTo] To and excluding
+     * @param {string} [departureLocation] Containing
+     * @param {string} [destination] Containing
+     * @param {string} [dateFrom] From and including
+     * @param {string} [dateTo] To and excluding
+     * @param {boolean} [isCompanyCar] Equals
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensemileageAllowanceApi
@@ -36046,7 +36046,7 @@ export class TravelExpensepassengerApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete passenger.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensepassengerApi
@@ -36058,8 +36058,8 @@ export class TravelExpensepassengerApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get passenger by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensepassengerApi
@@ -36071,7 +36071,7 @@ export class TravelExpensepassengerApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create passenger.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {Passenger} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensepassengerApi
@@ -36083,8 +36083,8 @@ export class TravelExpensepassengerApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update passenger.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {Passenger} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensepassengerApi
@@ -36096,12 +36096,12 @@ export class TravelExpensepassengerApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find passengers corresponding with sent data.
-     * @param {} [mileageAllowance] Equals
-     * @param {} [name] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [mileageAllowance] Equals
+     * @param {string} [name] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensepassengerApi
@@ -36318,8 +36318,8 @@ export class TravelExpensepaymentTypeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get payment type by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensepaymentTypeApi
@@ -36331,12 +36331,12 @@ export class TravelExpensepaymentTypeApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find payment type corresponding with sent data.
-     * @param {} [id] List of IDs
-     * @param {} [description] Containing
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [id] List of IDs
+     * @param {string} [description] Containing
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpensepaymentTypeApi
@@ -36508,7 +36508,7 @@ export const TravelExpenseperDiemCompensationApiFetchParamCreator = function (co
          * @param {string} [travelExpenseId] Equals
          * @param {string} [rateTypeId] Equals
          * @param {string} [rateCategoryId] Equals
-         * @param {string} [overnightAccommodation] Equals
+         * @param {'NONE' | 'HOTEL' | 'BOARDING_HOUSE_WITHOUT_COOKING' | 'BOARDING_HOUSE_WITH_COOKING'} [overnightAccommodation] Equals
          * @param {number} [countFrom] From and including
          * @param {number} [countTo] To and excluding
          * @param {number} [rateFrom] From and including
@@ -36527,7 +36527,7 @@ export const TravelExpenseperDiemCompensationApiFetchParamCreator = function (co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(travelExpenseId?: string, rateTypeId?: string, rateCategoryId?: string, overnightAccommodation?: string, countFrom?: number, countTo?: number, rateFrom?: number, rateTo?: number, amountFrom?: number, amountTo?: number, location?: string, address?: string, isDeductionForBreakfast?: boolean, isLunchDeduction?: boolean, isDinnerDeduction?: boolean, from?: number, count?: number, sorting?: string, fields?: string, options: any = {}): FetchArgs {
+        search(travelExpenseId?: string, rateTypeId?: string, rateCategoryId?: string, overnightAccommodation?: 'NONE' | 'HOTEL' | 'BOARDING_HOUSE_WITHOUT_COOKING' | 'BOARDING_HOUSE_WITH_COOKING', countFrom?: number, countTo?: number, rateFrom?: number, rateTo?: number, amountFrom?: number, amountTo?: number, location?: string, address?: string, isDeductionForBreakfast?: boolean, isLunchDeduction?: boolean, isDinnerDeduction?: boolean, from?: number, count?: number, sorting?: string, fields?: string, options: any = {}): FetchArgs {
             const localVarPath = `/travelExpense/perDiemCompensation`;
             const localVarUrlObj = url.parse(localVarPath, true);
             const localVarRequestOptions = Object.assign({ method: 'GET' }, options);
@@ -36719,7 +36719,7 @@ export const TravelExpenseperDiemCompensationApiFp = function(configuration?: Co
          * @param {string} [travelExpenseId] Equals
          * @param {string} [rateTypeId] Equals
          * @param {string} [rateCategoryId] Equals
-         * @param {string} [overnightAccommodation] Equals
+         * @param {'NONE' | 'HOTEL' | 'BOARDING_HOUSE_WITHOUT_COOKING' | 'BOARDING_HOUSE_WITH_COOKING'} [overnightAccommodation] Equals
          * @param {number} [countFrom] From and including
          * @param {number} [countTo] To and excluding
          * @param {number} [rateFrom] From and including
@@ -36738,7 +36738,7 @@ export const TravelExpenseperDiemCompensationApiFp = function(configuration?: Co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(travelExpenseId?: string, rateTypeId?: string, rateCategoryId?: string, overnightAccommodation?: string, countFrom?: number, countTo?: number, rateFrom?: number, rateTo?: number, amountFrom?: number, amountTo?: number, location?: string, address?: string, isDeductionForBreakfast?: boolean, isLunchDeduction?: boolean, isDinnerDeduction?: boolean, from?: number, count?: number, sorting?: string, fields?: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<ListResponsePerDiemCompensation> {
+        search(travelExpenseId?: string, rateTypeId?: string, rateCategoryId?: string, overnightAccommodation?: 'NONE' | 'HOTEL' | 'BOARDING_HOUSE_WITHOUT_COOKING' | 'BOARDING_HOUSE_WITH_COOKING', countFrom?: number, countTo?: number, rateFrom?: number, rateTo?: number, amountFrom?: number, amountTo?: number, location?: string, address?: string, isDeductionForBreakfast?: boolean, isLunchDeduction?: boolean, isDinnerDeduction?: boolean, from?: number, count?: number, sorting?: string, fields?: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<ListResponsePerDiemCompensation> {
             const localVarFetchArgs = TravelExpenseperDiemCompensationApiFetchParamCreator(configuration).search(travelExpenseId, rateTypeId, rateCategoryId, overnightAccommodation, countFrom, countTo, rateFrom, rateTo, amountFrom, amountTo, location, address, isDeductionForBreakfast, isLunchDeduction, isDinnerDeduction, from, count, sorting, fields, options);
             return (fetch: FetchAPI = portableFetch, basePath: string = BASE_PATH) => {
                 return fetch(basePath + localVarFetchArgs.url, localVarFetchArgs.options).then((response) => {
@@ -36807,7 +36807,7 @@ export const TravelExpenseperDiemCompensationApiFactory = function (configuratio
          * @param {string} [travelExpenseId] Equals
          * @param {string} [rateTypeId] Equals
          * @param {string} [rateCategoryId] Equals
-         * @param {string} [overnightAccommodation] Equals
+         * @param {'NONE' | 'HOTEL' | 'BOARDING_HOUSE_WITHOUT_COOKING' | 'BOARDING_HOUSE_WITH_COOKING'} [overnightAccommodation] Equals
          * @param {number} [countFrom] From and including
          * @param {number} [countTo] To and excluding
          * @param {number} [rateFrom] From and including
@@ -36826,7 +36826,7 @@ export const TravelExpenseperDiemCompensationApiFactory = function (configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(travelExpenseId?: string, rateTypeId?: string, rateCategoryId?: string, overnightAccommodation?: string, countFrom?: number, countTo?: number, rateFrom?: number, rateTo?: number, amountFrom?: number, amountTo?: number, location?: string, address?: string, isDeductionForBreakfast?: boolean, isLunchDeduction?: boolean, isDinnerDeduction?: boolean, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
+        search(travelExpenseId?: string, rateTypeId?: string, rateCategoryId?: string, overnightAccommodation?: 'NONE' | 'HOTEL' | 'BOARDING_HOUSE_WITHOUT_COOKING' | 'BOARDING_HOUSE_WITH_COOKING', countFrom?: number, countTo?: number, rateFrom?: number, rateTo?: number, amountFrom?: number, amountTo?: number, location?: string, address?: string, isDeductionForBreakfast?: boolean, isLunchDeduction?: boolean, isDinnerDeduction?: boolean, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
             return TravelExpenseperDiemCompensationApiFp(configuration).search(travelExpenseId, rateTypeId, rateCategoryId, overnightAccommodation, countFrom, countTo, rateFrom, rateTo, amountFrom, amountTo, location, address, isDeductionForBreakfast, isLunchDeduction, isDinnerDeduction, from, count, sorting, fields, options)(fetch, basePath);
         },
     };
@@ -36842,7 +36842,7 @@ export class TravelExpenseperDiemCompensationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Delete per diem compensation.
-     * @param {} id Element ID
+     * @param {number} id Element ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseperDiemCompensationApi
@@ -36854,8 +36854,8 @@ export class TravelExpenseperDiemCompensationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get per diem compensation by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseperDiemCompensationApi
@@ -36867,7 +36867,7 @@ export class TravelExpenseperDiemCompensationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Create per diem compensation.
-     * @param {} [body] JSON representing the new object to be created. Should not have ID and version set.
+     * @param {PerDiemCompensation} [body] JSON representing the new object to be created. Should not have ID and version set.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseperDiemCompensationApi
@@ -36879,8 +36879,8 @@ export class TravelExpenseperDiemCompensationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Update per diem compensation.
-     * @param {} id Element ID
-     * @param {} [body] Partial object describing what should be updated
+     * @param {number} id Element ID
+     * @param {PerDiemCompensation} [body] Partial object describing what should be updated
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseperDiemCompensationApi
@@ -36892,30 +36892,30 @@ export class TravelExpenseperDiemCompensationApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find per diem compensations corresponding with sent data.
-     * @param {} [travelExpenseId] Equals
-     * @param {} [rateTypeId] Equals
-     * @param {} [rateCategoryId] Equals
-     * @param {} [overnightAccommodation] Equals
-     * @param {} [countFrom] From and including
-     * @param {} [countTo] To and excluding
-     * @param {} [rateFrom] From and including
-     * @param {} [rateTo] To and excluding
-     * @param {} [amountFrom] From and including
-     * @param {} [amountTo] To and excluding
-     * @param {} [location] Containing
-     * @param {} [address] Containing
-     * @param {} [isDeductionForBreakfast] Equals
-     * @param {} [isLunchDeduction] Equals
-     * @param {} [isDinnerDeduction] Equals
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [travelExpenseId] Equals
+     * @param {string} [rateTypeId] Equals
+     * @param {string} [rateCategoryId] Equals
+     * @param {'NONE' | 'HOTEL' | 'BOARDING_HOUSE_WITHOUT_COOKING' | 'BOARDING_HOUSE_WITH_COOKING'} [overnightAccommodation] Equals
+     * @param {number} [countFrom] From and including
+     * @param {number} [countTo] To and excluding
+     * @param {number} [rateFrom] From and including
+     * @param {number} [rateTo] To and excluding
+     * @param {number} [amountFrom] From and including
+     * @param {number} [amountTo] To and excluding
+     * @param {string} [location] Containing
+     * @param {string} [address] Containing
+     * @param {boolean} [isDeductionForBreakfast] Equals
+     * @param {boolean} [isLunchDeduction] Equals
+     * @param {boolean} [isDinnerDeduction] Equals
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenseperDiemCompensationApi
      */
-    public search(travelExpenseId?: string, rateTypeId?: string, rateCategoryId?: string, overnightAccommodation?: string, countFrom?: number, countTo?: number, rateFrom?: number, rateTo?: number, amountFrom?: number, amountTo?: number, location?: string, address?: string, isDeductionForBreakfast?: boolean, isLunchDeduction?: boolean, isDinnerDeduction?: boolean, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
+    public search(travelExpenseId?: string, rateTypeId?: string, rateCategoryId?: string, overnightAccommodation?: 'NONE' | 'HOTEL' | 'BOARDING_HOUSE_WITHOUT_COOKING' | 'BOARDING_HOUSE_WITH_COOKING', countFrom?: number, countTo?: number, rateFrom?: number, rateTo?: number, amountFrom?: number, amountTo?: number, location?: string, address?: string, isDeductionForBreakfast?: boolean, isLunchDeduction?: boolean, isDinnerDeduction?: boolean, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
         return TravelExpenseperDiemCompensationApiFp(this.configuration).search(travelExpenseId, rateTypeId, rateCategoryId, overnightAccommodation, countFrom, countTo, rateFrom, rateTo, amountFrom, amountTo, location, address, isDeductionForBreakfast, isLunchDeduction, isDinnerDeduction, from, count, sorting, fields, options)(this.fetch, this.basePath);
     }
 
@@ -36971,7 +36971,7 @@ export const TravelExpenserateApiFetchParamCreator = function (configuration?: C
          * 
          * @summary [BETA] Find rates corresponding with sent data.
          * @param {string} [rateCategoryId] Equals
-         * @param {string} [type] Equals
+         * @param {'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE'} [type] Equals
          * @param {boolean} [isValidDayTrip] Equals
          * @param {boolean} [isValidAccommodation] Equals
          * @param {boolean} [isValidDomestic] Equals
@@ -36987,7 +36987,7 @@ export const TravelExpenserateApiFetchParamCreator = function (configuration?: C
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(rateCategoryId?: string, type?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, isValidForeignTravel?: boolean, requiresZone?: boolean, requiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options: any = {}): FetchArgs {
+        search(rateCategoryId?: string, type?: 'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE', isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, isValidForeignTravel?: boolean, requiresZone?: boolean, requiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options: any = {}): FetchArgs {
             const localVarPath = `/travelExpense/rate`;
             const localVarUrlObj = url.parse(localVarPath, true);
             const localVarRequestOptions = Object.assign({ method: 'GET' }, options);
@@ -37099,7 +37099,7 @@ export const TravelExpenserateApiFp = function(configuration?: Configuration) {
          * 
          * @summary [BETA] Find rates corresponding with sent data.
          * @param {string} [rateCategoryId] Equals
-         * @param {string} [type] Equals
+         * @param {'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE'} [type] Equals
          * @param {boolean} [isValidDayTrip] Equals
          * @param {boolean} [isValidAccommodation] Equals
          * @param {boolean} [isValidDomestic] Equals
@@ -37115,7 +37115,7 @@ export const TravelExpenserateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(rateCategoryId?: string, type?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, isValidForeignTravel?: boolean, requiresZone?: boolean, requiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<ListResponseTravelExpenseRate> {
+        search(rateCategoryId?: string, type?: 'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE', isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, isValidForeignTravel?: boolean, requiresZone?: boolean, requiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<ListResponseTravelExpenseRate> {
             const localVarFetchArgs = TravelExpenserateApiFetchParamCreator(configuration).search(rateCategoryId, type, isValidDayTrip, isValidAccommodation, isValidDomestic, isValidForeignTravel, requiresZone, requiresOvernightAccommodation, dateFrom, dateTo, from, count, sorting, fields, options);
             return (fetch: FetchAPI = portableFetch, basePath: string = BASE_PATH) => {
                 return fetch(basePath + localVarFetchArgs.url, localVarFetchArgs.options).then((response) => {
@@ -37151,7 +37151,7 @@ export const TravelExpenserateApiFactory = function (configuration?: Configurati
          * 
          * @summary [BETA] Find rates corresponding with sent data.
          * @param {string} [rateCategoryId] Equals
-         * @param {string} [type] Equals
+         * @param {'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE'} [type] Equals
          * @param {boolean} [isValidDayTrip] Equals
          * @param {boolean} [isValidAccommodation] Equals
          * @param {boolean} [isValidDomestic] Equals
@@ -37167,7 +37167,7 @@ export const TravelExpenserateApiFactory = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(rateCategoryId?: string, type?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, isValidForeignTravel?: boolean, requiresZone?: boolean, requiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
+        search(rateCategoryId?: string, type?: 'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE', isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, isValidForeignTravel?: boolean, requiresZone?: boolean, requiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
             return TravelExpenserateApiFp(configuration).search(rateCategoryId, type, isValidDayTrip, isValidAccommodation, isValidDomestic, isValidForeignTravel, requiresZone, requiresOvernightAccommodation, dateFrom, dateTo, from, count, sorting, fields, options)(fetch, basePath);
         },
     };
@@ -37183,8 +37183,8 @@ export class TravelExpenserateApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get travel expense rate by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenserateApi
@@ -37196,25 +37196,25 @@ export class TravelExpenserateApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find rates corresponding with sent data.
-     * @param {} [rateCategoryId] Equals
-     * @param {} [type] Equals
-     * @param {} [isValidDayTrip] Equals
-     * @param {} [isValidAccommodation] Equals
-     * @param {} [isValidDomestic] Equals
-     * @param {} [isValidForeignTravel] Equals
-     * @param {} [requiresZone] Equals
-     * @param {} [requiresOvernightAccommodation] Equals
-     * @param {} [dateFrom] From and including
-     * @param {} [dateTo] To and excluding
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [rateCategoryId] Equals
+     * @param {'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE'} [type] Equals
+     * @param {boolean} [isValidDayTrip] Equals
+     * @param {boolean} [isValidAccommodation] Equals
+     * @param {boolean} [isValidDomestic] Equals
+     * @param {boolean} [isValidForeignTravel] Equals
+     * @param {boolean} [requiresZone] Equals
+     * @param {boolean} [requiresOvernightAccommodation] Equals
+     * @param {string} [dateFrom] From and including
+     * @param {string} [dateTo] To and excluding
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenserateApi
      */
-    public search(rateCategoryId?: string, type?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, isValidForeignTravel?: boolean, requiresZone?: boolean, requiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
+    public search(rateCategoryId?: string, type?: 'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE', isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, isValidForeignTravel?: boolean, requiresZone?: boolean, requiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
         return TravelExpenserateApiFp(this.configuration).search(rateCategoryId, type, isValidDayTrip, isValidAccommodation, isValidDomestic, isValidForeignTravel, requiresZone, requiresOvernightAccommodation, dateFrom, dateTo, from, count, sorting, fields, options)(this.fetch, this.basePath);
     }
 
@@ -37269,7 +37269,7 @@ export const TravelExpenserateCategoryApiFetchParamCreator = function (configura
         /**
          * 
          * @summary [BETA] Find rate categories corresponding with sent data.
-         * @param {string} [type] Equals
+         * @param {'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE'} [type] Equals
          * @param {string} [name] Containing
          * @param {number} [travelReportRateCategoryGroupId] Equals
          * @param {string} [ameldingWageCode] Containing
@@ -37288,7 +37288,7 @@ export const TravelExpenserateCategoryApiFetchParamCreator = function (configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(type?: string, name?: string, travelReportRateCategoryGroupId?: number, ameldingWageCode?: string, wageCodeNumber?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, requiresZone?: boolean, isRequiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options: any = {}): FetchArgs {
+        search(type?: 'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE', name?: string, travelReportRateCategoryGroupId?: number, ameldingWageCode?: string, wageCodeNumber?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, requiresZone?: boolean, isRequiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options: any = {}): FetchArgs {
             const localVarPath = `/travelExpense/rateCategory`;
             const localVarUrlObj = url.parse(localVarPath, true);
             const localVarRequestOptions = Object.assign({ method: 'GET' }, options);
@@ -37407,7 +37407,7 @@ export const TravelExpenserateCategoryApiFp = function(configuration?: Configura
         /**
          * 
          * @summary [BETA] Find rate categories corresponding with sent data.
-         * @param {string} [type] Equals
+         * @param {'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE'} [type] Equals
          * @param {string} [name] Containing
          * @param {number} [travelReportRateCategoryGroupId] Equals
          * @param {string} [ameldingWageCode] Containing
@@ -37426,7 +37426,7 @@ export const TravelExpenserateCategoryApiFp = function(configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(type?: string, name?: string, travelReportRateCategoryGroupId?: number, ameldingWageCode?: string, wageCodeNumber?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, requiresZone?: boolean, isRequiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<ListResponseTravelExpenseRateCategory> {
+        search(type?: 'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE', name?: string, travelReportRateCategoryGroupId?: number, ameldingWageCode?: string, wageCodeNumber?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, requiresZone?: boolean, isRequiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any): (fetch?: FetchAPI, basePath?: string) => Promise<ListResponseTravelExpenseRateCategory> {
             const localVarFetchArgs = TravelExpenserateCategoryApiFetchParamCreator(configuration).search(type, name, travelReportRateCategoryGroupId, ameldingWageCode, wageCodeNumber, isValidDayTrip, isValidAccommodation, isValidDomestic, requiresZone, isRequiresOvernightAccommodation, dateFrom, dateTo, from, count, sorting, fields, options);
             return (fetch: FetchAPI = portableFetch, basePath: string = BASE_PATH) => {
                 return fetch(basePath + localVarFetchArgs.url, localVarFetchArgs.options).then((response) => {
@@ -37461,7 +37461,7 @@ export const TravelExpenserateCategoryApiFactory = function (configuration?: Con
         /**
          * 
          * @summary [BETA] Find rate categories corresponding with sent data.
-         * @param {string} [type] Equals
+         * @param {'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE'} [type] Equals
          * @param {string} [name] Containing
          * @param {number} [travelReportRateCategoryGroupId] Equals
          * @param {string} [ameldingWageCode] Containing
@@ -37480,7 +37480,7 @@ export const TravelExpenserateCategoryApiFactory = function (configuration?: Con
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        search(type?: string, name?: string, travelReportRateCategoryGroupId?: number, ameldingWageCode?: string, wageCodeNumber?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, requiresZone?: boolean, isRequiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
+        search(type?: 'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE', name?: string, travelReportRateCategoryGroupId?: number, ameldingWageCode?: string, wageCodeNumber?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, requiresZone?: boolean, isRequiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
             return TravelExpenserateCategoryApiFp(configuration).search(type, name, travelReportRateCategoryGroupId, ameldingWageCode, wageCodeNumber, isValidDayTrip, isValidAccommodation, isValidDomestic, requiresZone, isRequiresOvernightAccommodation, dateFrom, dateTo, from, count, sorting, fields, options)(fetch, basePath);
         },
     };
@@ -37496,8 +37496,8 @@ export class TravelExpenserateCategoryApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get travel expense rate category by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenserateCategoryApi
@@ -37509,27 +37509,27 @@ export class TravelExpenserateCategoryApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find rate categories corresponding with sent data.
-     * @param {} [type] Equals
-     * @param {} [name] Containing
-     * @param {} [travelReportRateCategoryGroupId] Equals
-     * @param {} [ameldingWageCode] Containing
-     * @param {} [wageCodeNumber] Equals
-     * @param {} [isValidDayTrip] Equals
-     * @param {} [isValidAccommodation] Equals
-     * @param {} [isValidDomestic] Equals
-     * @param {} [requiresZone] Equals
-     * @param {} [isRequiresOvernightAccommodation] Equals
-     * @param {} [dateFrom] From and including
-     * @param {} [dateTo] To and excluding
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE'} [type] Equals
+     * @param {string} [name] Containing
+     * @param {number} [travelReportRateCategoryGroupId] Equals
+     * @param {string} [ameldingWageCode] Containing
+     * @param {string} [wageCodeNumber] Equals
+     * @param {boolean} [isValidDayTrip] Equals
+     * @param {boolean} [isValidAccommodation] Equals
+     * @param {boolean} [isValidDomestic] Equals
+     * @param {boolean} [requiresZone] Equals
+     * @param {boolean} [isRequiresOvernightAccommodation] Equals
+     * @param {string} [dateFrom] From and including
+     * @param {string} [dateTo] To and excluding
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenserateCategoryApi
      */
-    public search(type?: string, name?: string, travelReportRateCategoryGroupId?: number, ameldingWageCode?: string, wageCodeNumber?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, requiresZone?: boolean, isRequiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
+    public search(type?: 'PER_DIEM' | 'ACCOMMODATION_ALLOWANCE' | 'MILEAGE_ALLOWANCE', name?: string, travelReportRateCategoryGroupId?: number, ameldingWageCode?: string, wageCodeNumber?: string, isValidDayTrip?: boolean, isValidAccommodation?: boolean, isValidDomestic?: boolean, requiresZone?: boolean, isRequiresOvernightAccommodation?: boolean, dateFrom?: string, dateTo?: string, from?: number, count?: number, sorting?: string, fields?: string, options?: any) {
         return TravelExpenserateCategoryApiFp(this.configuration).search(type, name, travelReportRateCategoryGroupId, ameldingWageCode, wageCodeNumber, isValidDayTrip, isValidAccommodation, isValidDomestic, requiresZone, isRequiresOvernightAccommodation, dateFrom, dateTo, from, count, sorting, fields, options)(this.fetch, this.basePath);
     }
 
@@ -37755,8 +37755,8 @@ export class TravelExpenserateCategoryGroupApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Get travel report rate category group by ID.
-     * @param {} id Element ID
-     * @param {} [fields] Fields filter pattern
+     * @param {number} id Element ID
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenserateCategoryGroupApi
@@ -37768,14 +37768,14 @@ export class TravelExpenserateCategoryGroupApi extends BaseAPI {
     /**
      * 
      * @summary [BETA] Find rate categoriy groups corresponding with sent data.
-     * @param {} [name] Containing
-     * @param {} [isForeignTravel] Equals
-     * @param {} [dateFrom] From and including
-     * @param {} [dateTo] To and excluding
-     * @param {} [from] From index
-     * @param {} [count] Number of elements to return
-     * @param {} [sorting] Sorting pattern
-     * @param {} [fields] Fields filter pattern
+     * @param {string} [name] Containing
+     * @param {boolean} [isForeignTravel] Equals
+     * @param {string} [dateFrom] From and including
+     * @param {string} [dateTo] To and excluding
+     * @param {number} [from] From index
+     * @param {number} [count] Number of elements to return
+     * @param {string} [sorting] Sorting pattern
+     * @param {string} [fields] Fields filter pattern
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TravelExpenserateCategoryGroupApi

@@ -3,9 +3,14 @@ sudo: false
 node_js: 8.3
 install:
 - travis_retry npm install
+before_install:
+- docker pull swaggerapi/swagger-codegen-cli
+- docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i https://tripletex.no/v2/swagger.json -l typescript-fetch --config /local/config.json --template-dir /local/templates/ -o /local/
 script:
 - npm run check
 - npm run compile
+services:
+  - docker
 deploy:
   provider: npm
   email: office@bjerk.io
