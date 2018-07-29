@@ -9,8 +9,8 @@
     "prebuild": "npm run swagger-gen",
     "compile": "tsc --outDir dist/",
     "build": "npm run compile",
-    "prepublishOnly": "npm run build",
-    "postinstall": "npm run build"
+    "prepublishOnly": "npm run compile",
+    "postinstall": "npm run compile"
   },
   "files": [
     "./dist/**"
