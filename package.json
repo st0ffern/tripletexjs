@@ -1,20 +1,38 @@
 {
-  "name": "typescript-fetch-api",
-  "version": "0.0.0",
-  "license": "Unlicense",
-  "main": "./dist/api.js",
-  "browser": "./dist/api.js",
-  "typings": "./dist/api.d.ts",
-  "dependencies": {
-    "core-js": "^2.4.0",
-    "isomorphic-fetch": "^2.2.1"
-  },
+  "name": "tripletexjs",
+  "version": "1.0.0",
+  "description": "Typescript / Javascript class for Tripletex 2.0 API",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "scripts": {
-    "prepublish": "typings install && tsc"
+    "swagger-gen": "./swagger-gen.sh",
+    "prebuild": "npm run swagger-gen",
+    "build": "tsc --outDir dist/",
+    "prepublishOnly": "npm run build",
+    "postinstall": "npm run build"
+  },
+  "files": [
+    "./dist/**"
+  ],
+  "keywords": [
+    "tripletex",
+    "rest-api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cobraz/tripletexjs.git"
+  },
+  "author": "Simen A. W. Olsen <so@ayr.no> (http://cobraz.no)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cobraz/tripletexjs/issues"
+  },
+  "homepage": "https://github.com/cobraz/tripletexjs#readme",
+  "dependencies": {
+    "portable-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "tslint": "^3.15.1",
-    "typescript": "^1.8.10",
-    "typings": "^1.0.4"
+    "@types/node": "^8.0.9",
+    "typescript": "^2.0"
   }
 }

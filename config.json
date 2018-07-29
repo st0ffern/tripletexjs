@@ -3,7 +3,8 @@
   "projectVersion": "2.0.0",
   "projectDescription": "JavaScript client library for the Tripletex API",
   "projectLicenseName": "MIT",
-  "moduleName": "Tripletex",
+  "moduleName": "tripletex",
   "usePromises": true,
-  "licenseName": "MIT"
+  "licenseName": "MIT",
+  "npmName": "tripletex"
 }
