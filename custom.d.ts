@@ -1,3 +1,3 @@
 declare module 'portable-fetch';
 declare module 'url';
-declare module 'btoa';
+declare module 'abab';

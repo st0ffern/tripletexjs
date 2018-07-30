@@ -6,7 +6,7 @@
 
 A wrapper for Tripletex 2.0 API in Typescript / Javascript.
 
-- Build date: 2018-07-30T16:27:07.676+02:00
+- Build date: 2018-07-30T17:31:24.622+02:00
 
 ## Installation
 

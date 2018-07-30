@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/Bjerkio/tripletexjs#readme",
   "dependencies": {
+    "abab": "^2.0.0",
     "portable-fetch": "^3.0.0"
   },
   "devDependencies": {
