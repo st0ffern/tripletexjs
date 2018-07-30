@@ -1,19 +1,18 @@
 {
   "name": "tripletexjs",
-  "version": "2.0.0-prealpha",
+  "version": "2.0.8-prealpha",
   "description": "Typescript / Javascript class for Tripletex 2.0 API",
-  "main": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "swagger-gen": "./swagger-gen.sh",
     "prebuild": "npm run swagger-gen",
     "compile": "tsc --outDir dist/",
     "build": "npm run compile",
-    "prepublishOnly": "npm run compile",
-    "postinstall": "npm run compile"
+    "prepublish": "npm run compile"
   },
   "files": [
-    "./dist/**"
+    "dist/**"
   ],
   "keywords": [
     "tripletex",
