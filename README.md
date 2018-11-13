@@ -6,7 +6,7 @@
 
 A wrapper for Tripletex 2.0 API in Typescript / Javascript.
 
-- Build date: 2018-07-30T17:31:24.622+02:00
+- Build date: 2018-11-13T21:24:15.122+01:00
 
 ## Installation
 
@@ -132,6 +132,7 @@ Class | Method | HTTP request | Description
  | [**post**](BankreconciliationmatchApi.md#post) | **POST** /bank/reconciliation/match | [BETA] Create a bank reconciliation match.
  | [**put**](BankreconciliationmatchApi.md#put) | **PUT** /bank/reconciliation/match/{id} | [BETA] Update a bank reconciliation match by ID.
  | [**search**](BankreconciliationmatchApi.md#search) | **GET** /bank/reconciliation/match | [BETA] Find bank reconciliation match corresponding with sent data.
+ | [**suggest**](BankreconciliationmatchApi.md#suggest) | **PUT** /bank/reconciliation/match/:suggest | [BETA] Suggest matches for a bank reconciliation by ID.
 
 ### BankreconciliationpaymentTypeApi
 
@@ -191,6 +192,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
  | [**get**](ContactApi.md#get) | **GET** /contact/{id} | Get contact by ID.
  | [**post**](ContactApi.md#post) | **POST** /contact | Create contact.
+ | [**put**](ContactApi.md#put) | **PUT** /contact/{id} | [BETA] Update contact.
  | [**search**](ContactApi.md#search) | **GET** /contact | Find contacts corresponding with sent data.
 
 ### CountryApi
@@ -263,7 +265,22 @@ import { DepartmentApi } from 'tripletexjs';
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
  | [**get**](DepartmentApi.md#get) | **GET** /department/{id} | Get department by ID.
+ | [**post**](DepartmentApi.md#post) | **POST** /department | [BETA] Add new department.
+ | [**postList**](DepartmentApi.md#postList) | **POST** /department/list | [BETA] Register new departments.
+ | [**put**](DepartmentApi.md#put) | **PUT** /department/{id} | [BETA] Update department.
+ | [**putList**](DepartmentApi.md#putList) | **PUT** /department/list | [BETA] Update multiple departments.
  | [**search**](DepartmentApi.md#search) | **GET** /department | Find department corresponding with sent data.
+
+### DocumentApi
+
+```typescript
+import { DocumentApi } from 'tripletexjs';
+```
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+ | [**downloadContent**](DocumentApi.md#downloadContent) | **GET** /document/{id}/content | [BETA] Get content of document given by ID.
+ | [**get**](DocumentApi.md#get) | **GET** /document/{id} | [BETA] Get document by ID.
 
 ### EmployeeApi
 
@@ -313,6 +330,9 @@ import { EmployeeemploymentemploymentTypeApi } from 'tripletexjs';
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+ | [**getMaritimeEmploymentType**](EmployeeemploymentemploymentTypeApi.md#getMaritimeEmploymentType) | **GET** /employee/employment/employmentType/maritimeEmploymentType | [BETA] Find all maritime employment type IDs.
+ | [**getSalaryType**](EmployeeemploymentemploymentTypeApi.md#getSalaryType) | **GET** /employee/employment/employmentType/salaryType | [BETA] Find all salary type IDs.
+ | [**getScheduleType**](EmployeeemploymentemploymentTypeApi.md#getScheduleType) | **GET** /employee/employment/employmentType/scheduleType | [BETA] Find all schedule type IDs.
  | [**search**](EmployeeemploymentemploymentTypeApi.md#search) | **GET** /employee/employment/employmentType | [BETA] Find all employment type IDs.
 
 ### EmployeeemploymentleaveOfAbsenceApi
@@ -437,12 +457,24 @@ import { InvoiceApi } from 'tripletexjs';
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+ | [**createCreditNote**](InvoiceApi.md#createCreditNote) | **PUT** /invoice/{id}/:createCreditNote | [BETA] Creates a new Invoice representing a credit memo that nullifies the given invoice. Updates this invoice and any pre-existing inverse invoice.
+ | [**createReminder**](InvoiceApi.md#createReminder) | **PUT** /invoice/{id}/:createReminder | [BETA] Create invoice reminder and sends it by the given dispatch type. Supports the reminder types SOFT_REMINDER, REMINDER and NOTICE_OF_DEBT_COLLECTION. DispatchType NETS_PRINT must have type NOTICE_OF_DEBT_COLLECTION. SMS and NETS_PRINT must be activated prior to usage in the API.
  | [**downloadPdf**](InvoiceApi.md#downloadPdf) | **GET** /invoice/{invoiceId}/pdf | Get invoice document by invoice ID.
  | [**get**](InvoiceApi.md#get) | **GET** /invoice/{id} | Get invoice by ID.
  | [**payment**](InvoiceApi.md#payment) | **PUT** /invoice/{id}/:payment | Update invoice. The invoice is updated with payment information. The amount is in the invoice’s currency.
  | [**post**](InvoiceApi.md#post) | **POST** /invoice | Create invoice.
- | [**search**](InvoiceApi.md#search) | **GET** /invoice | Find invoices corresponding with sent data.
+ | [**search**](InvoiceApi.md#search) | **GET** /invoice | Find invoices corresponding with sent data. Includes charged outgoing invoices only.
  | [**send**](InvoiceApi.md#send) | **PUT** /invoice/{id}/:send | [BETA] Send invoice by ID and sendType. Optionally override email recipient.
+
+### InvoicedetailsApi
+
+```typescript
+import { InvoicedetailsApi } from 'tripletexjs';
+```
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+ | [**get**](InvoicedetailsApi.md#get) | **GET** /invoice/details/{id} | [BETA] Get ProjectInvoiceDetails by ID.
 
 ### InvoicepaymentTypeApi
 
@@ -563,12 +595,16 @@ import { LedgervoucherApi } from 'tripletexjs';
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+ | [**_delete**](LedgervoucherApi.md#_delete) | **DELETE** /ledger/voucher/{id} | [BETA] Delete voucher by ID.
  | [**downloadPdf**](LedgervoucherApi.md#downloadPdf) | **GET** /ledger/voucher/{voucherId}/pdf | Get attachment by voucher ID.
  | [**get**](LedgervoucherApi.md#get) | **GET** /ledger/voucher/{id} | Get voucher by ID.
+ | [**importDocument**](LedgervoucherApi.md#importDocument) | **POST** /ledger/voucher/importDocument | [BETA] Upload a document to create one or more vouchers. Valid document formats are PDF, PNG, JPEG, TIFF and EHF. Send as multipart form.
  | [**importGbat10**](LedgervoucherApi.md#importGbat10) | **POST** /ledger/voucher/importGbat10 | Import GBAT10. Send as multipart form.
  | [**nonPosted**](LedgervoucherApi.md#nonPosted) | **GET** /ledger/voucher/&gt;nonPosted | [BETA] Find non-posted vouchers.
  | [**post**](LedgervoucherApi.md#post) | **POST** /ledger/voucher | Add new voucher. IMPORTANT: Also creates postings. Only the gross amounts will be used
- | [**put**](LedgervoucherApi.md#put) | **PUT** /ledger/voucher/{id} | Update voucher. Postings with guiRow&#x3D;&#x3D;0 will be deleted and regenerated.
+ | [**put**](LedgervoucherApi.md#put) | **PUT** /ledger/voucher/{id} | [BETA] Update voucher. Postings with guiRow&#x3D;&#x3D;0 will be deleted and regenerated.
+ | [**putList**](LedgervoucherApi.md#putList) | **PUT** /ledger/voucher/list | [BETA] Update multiple vouchers. Postings with guiRow&#x3D;&#x3D;0 will be deleted and regenerated.
+ | [**reverse**](LedgervoucherApi.md#reverse) | **PUT** /ledger/voucher/{id}/:reverse | Reverses the voucher, and returns the reversed voucher. Supports reversing most voucher types, except salary transactions.
  | [**search**](LedgervoucherApi.md#search) | **GET** /ledger/voucher | Find vouchers corresponding with sent data.
  | [**sendToInbox**](LedgervoucherApi.md#sendToInbox) | **PUT** /ledger/voucher/{id}/:sendToInbox | [BETA] Send voucher to inbox.
  | [**sendToLedger**](LedgervoucherApi.md#sendToLedger) | **PUT** /ledger/voucher/{id}/:sendToLedger | [BETA] Send voucher to ledger.
@@ -644,12 +680,15 @@ import { ProjectApi } from 'tripletexjs';
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+ | [**_delete**](ProjectApi.md#_delete) | **DELETE** /project/{id} | [BETA] Delete project.
  | [**deleteByIds**](ProjectApi.md#deleteByIds) | **DELETE** /project/list | [BETA] Delete projects.
+ | [**deleteList**](ProjectApi.md#deleteList) | **DELETE** /project | [BETA] Delete multiple projects.
  | [**get**](ProjectApi.md#get) | **GET** /project/{id} | Find project by ID.
  | [**getForTimeSheet**](ProjectApi.md#getForTimeSheet) | **GET** /project/&gt;forTimeSheet | Find projects applicable for time sheet registration on a specific day.
  | [**post**](ProjectApi.md#post) | **POST** /project | [BETA] Add new project.
  | [**postList**](ProjectApi.md#postList) | **POST** /project/list | [BETA] Register new projects. Multiple projects for different users can be sent in the same request.
  | [**put**](ProjectApi.md#put) | **PUT** /project/{id} | [BETA] Update project.
+ | [**putList**](ProjectApi.md#putList) | **PUT** /project/list | [BETA] Update multiple projects.
  | [**search**](ProjectApi.md#search) | **GET** /project | Find projects corresponding with sent data.
 
 ### ProjectcategoryApi
@@ -664,6 +703,45 @@ Class | Method | HTTP request | Description
  | [**post**](ProjectcategoryApi.md#post) | **POST** /project/category | Add new project category.
  | [**put**](ProjectcategoryApi.md#put) | **PUT** /project/category/{id} | Update project category.
  | [**search**](ProjectcategoryApi.md#search) | **GET** /project/category | Find project categories corresponding with sent data.
+
+### ProjectorderlineApi
+
+```typescript
+import { ProjectorderlineApi } from 'tripletexjs';
+```
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+ | [**_delete**](ProjectorderlineApi.md#_delete) | **DELETE** /project/orderline/{id} | [BETA] Delete order line by ID.
+ | [**get**](ProjectorderlineApi.md#get) | **GET** /project/orderline/{id} | [BETA] Get order line by ID.
+ | [**post**](ProjectorderlineApi.md#post) | **POST** /project/orderline | [BETA] Create order line. When creating several order lines, use /list for better performance.
+ | [**postList**](ProjectorderlineApi.md#postList) | **POST** /project/orderline/list | [BETA] Create multiple order lines.
+ | [**put**](ProjectorderlineApi.md#put) | **PUT** /project/orderline/{id} | [BETA] Update project orderline.
+
+### ProjectparticipantApi
+
+```typescript
+import { ProjectparticipantApi } from 'tripletexjs';
+```
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+ | [**deleteByIds**](ProjectparticipantApi.md#deleteByIds) | **DELETE** /project/participant/list | [BETA] Delete project participants.
+ | [**get**](ProjectparticipantApi.md#get) | **GET** /project/participant/{id} | [BETA] Find project participant by ID.
+ | [**post**](ProjectparticipantApi.md#post) | **POST** /project/participant | [BETA] Add new project participant.
+ | [**postList**](ProjectparticipantApi.md#postList) | **POST** /project/participant/list | [BETA] Register new projects. Multiple projects for different users can be sent in the same request.
+ | [**put**](ProjectparticipantApi.md#put) | **PUT** /project/participant/{id} | [BETA] Update project participant.
+
+### ReminderApi
+
+```typescript
+import { ReminderApi } from 'tripletexjs';
+```
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+ | [**get**](ReminderApi.md#get) | **GET** /reminder/{id} | Get reminder by ID.
+ | [**search**](ReminderApi.md#search) | **GET** /reminder | Find reminders corresponding with sent data.
 
 ### SalarypayslipApi
 
@@ -792,6 +870,7 @@ Class | Method | HTTP request | Description
  | [**_delete**](TravelExpenseApi.md#_delete) | **DELETE** /travelExpense/{id} | [BETA] Delete travel expense.
  | [**approve**](TravelExpenseApi.md#approve) | **PUT** /travelExpense/:approve | [BETA] Approve travel expenses.
  | [**copy**](TravelExpenseApi.md#copy) | **PUT** /travelExpense/:copy | [BETA] Copy travel expense.
+ | [**createVouchers**](TravelExpenseApi.md#createVouchers) | **PUT** /travelExpense/:createVouchers | [BETA] Create vouchers
  | [**deliver**](TravelExpenseApi.md#deliver) | **PUT** /travelExpense/:deliver | [BETA] Deliver travel expenses.
  | [**get**](TravelExpenseApi.md#get) | **GET** /travelExpense/{id} | [BETA] Get travel expense by ID.
  | [**post**](TravelExpenseApi.md#post) | **POST** /travelExpense | [BETA] Create travel expense.
@@ -950,6 +1029,7 @@ Class | Method | HTTP request | Description
  - [.Change](Change.md)
  - [.CloseGroup](CloseGroup.md)
  - [.Company](Company.md)
+ - [.CompanyAutoCompleteDTO](CompanyAutoCompleteDTO.md)
  - [.ConsumerToken](ConsumerToken.md)
  - [.Contact](Contact.md)
  - [.Cost](Cost.md)
@@ -959,6 +1039,7 @@ Class | Method | HTTP request | Description
  - [.CustomerCategory](CustomerCategory.md)
  - [.CustomerTripletexAccount](CustomerTripletexAccount.md)
  - [.Department](Department.md)
+ - [.Document](Document.md)
  - [.Employee](Employee.md)
  - [.EmployeeToken](EmployeeToken.md)
  - [.Employment](Employment.md)
@@ -966,6 +1047,7 @@ Class | Method | HTTP request | Description
  - [.EmploymentType](EmploymentType.md)
  - [.Entitlement](Entitlement.md)
  - [.EventInfoDescription](EventInfoDescription.md)
+ - [.ExternalProduct](ExternalProduct.md)
  - [.ImportConfigDTO](ImportConfigDTO.md)
  - [.ImportReportDTO](ImportReportDTO.md)
  - [.Inventory](Inventory.md)
@@ -991,6 +1073,7 @@ Class | Method | HTTP request | Description
  - [.ListResponseBanner](ListResponseBanner.md)
  - [.ListResponseCloseGroup](ListResponseCloseGroup.md)
  - [.ListResponseCompany](ListResponseCompany.md)
+ - [.ListResponseCompanyAutoCompleteDTO](ListResponseCompanyAutoCompleteDTO.md)
  - [.ListResponseContact](ListResponseContact.md)
  - [.ListResponseCost](ListResponseCost.md)
  - [.ListResponseCountry](ListResponseCountry.md)
@@ -1003,6 +1086,7 @@ Class | Method | HTTP request | Description
  - [.ListResponseEmploymentDetails](ListResponseEmploymentDetails.md)
  - [.ListResponseEmploymentType](ListResponseEmploymentType.md)
  - [.ListResponseEntitlement](ListResponseEntitlement.md)
+ - [.ListResponseExternalProduct](ListResponseExternalProduct.md)
  - [.ListResponseInventory](ListResponseInventory.md)
  - [.ListResponseInvoice](ListResponseInvoice.md)
  - [.ListResponseLeaveOfAbsenceType](ListResponseLeaveOfAbsenceType.md)
@@ -1012,21 +1096,27 @@ Class | Method | HTTP request | Description
  - [.ListResponseOccupationCode](ListResponseOccupationCode.md)
  - [.ListResponseOrder](ListResponseOrder.md)
  - [.ListResponseOrderLine](ListResponseOrderLine.md)
+ - [.ListResponseOrderOffer](ListResponseOrderOffer.md)
  - [.ListResponsePassenger](ListResponsePassenger.md)
  - [.ListResponsePaymentType](ListResponsePaymentType.md)
  - [.ListResponsePaymentTypeOut](ListResponsePaymentTypeOut.md)
  - [.ListResponsePayslip](ListResponsePayslip.md)
  - [.ListResponsePerDiemCompensation](ListResponsePerDiemCompensation.md)
+ - [.ListResponsePersonAutoCompleteDTO](ListResponsePersonAutoCompleteDTO.md)
  - [.ListResponsePosting](ListResponsePosting.md)
  - [.ListResponseProduct](ListResponseProduct.md)
  - [.ListResponseProductUnit](ListResponseProductUnit.md)
  - [.ListResponseProject](ListResponseProject.md)
  - [.ListResponseProjectCategory](ListResponseProjectCategory.md)
+ - [.ListResponseProjectOrderLine](ListResponseProjectOrderLine.md)
+ - [.ListResponseProjectParticipant](ListResponseProjectParticipant.md)
  - [.ListResponseProspect](ListResponseProspect.md)
+ - [.ListResponseReminder](ListResponseReminder.md)
  - [.ListResponseRemunerationType](ListResponseRemunerationType.md)
  - [.ListResponseSalarySpecification](ListResponseSalarySpecification.md)
  - [.ListResponseSalaryTransaction](ListResponseSalaryTransaction.md)
  - [.ListResponseSalaryType](ListResponseSalaryType.md)
+ - [.ListResponseSearchCompletionDTO](ListResponseSearchCompletionDTO.md)
  - [.ListResponseStandardTime](ListResponseStandardTime.md)
  - [.ListResponseSubscription](ListResponseSubscription.md)
  - [.ListResponseSupplier](ListResponseSupplier.md)
@@ -1045,6 +1135,7 @@ Class | Method | HTTP request | Description
  - [.ListResponseWeeklyStatus](ListResponseWeeklyStatus.md)
  - [.ListResponseWorkingHoursScheme](ListResponseWorkingHoursScheme.md)
  - [.LoggedInUserInfoDTO](LoggedInUserInfoDTO.md)
+ - [.MaritimeEmployment](MaritimeEmployment.md)
  - [.MaventaEventDataDTO](MaventaEventDataDTO.md)
  - [.MaventaStatusDTO](MaventaStatusDTO.md)
  - [.MileageAllowance](MileageAllowance.md)
@@ -1055,17 +1146,23 @@ Class | Method | HTTP request | Description
  - [.OccupationCode](OccupationCode.md)
  - [.Order](Order.md)
  - [.OrderLine](OrderLine.md)
+ - [.OrderOffer](OrderOffer.md)
  - [.Passenger](Passenger.md)
  - [.PaymentType](PaymentType.md)
  - [.PaymentTypeOut](PaymentTypeOut.md)
  - [.Payslip](Payslip.md)
  - [.PerDiemCompensation](PerDiemCompensation.md)
+ - [.PersonAutoCompleteDTO](PersonAutoCompleteDTO.md)
  - [.Posting](Posting.md)
  - [.Product](Product.md)
  - [.ProductUnit](ProductUnit.md)
  - [.Project](Project.md)
  - [.ProjectCategory](ProjectCategory.md)
+ - [.ProjectInvoiceDetails](ProjectInvoiceDetails.md)
+ - [.ProjectOrderLine](ProjectOrderLine.md)
+ - [.ProjectParticipant](ProjectParticipant.md)
  - [.Prospect](Prospect.md)
+ - [.Reminder](Reminder.md)
  - [.RemunerationType](RemunerationType.md)
  - [.ResponseWrapperAccommodationAllowance](ResponseWrapperAccommodationAllowance.md)
  - [.ResponseWrapperAccount](ResponseWrapperAccount.md)
@@ -1092,12 +1189,14 @@ Class | Method | HTTP request | Description
  - [.ResponseWrapperCustomer](ResponseWrapperCustomer.md)
  - [.ResponseWrapperCustomerCategory](ResponseWrapperCustomerCategory.md)
  - [.ResponseWrapperDepartment](ResponseWrapperDepartment.md)
+ - [.ResponseWrapperDocument](ResponseWrapperDocument.md)
  - [.ResponseWrapperDouble](ResponseWrapperDouble.md)
  - [.ResponseWrapperEmployee](ResponseWrapperEmployee.md)
  - [.ResponseWrapperEmployeeToken](ResponseWrapperEmployeeToken.md)
  - [.ResponseWrapperEmployment](ResponseWrapperEmployment.md)
  - [.ResponseWrapperEmploymentDetails](ResponseWrapperEmploymentDetails.md)
  - [.ResponseWrapperEntitlement](ResponseWrapperEntitlement.md)
+ - [.ResponseWrapperExternalProduct](ResponseWrapperExternalProduct.md)
  - [.ResponseWrapperInteger](ResponseWrapperInteger.md)
  - [.ResponseWrapperInventory](ResponseWrapperInventory.md)
  - [.ResponseWrapperInvoice](ResponseWrapperInvoice.md)
@@ -1112,6 +1211,7 @@ Class | Method | HTTP request | Description
  - [.ResponseWrapperObject](ResponseWrapperObject.md)
  - [.ResponseWrapperOrder](ResponseWrapperOrder.md)
  - [.ResponseWrapperOrderLine](ResponseWrapperOrderLine.md)
+ - [.ResponseWrapperOrderOffer](ResponseWrapperOrderOffer.md)
  - [.ResponseWrapperPassenger](ResponseWrapperPassenger.md)
  - [.ResponseWrapperPaymentType](ResponseWrapperPaymentType.md)
  - [.ResponseWrapperPaymentTypeOut](ResponseWrapperPaymentTypeOut.md)
@@ -1122,7 +1222,11 @@ Class | Method | HTTP request | Description
  - [.ResponseWrapperProductUnit](ResponseWrapperProductUnit.md)
  - [.ResponseWrapperProject](ResponseWrapperProject.md)
  - [.ResponseWrapperProjectCategory](ResponseWrapperProjectCategory.md)
+ - [.ResponseWrapperProjectInvoiceDetails](ResponseWrapperProjectInvoiceDetails.md)
+ - [.ResponseWrapperProjectOrderLine](ResponseWrapperProjectOrderLine.md)
+ - [.ResponseWrapperProjectParticipant](ResponseWrapperProjectParticipant.md)
  - [.ResponseWrapperProspect](ResponseWrapperProspect.md)
+ - [.ResponseWrapperReminder](ResponseWrapperReminder.md)
  - [.ResponseWrapperSalarySpecification](ResponseWrapperSalarySpecification.md)
  - [.ResponseWrapperSalaryTransaction](ResponseWrapperSalaryTransaction.md)
  - [.ResponseWrapperSalaryType](ResponseWrapperSalaryType.md)
@@ -1140,6 +1244,7 @@ Class | Method | HTTP request | Description
  - [.ResponseWrapperTravelExpenseRateCategory](ResponseWrapperTravelExpenseRateCategory.md)
  - [.ResponseWrapperTravelExpenseRateCategoryGroup](ResponseWrapperTravelExpenseRateCategoryGroup.md)
  - [.ResponseWrapperTravelPaymentType](ResponseWrapperTravelPaymentType.md)
+ - [.ResponseWrapperTripDTO](ResponseWrapperTripDTO.md)
  - [.ResponseWrapperTripletexAccountReturn](ResponseWrapperTripletexAccountReturn.md)
  - [.ResponseWrapperUnreadCountDTO](ResponseWrapperUnreadCountDTO.md)
  - [.ResponseWrapperVatType](ResponseWrapperVatType.md)
@@ -1150,6 +1255,7 @@ Class | Method | HTTP request | Description
  - [.SalarySpecification](SalarySpecification.md)
  - [.SalaryTransaction](SalaryTransaction.md)
  - [.SalaryType](SalaryType.md)
+ - [.SearchCompletionDTO](SearchCompletionDTO.md)
  - [.SessionToken](SessionToken.md)
  - [.SmartScanWebhook](SmartScanWebhook.md)
  - [.StandardTime](StandardTime.md)
@@ -1168,6 +1274,7 @@ Class | Method | HTTP request | Description
  - [.TravelExpenseRateCategoryGroup](TravelExpenseRateCategoryGroup.md)
  - [.TravelPaymentType](TravelPaymentType.md)
  - [.TriggerDTO](TriggerDTO.md)
+ - [.TripDTO](TripDTO.md)
  - [.TripletexAccount](TripletexAccount.md)
  - [.TripletexAccountReturn](TripletexAccountReturn.md)
  - [.UnreadCountDTO](UnreadCountDTO.md)
