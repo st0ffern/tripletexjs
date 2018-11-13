@@ -1,25 +1,26 @@
-[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![MIT License][license-image]][license-url]
+[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![MIT License][license-image]][license-url][![Build Status](https://travis-ci.org/Bjerkio/tripletexjs.svg?branch=master)](https://travis-ci.org/Bjerkio/tripletexjs)
+
+![](https://raw.githubusercontent.com/Bjerkio/tripletexjs.github.io/master/header.jpg)
+
+## Tripletex 2.0 Node.js / Javascript / Typescript API Wrapper
 
 A wrapper for Tripletex 2.0 API in Typescript / Javascript.
 
-## This is automatically built with Swagger Codegen!
-We know there is better ways of doing this. Please read more under the contribute section. We need you!
+Check out the documentation for the most current version [here](https://www.npmjs.com/package/tripletexjs)
 
-## How?
-```nodejs
-var tripletexjs = require('tripletexjs');
-```
+## Contributing
 
-If you use Typescript, the package comes with both definitions and typescript files.
+Send bug reports, feature requests, and code contributions to this
+repository. The repository is maintained by Bjerk AS (Simen A. W. Olsen).
 
-## Contribute!
-We welcome better ways to implement these functions. Some of the things
-we really would like is to build better documentation and accommodate for
-Tripletex 2.0 API's authentication.
+Contributions to this library is much appreciated. We are currently
+working on creating a script that automatically updates the repository
+when Tripletex updates their Swagger file. Please have a look at <thead>
+project tab or issues for more information on current help-needed.
 
-[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
-[license-url]: LICENSE
+## Disclaimer
 
-[npm-url]: https://npmjs.org/package/tripletexjs
-[npm-version-image]: http://img.shields.io/npm/v/tripletexjs.svg?style=flat
-[npm-downloads-image]: http://img.shields.io/npm/dm/tripletexjs.svg?style=flat
+This project is not associated with Tripletex AS at all. The maintainer works with their platform and have
+done so for many years. The Tripletex logo belongs to Tripletex AS. We put it there only so people would
+know we are speaking of the Tripletex accounting software, owned and provided by the Norwegian registered
+company Tripletex AS.

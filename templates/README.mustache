@@ -1,0 +1,125 @@
+[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![MIT License][license-image]][license-url][![Build Status](https://travis-ci.org/Bjerkio/tripletexjs.svg?branch=master)](https://travis-ci.org/Bjerkio/tripletexjs)
+
+![](https://raw.githubusercontent.com/Bjerkio/tripletexjs.github.io/master/header.jpg)
+
+## Tripletex 2.0 Node.js / Javascript / Typescript API Wrapper
+
+A wrapper for Tripletex 2.0 API in Typescript / Javascript.
+
+- Build date: {{generatedDate}}
+
+## Installation
+
+### For [Node.js](https://nodejs.org/)
+
+#### npm
+
+Install it via:
+
+```shell
+npm install tripletexjs
+```
+
+## Getting Started with Typescript
+
+Please follow the [installation](#installation) instruction and execute the following TS code:
+
+```typescript
+import { TokensessionApi, InvoiceApi } from 'tripletexjs';
+
+const tokenSession = new TokensessionApi;
+
+tokenSession.create('xxxx-xxxx-xxxx', 'xxxx-xxxx-xxxx', '2018-07-29T11:42:39.439Z').then(token => {
+  const invoice = new InvoiceApi({
+    username: '',
+    password: token.value.token
+  });
+
+  invoice.get(100000).then(invoiceItem => {
+    console.log(invoiceItem.value.amount);
+  })
+
+})
+```
+
+## Getting Started with Javascript
+
+Please follow the [installation](#installation) instruction and execute the following JS code:
+
+```javascript
+const tripletex = require('tripletexjs');
+
+const tokenSession = new tripletex.TokensessionApi;
+
+tokenSession.create('xxxx-xxxx-xxxx', 'xxxx-xxxx-xxxx', '2018-07-29T11:42:39.439Z').then(token => {
+  const invoice = new tripletex.InvoiceApi({
+    username: '',
+    password: token.value.token
+  });
+
+  invoice.get(100000).then(invoiceItem => {
+    console.log(invoiceItem.value.amount);
+  })
+
+})
+```
+
+## Documentation for API Endpoints
+
+All URIs are relative to *{{basePath}}*
+
+{{#apiInfo}}{{#apis}}
+### {{classname}}
+
+```typescript
+import { {{{classname}}} } from 'tripletexjs';
+```
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+{{#operations}}{{#operation}} | [**{{operationId}}**]({{apiDocPath}}{{classname}}.md#{{operationId}}) | **{{httpMethod}}** {{path}} | {{#summary}}{{summary}}{{/summary}}
+{{/operation}}{{/operations}}{{/apis}}{{/apiInfo}}
+
+## Documentation for Models
+
+{{#models}}{{#model}} - [{{moduleName}}.{{classname}}]({{modelDocPath}}{{classname}}.md)
+{{/model}}{{/models}}
+
+## Documentation for Authorization
+
+{{^authMethods}} All endpoints do not require authorization.
+{{/authMethods}}{{#authMethods}}{{#last}} Authentication schemes defined for the API:{{/last}}{{/authMethods}}
+{{#authMethods}}### {{name}}
+
+{{#isApiKey}}- **Type**: API key
+- **API key parameter name**: {{keyParamName}}
+- **Location**: {{#isKeyInQuery}}URL query string{{/isKeyInQuery}}{{#isKeyInHeader}}HTTP header{{/isKeyInHeader}}
+{{/isApiKey}}
+{{#isBasic}}- **Type**: HTTP basic authentication
+{{/isBasic}}
+{{#isOAuth}}- **Type**: OAuth
+- **Flow**: {{flow}}
+- **Authorization URL**: {{authorizationUrl}}
+- **Scopes**: {{^scopes}}N/A{{/scopes}}
+{{#scopes}}  - {{scope}}: {{description}}
+{{/scopes}}
+{{/isOAuth}}
+
+{{/authMethods}}
+
+## Contributing
+
+Send bug reports, feature requests, and code contributions to this
+repository. The repository is maintained by Bjerk AS (Simen A. W. Olsen).
+
+Contributions to this library is much appreciated. We are currently
+working on creating a script that automatically updates the repository
+when Tripletex updates their Swagger file. Please have a look at <thead>
+project tab or issues for more information on current help-needed.
+
+## Disclaimer
+
+This project is not associated with Tripletex AS at all. The maintainer works with their platform and have
+done so for many years. The Tripletex logo belongs to Tripletex AS. We put it there only so people would
+know we are speaking of the Tripletex accounting software, owned and provided by the Norwegian registered
+company Tripletex AS.
