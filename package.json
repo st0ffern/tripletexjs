@@ -12,10 +12,13 @@
     "prepublish": "npm run compile"
   },
   "files": [
-    "dist/**"
+    "dist/**",
+    "custom.d.ts"
   ],
   "keywords": [
     "tripletex",
+    "accounting",
+    "invoice",
     "rest-api"
   ],
   "repository": {
