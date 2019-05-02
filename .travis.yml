@@ -4,7 +4,6 @@ node_js: 8.3
 install:
 - travis_retry npm install
 script:
-- mv .npmrc_config .npmrc
 - npm run deploy
 services:
 - docker

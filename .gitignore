@@ -8,3 +8,4 @@ configuration.ts
 custom.d.ts
 tsconfig.json
 .swagger-codegen/
+.npmrc
