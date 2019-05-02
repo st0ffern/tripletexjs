@@ -2,7 +2,7 @@ const package = require('../package.json');
 const semver = require('semver');
 const fs = require('fs-extra');
 const path = require('path');
-const execa = require('execa');
+const shell = require('shelljs');
 const release = require('release-it');
 require('portable-fetch');
 
@@ -27,15 +27,36 @@ async function analyze() {
     } else return false;
 }
 
-function dockerBuild() {
-    await execa.shell('docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i https://tripletex.no/v2/swagger.json -l typescript-fetch --config /local/config.json --template-dir /local/templates/ -o /local/');
+function exec(cmd) {
+    return new Promise((resolve, reject) => {
+        console.log(`Running command: ${cmd}`);
+        const child = shell.exec(
+            cmd, {
+                async: true
+            }, (code, stdout, stderr) => {
+                stdout = stdout.toString().trim();
+                if (code === 0) {
+                    console.log(stdout);
+                    resolve(stdout);
+                } else {
+                    reject(new Error(stderr || stdout));
+                }
+            });
+    });
+}
+
+function buildDocker() {
+    return exec('docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i https://tripletex.no/v2/swagger.json -l typescript-fetch --config /local/config.json --template-dir /local/templates/ -o /local/');
+}
+
+function buildTypescript() {
+    return exec('npm run compile');
 }
 
 async function releasePackage(version) {
     return release({
         increment: version,
         'non-interactive': true,
-        'dry-run': true,
         git: {
             commitArgs: `--message="chore(release): Release ${version} [skip ci]"`,
             requireCleanWorkingDir: false
@@ -47,14 +68,14 @@ async function releasePackage(version) {
 }
 
 async function build() {
-    await dockerBuild();
-    await execa.shell(`npm run compile`);
+    await buildDocker();
+    await buildTypescript();
 }
 
 async function run() {
     // Analyze to see if there is a new build.
     const newVersion = await analyze();
-    if(!newVersion) {
+    if (!newVersion) {
         return "No new version. Skipping 🎉"
     }
 
