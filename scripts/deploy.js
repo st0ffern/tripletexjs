@@ -29,7 +29,7 @@ async function analyze() {
     const swagger = await getSwaggerFile();
     console.log(`Tripletex has version ${swagger.info.version}. We got ${package.version}`);
     if (semver.lt(package.version, swagger.info.version)) {
-        return swagger.info.version;
+        return `${swagger.info.version}-rc.1`;
     } else return false;
 }
 
