@@ -4,7 +4,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const shell = require('shelljs');
 const release = require('release-it');
-require('portable-fetch');
+const request = require('request');
 
 const simpleGit = require('simple-git')(path.resolve(__dirname, '..'));
 
@@ -15,8 +15,14 @@ const packagePath = path.resolve(__dirname, '..', 'package.json');
  * Get swagger file from Tripletex
  */
 async function getSwaggerFile() {
-    const swagger = await fetch(tripletexSwaggerFile);
-    return swagger.json();
+    return new Promise((resolve, reject) => {
+        request(tripletexSwaggerFile, (err, response, body) => {
+            if(err) {
+                return reject(err);
+            }
+            resolve(JSON.parse(body));
+        });
+    })
 }
 
 async function analyze() {
