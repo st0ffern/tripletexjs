@@ -76,8 +76,10 @@ async function releasePackage(version) {
 async function checkoutMaster() {
     await exec('git remote set-url origin https://${GH_TOKEN}@github.com/Bjerkio/tripletexjs.git');
     await exec('git checkout master');
-    await exec('touch .npmrc');
-    await exec('cat "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc');
+    fs.writeFileSync(
+      path.resolve(__dirname, '..', '.npmrc'),
+      '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'
+    );
 }
 
 async function build() {
