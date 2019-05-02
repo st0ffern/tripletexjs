@@ -59,14 +59,16 @@ async function releasePackage(version) {
         'non-interactive': true,
         git: {
             commitArgs: `--message="chore(release): Release ${version} [skip ci]"`,
-            pushArgs: `--set-upstream https://github.com/Bjerkio/tripletexjs.git`,
-            requireUpstream: false,
             requireCleanWorkingDir: false
         },
         publishConfig: {
             access: 'public'
         }
     });
+}
+
+async function addRemotes() {
+    exec('git remote add origin https://${GH_TOKEN}@github.com/Bjerkio/tripletexjs.git');
 }
 
 async function build() {
@@ -82,6 +84,7 @@ async function run() {
     }
 
     await build();
+    await addRemotes();
     await releasePackage(newVersion);
 }
 
