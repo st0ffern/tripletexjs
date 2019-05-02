@@ -68,7 +68,7 @@ async function releasePackage(version) {
 }
 
 async function checkoutMaster() {
-    exec('git remote origin set-url https://${GH_TOKEN}@github.com/Bjerkio/tripletexjs.git');
+    exec('git remote set-url origin https://${GH_TOKEN}@github.com/Bjerkio/tripletexjs.git');
     exec('git checkout master');
 }
 
