@@ -1,6 +1,6 @@
 {
   "name": "tripletexjs",
-  "version": "2.0.3",
+  "version": "0.0.0",
   "description": "Typescript / Javascript class for Tripletex 2.0 API",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "prebuild": "npm run swagger-gen",
     "compile": "tsc --outDir dist/",
     "build": "npm run compile",
-    "prepublish": "npm run compile"
+    "deploy": "node scripts/deploy"
   },
   "files": [
     "dist/**",
@@ -37,6 +37,11 @@
   },
   "devDependencies": {
     "@types/node": "^8.0.9",
+    "execa": "^1.0.0",
+    "fs-extra": "^7.0.1",
+    "release-it": "^11.0.0",
+    "semver": "^6.0.0",
+    "simple-git": "^1.110.0",
     "typescript": "^2.0"
   }
 }

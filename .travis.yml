@@ -3,21 +3,8 @@ sudo: required
 node_js: 8.3
 install:
 - travis_retry npm install
-before_install:
-- docker pull swaggerapi/swagger-codegen-cli
-- docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i https://tripletex.no/v2/swagger.json
-  -l typescript-fetch --config /local/config.json --template-dir /local/templates/
-  -o /local/
 script:
+- mv .npmrc_config .npmrc
 - npm run compile
 services:
 - docker
-deploy:
-  provider: npm
-  email: office@bjerk.io
-  skip_cleanup: true
-  tag: next
-  on:
-    branch: master
-  api_key:
-    secure: f70gSl6OtqiBaAM7mG4H2HhZev1zkwRvmdGwhnL3TUD96sqmvvTvxHH6pl+vkPpLtuo7lkKEJPrf0cw2fIk7nYnHfO0RwItr+/SXMuSPHg9rbvvxm2MBX2VAaO4mrecjUWxMJTlanoxzLjdBhvDEY4fDSw2kNXN2KooTAMgU8AxUR/KaBqSLjY3qLKK7GAgkAS0emRbqBFyoTpsXlBrElA5Kf4+m1xuarR/FRlB6/3IzvU0O2aN0tlHGTqX4O9wfHQp/w2mgsix1wByXabol/OBEEm9EbfPTlKjof0cwsdHSssAwBNm8Y/meTTtE4anYMPdfI8psBJAf6bl2I23iQCLbYIBXo2FksNkQ4fQ4kVvpWqPCPbvkp7ksBpPEjxj842yrYwj6biqJj66ccnslwbdX01/e5eYJ7F1tL6q/mk4x/zcGk605p+E7jm792tRftgoXlTt5bNwolUWGiVyscI1AvDQ56q/quOX4WJnbMXPzniuMUZZa0BXLjQrJPRU0Nmd96MBRkwJ5LacMpSqlhas/i2GuwjQex8zzxEy4+Eh2wznk0eupNXocrVRw+OfrHPIFgAfllf/zz8F4orZXloDUrXzVf7xeeFuLvW5AizsMvphckC45lX+9iGcQznRVBZpbjl3bioPlcIBMvEpwneE8YKW/6lqJApT9BqNDFrg=
