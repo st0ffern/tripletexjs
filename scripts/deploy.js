@@ -46,7 +46,7 @@ function exec(cmd) {
 }
 
 function buildDocker() {
-    return exec('docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i https://tripletex.no/v2/swagger.json -l typescript-fetch --config /local/config.json --template-dir /local/templates/ -o /local/');
+    return exec('docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i https://tripletex.no/v2/swagger.json -l typescript-node --config /local/config.json --template-dir /local/templates/ -o /local/');
 }
 
 function buildTypescript() {
