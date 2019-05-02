@@ -20,42 +20,17 @@ Install it via:
 npm install tripletexjs
 ```
 
-## Getting Started with Typescript
+## Getting Started
 
 Please follow the [installation](#installation) instruction and execute the following TS code:
 
 ```typescript
 import { TokensessionApi, InvoiceApi } from 'tripletexjs';
 
-const tokenSession = new TokensessionApi;
+const tokenSession = new TokensessionApi();
 
 tokenSession.create('xxxx-xxxx-xxxx', 'xxxx-xxxx-xxxx', '2018-07-29T11:42:39.439Z').then(token => {
-  const invoice = new InvoiceApi({
-    username: '',
-    password: token.value.token
-  });
-
-  invoice.get(100000).then(invoiceItem => {
-    console.log(invoiceItem.value.amount);
-  })
-
-})
-```
-
-## Getting Started with Javascript
-
-Please follow the [installation](#installation) instruction and execute the following JS code:
-
-```javascript
-const tripletex = require('tripletexjs');
-
-const tokenSession = new tripletex.TokensessionApi;
-
-tokenSession.create('xxxx-xxxx-xxxx', 'xxxx-xxxx-xxxx', '2018-07-29T11:42:39.439Z').then(token => {
-  const invoice = new tripletex.InvoiceApi({
-    username: '',
-    password: token.value.token
-  });
+  const invoice = new InvoiceApi('', token.value.token);
 
   invoice.get(100000).then(invoiceItem => {
     console.log(invoiceItem.value.amount);

@@ -1,6 +1,6 @@
 {
   "name": "tripletexjs",
-  "version": "2.33.9",
+  "version": "0.0.0",
   "description": "Typescript / Javascript class for Tripletex 2.0 API",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -32,8 +32,10 @@
   },
   "homepage": "https://github.com/Bjerkio/tripletexjs#readme",
   "dependencies": {
-    "abab": "^2.0.0",
-    "portable-fetch": "^3.0.0"
+    "bluebird": "^3.5.0",
+    "request": "^2.81.0",
+    "@types/bluebird": "*",
+    "@types/request": "*"
   },
   "devDependencies": {
     "@types/node": "^8.0.9",
@@ -43,6 +45,6 @@
     "semver": "^6.0.0",
     "shelljs": "^0.8.3",
     "simple-git": "^1.110.0",
-    "typescript": "^2.0"
+    "typescript": "^2.4.2"
   }
 }
