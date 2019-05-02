@@ -59,6 +59,8 @@ async function releasePackage(version) {
         'non-interactive': true,
         git: {
             commitArgs: `--message="chore(release): Release ${version} [skip ci]"`,
+            pushArgs: `--set-upstream origin/master`,
+            requireUpstream: false,
             requireCleanWorkingDir: false
         },
         publishConfig: {
