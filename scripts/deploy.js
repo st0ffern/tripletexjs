@@ -28,7 +28,7 @@ async function analyze() {
 }
 
 function dockerBuild() {
-    return execa.shell('docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i https://tripletex.no/v2/swagger.json -l typescript-fetch --config /local/config.json --template-dir /local/templates/ -o /local/');
+    await execa.shell('docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate -i https://tripletex.no/v2/swagger.json -l typescript-fetch --config /local/config.json --template-dir /local/templates/ -o /local/');
 }
 
 async function releasePackage(version) {
@@ -48,7 +48,7 @@ async function releasePackage(version) {
 
 async function build() {
     await dockerBuild();
-    return execa.shell(`npm run compile`);
+    await execa.shell(`npm run compile`);
 }
 
 async function run() {
