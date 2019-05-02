@@ -60,6 +60,7 @@ async function releasePackage(version) {
         git: {
             commitArgs: `--message="chore(release): Release ${version} [skip ci]"`,
             pushArgs: `--set-upstream origin`,
+            requireUpstream: false,
             requireCleanWorkingDir: false
         },
         publishConfig: {
