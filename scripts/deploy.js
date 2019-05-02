@@ -28,7 +28,7 @@ async function getSwaggerFile() {
 async function analyze() {
     const swagger = await getSwaggerFile();
     console.log(`Tripletex has version ${swagger.info.version}. We got ${package.version}`);
-    if (semver.lt(package.version, swagger.info.version)) {
+    if (semver.lt(package.version, `${swagger.info.version}-beta`)) {
         return swagger.info.version;
     } else return false;
 }
