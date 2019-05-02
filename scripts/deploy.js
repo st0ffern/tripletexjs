@@ -59,7 +59,7 @@ async function releasePackage(version) {
         'non-interactive': true,
         git: {
             commitArgs: `--message="chore(release): Release ${version} [skip ci]"`,
-            pushArgs: `--set-upstream origin/master`,
+            pushArgs: `--set-upstream https://github.com/Bjerkio/tripletexjs.git`,
             requireUpstream: false,
             requireCleanWorkingDir: false
         },
