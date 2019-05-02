@@ -1,6 +1,6 @@
 {
   "name": "tripletexjs",
-  "version": "0.0.0",
+  "version": "2.33.9-beta",
   "description": "Typescript / Javascript class for Tripletex 2.0 API",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
