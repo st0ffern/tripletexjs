@@ -69,8 +69,8 @@ async function releasePackage(version) {
     });
 }
 
-async function addRemotes() {
-    exec('git remote add github-origin https://${GH_TOKEN}@github.com/Bjerkio/tripletexjs.git');
+async function checkoutMaster() {
+    exec('git checkout master');
 }
 
 async function build() {
@@ -85,8 +85,8 @@ async function run() {
         return "No new version. Skipping 🎉"
     }
 
-    await build();
-    await addRemotes();
+    await checkoutMaster();
+    await build();    
     await releasePackage(newVersion);
 }
 
