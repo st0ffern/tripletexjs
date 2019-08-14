@@ -1,4 +1,4 @@
-[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![MIT License][license-image]][license-url][![Build Status](https://travis-ci.org/Bjerkio/tripletexjs.svg?branch=master)](https://travis-ci.org/Bjerkio/tripletexjs)
+[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![MIT License][license-image]][license-url][![Build Status](https://travis-ci.org/Bjerkio/tripletexjs.svg?branch=master)](https://travis-ci.org/Bjerkio/tripletexjs) [![Greenkeeper badge](https://badges.greenkeeper.io/Bjerkio/tripletexjs.svg)](https://greenkeeper.io/)
 
 ![](https://raw.githubusercontent.com/Bjerkio/tripletexjs.github.io/master/header.jpg)
 
